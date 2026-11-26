@@ -1,0 +1,151 @@
+{
+  "map": 389,
+  "name": "Ragefire Chasm",
+  "minLevel": 13,
+  "maxLevel": 18,
+  "requiredLevel": 10,
+  "zone": 1454,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenRagefireChasm",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1454, 53, 49],
+  "encounters": [
+    {
+      "id": 2732,
+      "name": "Oggleflint",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Oggleflint",
+      "displayID": 11611,
+      "npc": 11517,
+      "level": 16,
+      "loot": [
+        {
+          "item": 272996,
+          "name": "Trogg Scepter"
+        },
+        {
+          "item": 272998,
+          "name": "Bone Knuckles"
+        },
+        {
+          "item": 272999,
+          "name": "Barbaric Crossbow"
+        },
+        {
+          "item": 252781,
+          "name": "Pattern: Stormrider's Leather Gloves"
+        },
+        {
+          "item": 252782,
+          "name": "Pattern: Wisdom's Leather Gloves"
+        }
+      ]
+    },
+    {
+      "id": 2733,
+      "name": "Taragaman the Hungerer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Taragaman the Hungerer",
+      "displayID": 7970,
+      "npc": 11520,
+      "level": 16,
+      "loot": [
+        {
+          "item": 14145,
+          "name": "Cursed Felblade"
+        },
+        {
+          "item": 14148,
+          "name": "Crystalline Cuffs"
+        },
+        {
+          "item": 14149,
+          "name": "Subterranean Cape"
+        },
+        {
+          "item": 251361,
+          "name": "Plans: Guard's Gloves"
+        },
+        {
+          "item": 251362,
+          "name": "Plans: Protector's Gloves"
+        },
+        {
+          "item": 251363,
+          "name": "Plans: Acolyte's Gloves"
+        },
+        {
+          "item": 252782,
+          "name": "Pattern: Wisdom's Leather Gloves"
+        }
+      ]
+    },
+    {
+      "id": 2734,
+      "name": "Jergosh the Invoker",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Jergosh the Invoker",
+      "displayID": 11429,
+      "npc": 11518,
+      "level": 16,
+      "loot": [
+        {
+          "item": 14147,
+          "name": "Cavedweller Bracers"
+        },
+        {
+          "item": 14150,
+          "name": "Robe of Evocation"
+        },
+        {
+          "item": 14151,
+          "name": "Chanting Blade"
+        },
+        {
+          "item": 251360,
+          "name": "Plans: Veteran's Gloves"
+        },
+        {
+          "item": 253906,
+          "name": "Pattern: Filigreed Flame Gown"
+        }
+      ]
+    },
+    {
+      "id": 2735,
+      "name": "Bazzalan",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Bazzalan",
+      "displayID": 2007,
+      "npc": 11519,
+      "level": 16,
+      "loot": [
+        {
+          "item": 273003,
+          "name": "Searing Dagger"
+        },
+        {
+          "item": 273007,
+          "name": "Chasm Walkers"
+        },
+        {
+          "item": 273005,
+          "name": "Satyrskin Cloak"
+        },
+        {
+          "item": 252780,
+          "name": "Pattern: Totemic Leather Gloves"
+        },
+        {
+          "item": 252782,
+          "name": "Pattern: Wisdom's Leather Gloves"
+        },
+        {
+          "item": 253908,
+          "name": "Pattern: Filigreed Shadow Gown"
+        },
+        {
+          "item": 253910,
+          "name": "Pattern: Filigreed Pearly Gown"
+        }
+      ]
+    }
+  ],
+  "trash": [],
+  "quests": [5728, 5725, 5724, 5723, 5722, 5761]
+}

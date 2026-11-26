@@ -1,0 +1,224 @@
+guide forever/class/paladin/tyrs-watch
+title Tyr's Watch and Redemption (Forsaken)
+category Class
+class Paladin
+folder Paladin
+faction Horde
+race Undead
+levels 1-13
+zone Tirisfal Glades
+keywords Tyr's Watch, Bandarion Keep, Aramis Hammerhand, Frightened Paladin, Coming to Terms, Continue Your Training, Shari Stilwell, Danitha Morr, Breton Samuels, Hilda the Breaker, Ephram Barbaro, As Above, So Below, The One That Got Away, Shadowvale, A Lesson in Divinity, Redemption, Symbol of Life, Rudolph Gelhardt, Forsaken Paladin, class quest
+reward spell 7328 "Redemption"
+reward item 246164 246165
+reward item 246265
+why Redemption to raise fallen allies, plus a weapon and a shield for a new Forsaken paladin.
+
+# The Forsaken paladin's class story in Tirisfal, new in Forever, from the
+# first day in Deathknell to Redemption at 12:
+# - Deathknell (1-4): A Difficult Path (98601, Shadow Priest Sarvis's scroll
+#   to Aramis Hammerhand), Rediscovering the Light (90902, heal five Injured
+#   Deathguard), Coming to Terms (91208, the Frightened Paladin) and Continue
+#   Your Training (91209, to Shari Stilwell in Brill).
+# - Bandarion Keep (8-12): A Second Home (91282) from Shari, Murlocs at the
+#   Gates (91285), Touring the Grounds (91294), Making Repairs (91316), The
+#   Tarnished (91317) and A Token of Good Faith (95803, to Sylvanas); beside
+#   them Hilda the Breaker's As Above, So Below (99152) and Ephram Barbaro's
+#   The One That Got Away (99153) in the crypt under Shadowvale.
+# - Redemption (12): the seven A Lesson in Divinity quests (94427-94441).
+# Sources: Forever's quest data (quests.json, the knowledge base) for givers,
+# enders, objectives, spawns, mob levels and drop rates (Faintly Glowing Bone
+# 60% from one Shadowvale Mystic, 48% from the Lurchers, 29% from the other
+# Mystic; Sturdy Lumber from each of the 12 Lumber Piles); players' notes in
+# Forever's quest data for the places: the Frightened Paladin just south of
+# the bat cave west of the church, the crypt under Shadowvale entered through
+# a burned house (about 12.9,65.7), the crystal on the floor of the crypt's
+# left-hand part, Rudolph Gelhardt upstairs in a house, Billmuth downstairs in
+# the keep, Falgan dying again soon after he is raised. The data has no
+# prerequisites for these quests; the order is the story's.
+# 99152 and 99153: the sources disagree on who may take them. A Scourge Mage
+# found neither quest in the givers' windows (maybe before A Righteous Cause);
+# Forever's server quest answers (EG Link, build 70450) list both as Tirisfal
+# zone quests (zone 85) with the Horde race mask of Hadric's any-class chain
+# (96896-96899, 98545), where every quest of this guide is in the Paladin
+# class category (141) and Undead-only. So the data has no class lock on
+# them (the paladin-only
+# private correction is gone); the Undead route offers them to every class
+# as optional steps. Their prerequisite is
+# Leonid's chain: one source gives 99152 the prerequisite A Righteous Cause
+# (96896), Ephram's text thanks you for the work against the cultists at the
+# remnants of the Naxxramas battle (Hadric Harlson's The Cult of the Damned
+# 96897 and Remnants of War 96898, south-east of Brill, then Bandarion Keep
+# 96899 and 96896), and a paladin found both quests only after 96896. Here
+# the accepts are optional, as this guide does not take Leonid's chain, and
+# the later steps wait with `when onquest`, so a player without them loses
+# nothing.
+# Other classes take them too: players' in-game recordings show an Undead
+# Rogue taking and handing in 99152 and an Undead Warlock both.
+# The leveling route (forever/horde/undead/01-tirisfal-glades) does the
+# Deathknell quests, the keep's first three and Hilda's and Ephram's, and
+# leaves out the rest: three crossings of the glades for a spell solo leveling
+# does not need. This guide is the whole story; steps done in the route are
+# already ticked here. The Deathknell steps only show below level 9 (they are
+# a few hundred XP, not worth the walk back). Danitha Morr also starts the
+# level 18 chain in Silverpine (forever/class/paladin/lumina-windsinger).
+# Horde paladin mounts: the Forever client has a Forsaken Summon Warhorse
+# (spell 1279399) and Summon Forsaken Charger (1296534), but Forever's quest
+# data has no quest for either yet; see the comments of
+# forever/collectibles/mounts/alliance/paladin-warhorse.
+
+# ---------------------------------------------------------------- Deathknell
+
+step Aramis Hammerhand
+  when level<9
+  zone Tirisfal Glades
+  tip Shadow Priest Sarvis gives you a Consecrated Scroll after The Mindless Ones: read it, then bring it to Aramis Hammerhand by the church. He asks you to heal five Injured Deathguard lying around Deathknell. Holy Light hurts a Forsaken paladin a little each time: watch your health.
+  accept 98601                        -- Shadow Priest Sarvis
+  turnin 98601                        -- Aramis Hammerhand
+  level 2
+  accept 90902
+  complete 90902 @31.6,65.8           -- Heal 5 Injured Deathguard with Holy Light
+  turnin 90902                        -- Aramis Hammerhand
+
+step Coming to Terms
+  when level<9
+  tip At 4 Aramis sends you after a Frightened Paladin who fled into the hills west of the church, just south of the bat cave. Talk to her to offer aid: she turns on you, and you have to put her down (level 3, easy).
+  level 4
+  accept 91208                        -- Aramis Hammerhand
+  accept 91209
+  kill 246143 quest 91208.1           -- Talk to the Frightened Paladin, then defeat her
+  turnin 91208                        -- Aramis Hammerhand
+
+step Shari Stilwell
+  when level<9
+  tip Follow the road east out of Deathknell to Brill. Shari Stilwell, the paladin trainer, stands in town; she trains you from here on.
+  turnin 91209                        -- Shari Stilwell, Brill
+  train class
+
+# ---------------------------------------------------------------- Bandarion Keep
+
+step A Second Home
+  tip At 8 Shari Stilwell in Brill sends you to the order's keep on the west coast. The Tarnished in Shadowvale and the crypt under it hit hard at 8-9: come at 10 or later.
+  level 8
+  accept 91282                        -- Shari Stilwell, Brill
+
+step Bandarion Keep
+  tip {area:16602} stands on the bluffs north-west of the Solliden Farmstead (the road west starts near 29,46). Breton Samuels waits at the gate. Hilda the Breaker, the keep's trainer, and Ephram Barbaro, its stable master, stand at the forest's edge just south of him. They only have work for you from level 10 and after A Righteous Cause from Leonid at the keep, the end of Hadric Harlson's chain that starts south-east of Brill; take their quests when you see them.
+  level 11
+  turnin 91282                        -- Breton Samuels
+  accept 91285
+  accept 99152 optional               -- Hilda the Breaker: As Above, So Below
+  accept 99153 optional               -- Ephram Barbaro: The One That Got Away
+
+step Murlocs at the Gates
+  tip The Vile Fin murlocs (level 9-11) lurk on the bluffs along the road east of the keep and in the camps around the lake to the south-west, on the way down to Shadowvale.
+  level 11
+  kill 250283 quest 91285.1           -- Vile Fin Attackers x8
+  kill 250282 quest 91285.2           -- Vile Fin Seers x8
+
+step Touring the Grounds
+  tip Breton gives you a weapon, then sends you round the keep to speak with four of its people: Hilda the Breaker just south of the gate, Ander Solliden, the lookout, who walks the road south-east of the keep, then Jorin Croge and Danitha Morr inside the keep. Pick the conversation option with each.
+  level 10
+  turnin 91285 choose 246164 246165   -- Breton Samuels: Skullthumper or Driftwood Smasher
+  accept 91294
+  talk 246389 quest 91294.1           -- Hilda the Breaker
+  talk 246394 quest 91294.3           -- Ander Solliden
+  talk 246393 quest 91294.2           -- Jorin Croge
+  talk 246378 quest 91294.4           -- Danitha Morr
+
+step Danitha Morr
+  tip Danitha Morr leads the order from inside the keep; Jorin Croge stands beside it. The Tarnished need level 9.
+  turnin 91294                        -- Danitha Morr
+  level 11
+  accept 91317
+  accept 91316                        -- Jorin Croge
+
+step Shadowvale
+  tip The Tarnished (level 8-9) hold the ruined village of Shadowvale in the Whispering Forest, south-west of the keep. Commander Rudolph Gelhardt (level 10) stands on the upper floor of a house, with Drudges below him: clear the ground floor first.
+  level 12
+  kill 259434 quest 91317.2           -- Tarnished Drudges x8
+  kill 259433 quest 91317.3           -- Tarnished Zealots x6
+  collect 270435 quest 91317.1        -- Rudolph Gelhardt's Head
+
+step The crypt under Shadowvale
+  tip The cellar is under the village, not on the surface: the way down is inside a burned-out house, where the arrow points. Twelve Lumber Piles (stacked beams) lie in the cellar, each good for one Sturdy Lumber. Whispering Horror, an elite (level 11-13), sits at the far end: leave it alone.
+  level 12
+  collect 246213 quest 91316.1 @12.9,65.7 -- Lumber Piles, in the cellar: the way down is here
+
+step Hilda's bones
+  when onquest 99152
+  tip The Shadowvale Lurchers and Mystics (level 8-10) in the crypt drop the Faintly Glowing Bones: about one in two from Lurchers, more from one kind of Mystic, less from the other.
+  level 12
+  collect 286259 quest 99152.1 @9.89,66.36 -- Faintly Glowing Bones x6
+
+step Ephram's crystal
+  when onquest 99153
+  tip The Glowing Crystal Fragment, a green crystal, lies on the floor in the left-hand part of the crypt.
+  level 12
+  collect 286269 quest 99153.1 @9.8,69.3 -- Glowing Crystal Fragment
+
+step Back to the keep
+  tip Danitha hands you Rudolph Gelhardt's head for Sylvanas: keep it in your bags, it is what you hand in.
+  turnin 91316 choose 246265          -- Jorin Croge: Salvaged Wooden Tower Shield
+  turnin 91317                        -- Danitha Morr
+  accept 95803
+
+step Hilda the Breaker
+  when onquest 99152
+  tip Hilda and Ephram wait at the forest's edge south of the gate.
+  turnin 99152                        -- Hilda the Breaker
+
+step Ephram Barbaro
+  when onquest 99153
+  tip Ephram waits at the forest's edge south of the gate, a few steps west of Hilda.
+  turnin 99153                        -- Ephram Barbaro
+
+# ---------------------------------------------------------------- A Lesson in Divinity
+
+step A Lesson in Divinity
+  tip Danitha offers the first Lesson in Divinity at level 12. Bring 10 Linen Cloth if you have it: the Undercity asks for it next.
+  level 12
+  accept 94427                        -- Danitha Morr
+
+step The Undercity
+  zone Undercity
+  tip Walk south from Brill to the Ruins of Lordaeron and down into the Undercity. Lady Sylvanas Windrunner holds court in the Royal Quarter; Tanis Alderwood begs in the Trade Quarter.
+  level 11
+  turnin 95803                        -- Lady Sylvanas Windrunner
+  turnin 94427                        -- Tanis Alderwood
+  accept 94434
+
+step Linen Cloth
+  zone Tirisfal Glades
+  tip Tanis needs 10 Linen Cloth. Humanoids drop it: the Scarlet Zealots and Friars of the glades about three kills in ten. The Undercity Auction House sells it too.
+  level 11
+  collect 2589 quest 94434.1          -- Linen Cloth x10
+
+step Tanis Alderwood
+  zone Undercity
+  turnin 94434
+  accept 94435
+
+step The Symbol of Life
+  zone Tirisfal Glades
+  tip Back to {area:16602}. Danitha gives you the Symbol of Life; Deathguard Billmuth waits downstairs in the keep. If you lose the symbol, Danitha gives you another.
+  turnin 94435                        -- Danitha Morr
+  accept 94436
+  turnin 94436                        -- Deathguard Billmuth, downstairs
+  accept 94438
+
+step Deathguard Falgan
+  tip Venomweb Vale is at the far east end of the glades, a long walk. Falgan lies dead among the Scarlet Crusaders there: target his body and use the Symbol of Life, then talk to him at once, as he does not stay alive long. If he is already up (another player), just talk to him; if he died again, raise him again.
+  level 11
+  turnin 94438                        -- Deathguard Falgan
+  accept 94440
+
+step The Scarlet attack plans
+  tip The Scarlet Zealots (level 8-9), Friars (9-10) and Tarnished around Venomweb Vale carry the attack plans. They run for help at low health and respawn in five minutes.
+  level 12
+  collect 264693 quest 94440.1        -- Scarlet Crusade Attack Plans
+
+step Redemption
+  tip Back to {area:16602}, across the whole glades: Billmuth downstairs takes the plans, then Danitha, back upstairs in the keep, teaches you Redemption.
+  turnin 94440                        -- Deathguard Billmuth, downstairs
+  accept 94441
+  turnin 94441                        -- Danitha Morr, back upstairs: Redemption

@@ -1,0 +1,1216 @@
+{
+  "map": 289,
+  "name": "Scholomance",
+  "minLevel": 58,
+  "maxLevel": 60,
+  "requiredLevel": 45,
+  "zone": 1422,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenScholomance",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1422, 70, 73],
+  "encounters": [
+    {
+      "id": 2805,
+      "name": "Kirtonos",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Kirtonos the Herald",
+      "npc": 10506,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16734,
+          "name": "Boots of Valor"
+        },
+        {
+          "item": 13960,
+          "name": "Heart of the Fiend"
+        },
+        {
+          "item": 13967,
+          "name": "Windreaver Greaves"
+        },
+        {
+          "item": 13969,
+          "name": "Loomguard Armbraces"
+        },
+        {
+          "item": 14024,
+          "name": "Frightalon"
+        },
+        {
+          "item": 13957,
+          "name": "Gargoyle Slashers"
+        },
+        {
+          "item": 13955,
+          "name": "Stoneform Shoulders"
+        },
+        {
+          "item": 13983,
+          "name": "Gravestone War Axe"
+        },
+        {
+          "item": 13956,
+          "name": "Clutch of Andros"
+        }
+      ]
+    },
+    {
+      "id": 2804,
+      "name": "Jandice Barov",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Jandice Barov",
+      "npc": 10503,
+      "level": 61,
+      "loot": [
+        {
+          "item": 16701,
+          "name": "Dreadmist Mantle"
+        },
+        {
+          "item": 14545,
+          "name": "Ghostloom Leggings"
+        },
+        {
+          "item": 14541,
+          "name": "Barovian Family Sword"
+        },
+        {
+          "item": 14548,
+          "name": "Royal Cap Spaulders"
+        },
+        {
+          "item": 18690,
+          "name": "Wraithplate Leggings"
+        },
+        {
+          "item": 18689,
+          "name": "Phantasmal Cloak"
+        },
+        {
+          "item": 22394,
+          "name": "Staff of Metanoia"
+        }
+      ]
+    },
+    {
+      "id": 2811,
+      "name": "Rattlegore",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Rattlegore",
+      "npc": 11622,
+      "level": 61,
+      "loot": [
+        {
+          "item": 16711,
+          "name": "Shadowcraft Boots"
+        },
+        {
+          "item": 14528,
+          "name": "Rattlecage Buckler"
+        },
+        {
+          "item": 14531,
+          "name": "Frightskull Shaft"
+        },
+        {
+          "item": 14537,
+          "name": "Corpselight Greaves"
+        },
+        {
+          "item": 14538,
+          "name": "Deadwalker Mantle"
+        },
+        {
+          "item": 14539,
+          "name": "Bone Ring Helm"
+        },
+        {
+          "item": 18686,
+          "name": "Bone Golem Shoulders"
+        }
+      ]
+    },
+    {
+      "id": 2809,
+      "name": "Marduk Blackpool",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Marduk Blackpool",
+      "npc": 10433,
+      "level": 58,
+      "loot": [
+        {
+          "item": 14576,
+          "name": "Ebon Hilt of Marduk"
+        },
+        {
+          "item": 18692,
+          "name": "Death Knight Sabatons"
+        }
+      ]
+    },
+    {
+      "id": 2813,
+      "name": "Vectus",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Vectus",
+      "npc": 10432,
+      "level": 60,
+      "loot": [
+        {
+          "item": 14577,
+          "name": "Skullsmoke Pants"
+        },
+        {
+          "item": 18691,
+          "name": "Dark Advisor's Pendant"
+        },
+        {
+          "item": 273121,
+          "name": "Blueprint: Sewing Machine"
+        }
+      ]
+    },
+    {
+      "id": 3055,
+      "name": "Kormok",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Kormok",
+      "loot": [
+        {
+          "item": 22332,
+          "name": "Blade of Necromancy"
+        },
+        {
+          "item": 22303,
+          "name": "Ironweave Pants"
+        },
+        {
+          "item": 22326,
+          "name": "Amalgam's Band"
+        },
+        {
+          "item": 21984,
+          "name": "Left Piece of Lord Valthalak's Amulet"
+        },
+        {
+          "item": 22046,
+          "name": "Right Piece of Lord Valthalak's Amulet"
+        },
+        {
+          "item": 22331,
+          "name": "Band of the Steadfast Hero"
+        },
+        {
+          "item": 22333,
+          "name": "Hammer of Divine Might"
+        }
+      ]
+    },
+    {
+      "id": 2810,
+      "name": "Ras Frostwhisperer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Ras Frostwhisper",
+      "npc": 10508,
+      "level": 62,
+      "loot": [
+        {
+          "item": 16689,
+          "name": "Magister's Mantle"
+        },
+        {
+          "item": 14487,
+          "name": "Bonechill Hammer"
+        },
+        {
+          "item": 14502,
+          "name": "Frostbite Girdle"
+        },
+        {
+          "item": 18694,
+          "name": "Shadowy Mail Greaves"
+        },
+        {
+          "item": 18696,
+          "name": "Intricately Runed Shield"
+        },
+        {
+          "item": 13952,
+          "name": "Iceblade Hacker"
+        },
+        {
+          "item": 14340,
+          "name": "Freezing Lich Robes"
+        },
+        {
+          "item": 14522,
+          "name": "Maelstrom Leggings"
+        },
+        {
+          "item": 14525,
+          "name": "Boneclenched Gauntlets"
+        },
+        {
+          "item": 18693,
+          "name": "Shivery Handwraps"
+        },
+        {
+          "item": 13521,
+          "name": "Recipe: Flask of Supreme Power"
+        },
+        {
+          "item": 273112,
+          "name": "Blueprint: Alchemy Laboratory"
+        },
+        {
+          "item": 13314,
+          "name": "Alanna's Embrace"
+        },
+        {
+          "item": 14503,
+          "name": "Death's Clutch"
+        },
+        {
+          "item": 18695,
+          "name": "Spellbound Tome"
+        }
+      ]
+    },
+    {
+      "id": 2803,
+      "name": "Instructor Malicia",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Instructor Malicia",
+      "npc": 10505,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16710,
+          "name": "Shadowcraft Bracers"
+        },
+        {
+          "item": 23201,
+          "name": "Libram of Divinity"
+        },
+        {
+          "item": 23200,
+          "name": "Totem of Sustaining"
+        },
+        {
+          "item": 14614,
+          "name": "Bloodmail Belt"
+        },
+        {
+          "item": 14616,
+          "name": "Bloodmail Boots"
+        },
+        {
+          "item": 14615,
+          "name": "Bloodmail Gauntlets"
+        },
+        {
+          "item": 14611,
+          "name": "Bloodmail Hauberk"
+        },
+        {
+          "item": 14612,
+          "name": "Bloodmail Legguards"
+        },
+        {
+          "item": 14637,
+          "name": "Cadaverous Armor"
+        },
+        {
+          "item": 14636,
+          "name": "Cadaverous Belt"
+        },
+        {
+          "item": 14640,
+          "name": "Cadaverous Gloves"
+        },
+        {
+          "item": 14638,
+          "name": "Cadaverous Leggings"
+        },
+        {
+          "item": 14641,
+          "name": "Cadaverous Walkers"
+        },
+        {
+          "item": 14624,
+          "name": "Deathbone Chestplate"
+        },
+        {
+          "item": 14622,
+          "name": "Deathbone Gauntlets"
+        },
+        {
+          "item": 14620,
+          "name": "Deathbone Girdle"
+        },
+        {
+          "item": 14623,
+          "name": "Deathbone Legguards"
+        },
+        {
+          "item": 14621,
+          "name": "Deathbone Sabatons"
+        },
+        {
+          "item": 18684,
+          "name": "Dimly Opalescent Ring"
+        },
+        {
+          "item": 18682,
+          "name": "Ghoul Skin Leggings"
+        },
+        {
+          "item": 18683,
+          "name": "Hammer of the Vesper"
+        },
+        {
+          "item": 14631,
+          "name": "Necropile Boots"
+        },
+        {
+          "item": 14629,
+          "name": "Necropile Cuffs"
+        },
+        {
+          "item": 14632,
+          "name": "Necropile Leggings"
+        },
+        {
+          "item": 14633,
+          "name": "Necropile Mantle"
+        },
+        {
+          "item": 14626,
+          "name": "Necropile Robe"
+        },
+        {
+          "item": 18680,
+          "name": "Ancient Bone Bow"
+        },
+        {
+          "item": 18681,
+          "name": "Burial Shawl"
+        }
+      ]
+    },
+    {
+      "id": 2802,
+      "name": "Doctor Theolen Krastinov",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Doctor Theolen Krastinov",
+      "npc": 11261,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16684,
+          "name": "Magister's Gloves"
+        },
+        {
+          "item": 14617,
+          "name": "Sawbones Shirt"
+        },
+        {
+          "item": 23201,
+          "name": "Libram of Divinity"
+        },
+        {
+          "item": 23200,
+          "name": "Totem of Sustaining"
+        },
+        {
+          "item": 14614,
+          "name": "Bloodmail Belt"
+        },
+        {
+          "item": 14616,
+          "name": "Bloodmail Boots"
+        },
+        {
+          "item": 14615,
+          "name": "Bloodmail Gauntlets"
+        },
+        {
+          "item": 14611,
+          "name": "Bloodmail Hauberk"
+        },
+        {
+          "item": 14612,
+          "name": "Bloodmail Legguards"
+        },
+        {
+          "item": 14637,
+          "name": "Cadaverous Armor"
+        },
+        {
+          "item": 14636,
+          "name": "Cadaverous Belt"
+        },
+        {
+          "item": 14640,
+          "name": "Cadaverous Gloves"
+        },
+        {
+          "item": 14638,
+          "name": "Cadaverous Leggings"
+        },
+        {
+          "item": 14641,
+          "name": "Cadaverous Walkers"
+        },
+        {
+          "item": 14624,
+          "name": "Deathbone Chestplate"
+        },
+        {
+          "item": 14622,
+          "name": "Deathbone Gauntlets"
+        },
+        {
+          "item": 14620,
+          "name": "Deathbone Girdle"
+        },
+        {
+          "item": 14623,
+          "name": "Deathbone Legguards"
+        },
+        {
+          "item": 14621,
+          "name": "Deathbone Sabatons"
+        },
+        {
+          "item": 18684,
+          "name": "Dimly Opalescent Ring"
+        },
+        {
+          "item": 18682,
+          "name": "Ghoul Skin Leggings"
+        },
+        {
+          "item": 18683,
+          "name": "Hammer of the Vesper"
+        },
+        {
+          "item": 14631,
+          "name": "Necropile Boots"
+        },
+        {
+          "item": 14629,
+          "name": "Necropile Cuffs"
+        },
+        {
+          "item": 14632,
+          "name": "Necropile Leggings"
+        },
+        {
+          "item": 14633,
+          "name": "Necropile Mantle"
+        },
+        {
+          "item": 14626,
+          "name": "Necropile Robe"
+        },
+        {
+          "item": 18680,
+          "name": "Ancient Bone Bow"
+        },
+        {
+          "item": 18681,
+          "name": "Burial Shawl"
+        },
+        {
+          "item": 273118,
+          "name": "Blueprint: Plague Doctor's Laboratory"
+        }
+      ]
+    },
+    {
+      "id": 2808,
+      "name": "Lorekeeper Polkelt",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lorekeeper Polkelt",
+      "npc": 10901,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16705,
+          "name": "Dreadmist Wraps"
+        },
+        {
+          "item": 23201,
+          "name": "Libram of Divinity"
+        },
+        {
+          "item": 23200,
+          "name": "Totem of Sustaining"
+        },
+        {
+          "item": 14614,
+          "name": "Bloodmail Belt"
+        },
+        {
+          "item": 14616,
+          "name": "Bloodmail Boots"
+        },
+        {
+          "item": 14615,
+          "name": "Bloodmail Gauntlets"
+        },
+        {
+          "item": 14611,
+          "name": "Bloodmail Hauberk"
+        },
+        {
+          "item": 14612,
+          "name": "Bloodmail Legguards"
+        },
+        {
+          "item": 14637,
+          "name": "Cadaverous Armor"
+        },
+        {
+          "item": 14636,
+          "name": "Cadaverous Belt"
+        },
+        {
+          "item": 14640,
+          "name": "Cadaverous Gloves"
+        },
+        {
+          "item": 14638,
+          "name": "Cadaverous Leggings"
+        },
+        {
+          "item": 14641,
+          "name": "Cadaverous Walkers"
+        },
+        {
+          "item": 14624,
+          "name": "Deathbone Chestplate"
+        },
+        {
+          "item": 14622,
+          "name": "Deathbone Gauntlets"
+        },
+        {
+          "item": 14620,
+          "name": "Deathbone Girdle"
+        },
+        {
+          "item": 14623,
+          "name": "Deathbone Legguards"
+        },
+        {
+          "item": 14621,
+          "name": "Deathbone Sabatons"
+        },
+        {
+          "item": 18684,
+          "name": "Dimly Opalescent Ring"
+        },
+        {
+          "item": 18682,
+          "name": "Ghoul Skin Leggings"
+        },
+        {
+          "item": 18683,
+          "name": "Hammer of the Vesper"
+        },
+        {
+          "item": 14631,
+          "name": "Necropile Boots"
+        },
+        {
+          "item": 14629,
+          "name": "Necropile Cuffs"
+        },
+        {
+          "item": 14632,
+          "name": "Necropile Leggings"
+        },
+        {
+          "item": 14633,
+          "name": "Necropile Mantle"
+        },
+        {
+          "item": 14626,
+          "name": "Necropile Robe"
+        },
+        {
+          "item": 18680,
+          "name": "Ancient Bone Bow"
+        },
+        {
+          "item": 18681,
+          "name": "Burial Shawl"
+        }
+      ]
+    },
+    {
+      "id": 2812,
+      "name": "The Ravenian",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-The Ravenian",
+      "npc": 10507,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16716,
+          "name": "Wildheart Belt"
+        },
+        {
+          "item": 23201,
+          "name": "Libram of Divinity"
+        },
+        {
+          "item": 23200,
+          "name": "Totem of Sustaining"
+        },
+        {
+          "item": 14614,
+          "name": "Bloodmail Belt"
+        },
+        {
+          "item": 14616,
+          "name": "Bloodmail Boots"
+        },
+        {
+          "item": 14615,
+          "name": "Bloodmail Gauntlets"
+        },
+        {
+          "item": 14611,
+          "name": "Bloodmail Hauberk"
+        },
+        {
+          "item": 14612,
+          "name": "Bloodmail Legguards"
+        },
+        {
+          "item": 14637,
+          "name": "Cadaverous Armor"
+        },
+        {
+          "item": 14636,
+          "name": "Cadaverous Belt"
+        },
+        {
+          "item": 14640,
+          "name": "Cadaverous Gloves"
+        },
+        {
+          "item": 14638,
+          "name": "Cadaverous Leggings"
+        },
+        {
+          "item": 14641,
+          "name": "Cadaverous Walkers"
+        },
+        {
+          "item": 14624,
+          "name": "Deathbone Chestplate"
+        },
+        {
+          "item": 14622,
+          "name": "Deathbone Gauntlets"
+        },
+        {
+          "item": 14620,
+          "name": "Deathbone Girdle"
+        },
+        {
+          "item": 14623,
+          "name": "Deathbone Legguards"
+        },
+        {
+          "item": 14621,
+          "name": "Deathbone Sabatons"
+        },
+        {
+          "item": 18684,
+          "name": "Dimly Opalescent Ring"
+        },
+        {
+          "item": 18682,
+          "name": "Ghoul Skin Leggings"
+        },
+        {
+          "item": 18683,
+          "name": "Hammer of the Vesper"
+        },
+        {
+          "item": 14631,
+          "name": "Necropile Boots"
+        },
+        {
+          "item": 14629,
+          "name": "Necropile Cuffs"
+        },
+        {
+          "item": 14632,
+          "name": "Necropile Leggings"
+        },
+        {
+          "item": 14633,
+          "name": "Necropile Mantle"
+        },
+        {
+          "item": 14626,
+          "name": "Necropile Robe"
+        },
+        {
+          "item": 18680,
+          "name": "Ancient Bone Bow"
+        },
+        {
+          "item": 18681,
+          "name": "Burial Shawl"
+        }
+      ]
+    },
+    {
+      "id": 2807,
+      "name": "Lord Alexei Barov",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Alexei Barov",
+      "npc": 10504,
+      "level": 60,
+      "loot": [
+        {
+          "item": 14626,
+          "name": "Necropile Robe"
+        },
+        {
+          "item": 14637,
+          "name": "Cadaverous Armor"
+        },
+        {
+          "item": 18680,
+          "name": "Ancient Bone Bow"
+        },
+        {
+          "item": 18681,
+          "name": "Burial Shawl"
+        },
+        {
+          "item": 18682,
+          "name": "Ghoul Skin Leggings"
+        },
+        {
+          "item": 18683,
+          "name": "Hammer of the Vesper"
+        },
+        {
+          "item": 18684,
+          "name": "Dimly Opalescent Ring"
+        },
+        {
+          "item": 14611,
+          "name": "Bloodmail Hauberk"
+        },
+        {
+          "item": 14624,
+          "name": "Deathbone Chestplate"
+        },
+        {
+          "item": 16722,
+          "name": "Lightforge Bracers"
+        },
+        {
+          "item": 23201,
+          "name": "Libram of Divinity"
+        },
+        {
+          "item": 23200,
+          "name": "Totem of Sustaining"
+        },
+        {
+          "item": 14614,
+          "name": "Bloodmail Belt"
+        },
+        {
+          "item": 14616,
+          "name": "Bloodmail Boots"
+        },
+        {
+          "item": 14615,
+          "name": "Bloodmail Gauntlets"
+        },
+        {
+          "item": 14612,
+          "name": "Bloodmail Legguards"
+        },
+        {
+          "item": 14636,
+          "name": "Cadaverous Belt"
+        },
+        {
+          "item": 14640,
+          "name": "Cadaverous Gloves"
+        },
+        {
+          "item": 14638,
+          "name": "Cadaverous Leggings"
+        },
+        {
+          "item": 14641,
+          "name": "Cadaverous Walkers"
+        },
+        {
+          "item": 14622,
+          "name": "Deathbone Gauntlets"
+        },
+        {
+          "item": 14620,
+          "name": "Deathbone Girdle"
+        },
+        {
+          "item": 14623,
+          "name": "Deathbone Legguards"
+        },
+        {
+          "item": 14621,
+          "name": "Deathbone Sabatons"
+        },
+        {
+          "item": 14631,
+          "name": "Necropile Boots"
+        },
+        {
+          "item": 14629,
+          "name": "Necropile Cuffs"
+        },
+        {
+          "item": 14632,
+          "name": "Necropile Leggings"
+        },
+        {
+          "item": 14633,
+          "name": "Necropile Mantle"
+        }
+      ]
+    },
+    {
+      "id": 2806,
+      "name": "Lady Illucia Barov",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lady Illucia Barov",
+      "npc": 10502,
+      "level": 60,
+      "loot": [
+        {
+          "item": 23201,
+          "name": "Libram of Divinity"
+        },
+        {
+          "item": 23200,
+          "name": "Totem of Sustaining"
+        },
+        {
+          "item": 14614,
+          "name": "Bloodmail Belt"
+        },
+        {
+          "item": 14616,
+          "name": "Bloodmail Boots"
+        },
+        {
+          "item": 14615,
+          "name": "Bloodmail Gauntlets"
+        },
+        {
+          "item": 14611,
+          "name": "Bloodmail Hauberk"
+        },
+        {
+          "item": 14612,
+          "name": "Bloodmail Legguards"
+        },
+        {
+          "item": 14637,
+          "name": "Cadaverous Armor"
+        },
+        {
+          "item": 14636,
+          "name": "Cadaverous Belt"
+        },
+        {
+          "item": 14640,
+          "name": "Cadaverous Gloves"
+        },
+        {
+          "item": 14638,
+          "name": "Cadaverous Leggings"
+        },
+        {
+          "item": 14641,
+          "name": "Cadaverous Walkers"
+        },
+        {
+          "item": 14624,
+          "name": "Deathbone Chestplate"
+        },
+        {
+          "item": 14622,
+          "name": "Deathbone Gauntlets"
+        },
+        {
+          "item": 14620,
+          "name": "Deathbone Girdle"
+        },
+        {
+          "item": 14623,
+          "name": "Deathbone Legguards"
+        },
+        {
+          "item": 14621,
+          "name": "Deathbone Sabatons"
+        },
+        {
+          "item": 18684,
+          "name": "Dimly Opalescent Ring"
+        },
+        {
+          "item": 18682,
+          "name": "Ghoul Skin Leggings"
+        },
+        {
+          "item": 18683,
+          "name": "Hammer of the Vesper"
+        },
+        {
+          "item": 14631,
+          "name": "Necropile Boots"
+        },
+        {
+          "item": 14629,
+          "name": "Necropile Cuffs"
+        },
+        {
+          "item": 14632,
+          "name": "Necropile Leggings"
+        },
+        {
+          "item": 14633,
+          "name": "Necropile Mantle"
+        },
+        {
+          "item": 14626,
+          "name": "Necropile Robe"
+        },
+        {
+          "item": 18680,
+          "name": "Ancient Bone Bow"
+        },
+        {
+          "item": 18681,
+          "name": "Burial Shawl"
+        }
+      ]
+    },
+    {
+      "id": 2801,
+      "name": "Darkmaster Gandling",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Darkmaster Gandling",
+      "npc": 1853,
+      "level": 61,
+      "loot": [
+        {
+          "item": 16667,
+          "name": "Coif of Elements"
+        },
+        {
+          "item": 16677,
+          "name": "Beaststalker's Cap"
+        },
+        {
+          "item": 16686,
+          "name": "Magister's Crown"
+        },
+        {
+          "item": 16693,
+          "name": "Devout Crown"
+        },
+        {
+          "item": 16698,
+          "name": "Dreadmist Mask"
+        },
+        {
+          "item": 16707,
+          "name": "Shadowcraft Cap"
+        },
+        {
+          "item": 16720,
+          "name": "Wildheart Cowl"
+        },
+        {
+          "item": 16727,
+          "name": "Lightforge Helm"
+        },
+        {
+          "item": 16731,
+          "name": "Helm of Valor"
+        },
+        {
+          "item": 13951,
+          "name": "Vigorsteel Vambraces"
+        },
+        {
+          "item": 13398,
+          "name": "Boots of the Shrieker"
+        },
+        {
+          "item": 13938,
+          "name": "Bonecreeper Stylus"
+        },
+        {
+          "item": 13944,
+          "name": "Tombstone Breastplate"
+        },
+        {
+          "item": 13953,
+          "name": "Silent Fang"
+        },
+        {
+          "item": 13964,
+          "name": "Witchblade"
+        },
+        {
+          "item": 22433,
+          "name": "Don Mauricio's Band of Domination"
+        },
+        {
+          "item": 14514,
+          "name": "Pattern: Robe of the Void"
+        },
+        {
+          "item": 13501,
+          "name": "Recipe: Major Mana Potion"
+        },
+        {
+          "item": 13937,
+          "name": "Headmaster's Charge"
+        }
+      ]
+    },
+    {
+      "id": -14516,
+      "name": "Death Knight Darkreaver",
+      "npc": 14516,
+      "level": 62,
+      "loot": [
+        {
+          "item": 18758,
+          "name": "Specter's Blade"
+        },
+        {
+          "item": 18759,
+          "name": "Malicious Axe"
+        },
+        {
+          "item": 18760,
+          "name": "Necromantic Band"
+        },
+        {
+          "item": 18761,
+          "name": "Oblivion's Touch"
+        },
+        {
+          "item": 18749,
+          "name": "Charger's Lost Soul"
+        },
+        {
+          "item": 18880,
+          "name": "Darkreaver's Head"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 16684,
+      "name": "Magister's Gloves"
+    },
+    {
+      "item": 16705,
+      "name": "Dreadmist Wraps"
+    },
+    {
+      "item": 16722,
+      "name": "Lightforge Bracers"
+    },
+    {
+      "item": 16685,
+      "name": "Magister's Belt"
+    },
+    {
+      "item": 16702,
+      "name": "Dreadmist Belt"
+    },
+    {
+      "item": 16714,
+      "name": "Wildheart Bracers"
+    },
+    {
+      "item": 16710,
+      "name": "Shadowcraft Bracers"
+    },
+    {
+      "item": 16716,
+      "name": "Wildheart Belt"
+    },
+    {
+      "item": 16671,
+      "name": "Bindings of Elements"
+    },
+    {
+      "item": 18697,
+      "name": "Coldstone Slippers"
+    },
+    {
+      "item": 18698,
+      "name": "Tattered Leather Hood"
+    },
+    {
+      "item": 18699,
+      "name": "Icy Tomb Spaulders"
+    },
+    {
+      "item": 18700,
+      "name": "Malefic Bracers"
+    },
+    {
+      "item": 18701,
+      "name": "Innervating Band"
+    },
+    {
+      "item": 18702,
+      "name": "Belt of the Ordained"
+    },
+    {
+      "item": 14536,
+      "name": "Bonebrace Hauberk"
+    },
+    {
+      "item": 16254,
+      "name": "Formula: Enchant Weapon - Lifestealing"
+    },
+    {
+      "item": 16255,
+      "name": "Formula: Enchant 2H Weapon - Major Spirit"
+    },
+    {
+      "item": 15776,
+      "name": "Pattern: Runic Leather Armor"
+    },
+    {
+      "item": 15773,
+      "name": "Pattern: Wicked Leather Armor"
+    },
+    {
+      "item": 20520,
+      "name": "Dark Rune"
+    },
+    {
+      "item": 12753,
+      "name": "Skin of Shadow"
+    },
+    {
+      "item": 252940,
+      "name": "Pattern: Pristine Scorpid Leggings"
+    }
+  ],
+  "quests": [5466, 5343, 5341, 4771, 5529, 7629, 7647, 7668]
+}

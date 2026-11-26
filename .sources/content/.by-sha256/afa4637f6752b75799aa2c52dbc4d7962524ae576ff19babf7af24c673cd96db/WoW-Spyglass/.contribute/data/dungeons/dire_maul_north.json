@@ -1,0 +1,303 @@
+{
+  "map": 429,
+  "id": 42903,
+  "name": "Dire Maul: North",
+  "minLevel": 56,
+  "maxLevel": 60,
+  "requiredLevel": 45,
+  "zone": 1444,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenDireMaul",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1444, 63, 25],
+  "encounters": [
+    {
+      "id": 362,
+      "name": "Guard Mol'dar",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Guard Moldar",
+      "npc": 14326,
+      "level": 59,
+      "loot": [
+        {
+          "item": 18494,
+          "name": "Denwatcher's Shoulders"
+        },
+        {
+          "item": 18493,
+          "name": "Bulky Iron Spaulders"
+        },
+        {
+          "item": 18496,
+          "name": "Heliotrope Cloak"
+        },
+        {
+          "item": 18497,
+          "name": "Sublime Wristguards"
+        },
+        {
+          "item": 18498,
+          "name": "Hedgecutter"
+        },
+        {
+          "item": 18450,
+          "name": "Robe of Combustion"
+        },
+        {
+          "item": 18451,
+          "name": "Hyena Hide Belt"
+        },
+        {
+          "item": 18458,
+          "name": "Modest Armguards"
+        },
+        {
+          "item": 18459,
+          "name": "Gallant's Wristguards"
+        },
+        {
+          "item": 18460,
+          "name": "Unsophisticated Hand Cannon"
+        },
+        {
+          "item": 18462,
+          "name": "Jagged Bone Fist"
+        },
+        {
+          "item": 18463,
+          "name": "Ogre Pocket Knife"
+        },
+        {
+          "item": 18464,
+          "name": "Gordok Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 363,
+      "name": "Stomper Kreeg",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Stomper Kreeg",
+      "npc": 14322,
+      "level": 59,
+      "loot": [
+        {
+          "item": 18425,
+          "name": "Kreeg's Mug"
+        }
+      ]
+    },
+    {
+      "id": 364,
+      "name": "Guard Fengus",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Guard Fengus",
+      "npc": 14321,
+      "level": 59,
+      "loot": [
+        {
+          "item": 18494,
+          "name": "Denwatcher's Shoulders"
+        },
+        {
+          "item": 18493,
+          "name": "Bulky Iron Spaulders"
+        },
+        {
+          "item": 18496,
+          "name": "Heliotrope Cloak"
+        },
+        {
+          "item": 18497,
+          "name": "Sublime Wristguards"
+        },
+        {
+          "item": 18498,
+          "name": "Hedgecutter"
+        },
+        {
+          "item": 18450,
+          "name": "Robe of Combustion"
+        },
+        {
+          "item": 18451,
+          "name": "Hyena Hide Belt"
+        },
+        {
+          "item": 18458,
+          "name": "Modest Armguards"
+        },
+        {
+          "item": 18459,
+          "name": "Gallant's Wristguards"
+        },
+        {
+          "item": 18460,
+          "name": "Unsophisticated Hand Cannon"
+        },
+        {
+          "item": 18462,
+          "name": "Jagged Bone Fist"
+        },
+        {
+          "item": 18463,
+          "name": "Ogre Pocket Knife"
+        },
+        {
+          "item": 18464,
+          "name": "Gordok Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 365,
+      "name": "Guard Slip'kik",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Guard Slipkik",
+      "npc": 14323,
+      "level": 59,
+      "loot": [
+        {
+          "item": 18494,
+          "name": "Denwatcher's Shoulders"
+        },
+        {
+          "item": 18493,
+          "name": "Bulky Iron Spaulders"
+        },
+        {
+          "item": 18496,
+          "name": "Heliotrope Cloak"
+        },
+        {
+          "item": 18497,
+          "name": "Sublime Wristguards"
+        },
+        {
+          "item": 18498,
+          "name": "Hedgecutter"
+        },
+        {
+          "item": 18450,
+          "name": "Robe of Combustion"
+        },
+        {
+          "item": 18451,
+          "name": "Hyena Hide Belt"
+        },
+        {
+          "item": 18458,
+          "name": "Modest Armguards"
+        },
+        {
+          "item": 18459,
+          "name": "Gallant's Wristguards"
+        },
+        {
+          "item": 18460,
+          "name": "Unsophisticated Hand Cannon"
+        },
+        {
+          "item": 18462,
+          "name": "Jagged Bone Fist"
+        },
+        {
+          "item": 18463,
+          "name": "Ogre Pocket Knife"
+        },
+        {
+          "item": 18464,
+          "name": "Gordok Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 366,
+      "name": "Captain Kromcrush",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Captain Kromcrush",
+      "npc": 14325,
+      "level": 61,
+      "loot": [
+        {
+          "item": 18503,
+          "name": "Kromcrush's Chestplate"
+        },
+        {
+          "item": 18507,
+          "name": "Boots of the Full Moon"
+        },
+        {
+          "item": 18502,
+          "name": "Monstrous Glaive"
+        },
+        {
+          "item": 18505,
+          "name": "Mugger's Belt"
+        }
+      ]
+    },
+    {
+      "id": 367,
+      "name": "Cho'Rush the Observer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-ChoRush the Observer",
+      "npc": 14324,
+      "level": 60,
+      "loot": [
+        {
+          "item": 18483,
+          "name": "Mana Channeling Wand"
+        },
+        {
+          "item": 18484,
+          "name": "Cho'Rush's Blade"
+        },
+        {
+          "item": 18485,
+          "name": "Observer's Shield"
+        },
+        {
+          "item": 18490,
+          "name": "Insightful Hood"
+        }
+      ]
+    },
+    {
+      "id": 368,
+      "name": "King Gordok",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-King Gordok",
+      "npc": 11501,
+      "level": 62,
+      "loot": [
+        {
+          "item": 18526,
+          "name": "Crown of the Ogre King"
+        },
+        {
+          "item": 18525,
+          "name": "Bracers of Prosperity"
+        },
+        {
+          "item": 18527,
+          "name": "Harmonious Gauntlets"
+        },
+        {
+          "item": 18524,
+          "name": "Leggings of Destruction"
+        },
+        {
+          "item": 18521,
+          "name": "Grimy Metal Boots"
+        },
+        {
+          "item": 18520,
+          "name": "Barbarous Blade"
+        },
+        {
+          "item": 18522,
+          "name": "Band of the Ogre King"
+        },
+        {
+          "item": 18523,
+          "name": "Brightly Glowing Stone"
+        }
+      ]
+    }
+  ],
+  "trash": [],
+  "quests": [7703, 5525, 5518, 7482, 7481, 7506, 7503, 7500, 7501, 7504, 7498, 7505, 7502, 7499, 7507, 7483, 7484, 7485]
+}

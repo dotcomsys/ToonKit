@@ -1,0 +1,37 @@
+{
+  "source": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
+  "retrieved": "2026-10-18",
+  "notice": "Factual announced dungeon names only; no article prose or media reproduced. No levels, entrances, bosses or drops inferred.",
+  "records": [
+    {
+      "slug": "the-drowned-city",
+      "name": "The Drowned City",
+      "source": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
+      "availability": "announced"
+    },
+    {
+      "slug": "kroldok-stronghold",
+      "name": "Krol'dok Stronghold",
+      "source": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
+      "availability": "announced"
+    },
+    {
+      "slug": "alcaz-prison",
+      "name": "Alcaz Prison",
+      "source": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
+      "availability": "announced"
+    },
+    {
+      "slug": "blackmaw-hold",
+      "name": "Blackmaw Hold",
+      "source": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
+      "availability": "announced"
+    },
+    {
+      "slug": "shapers-terrace",
+      "name": "Shaper's Terrace",
+      "source": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
+      "availability": "announced"
+    }
+  ]
+}

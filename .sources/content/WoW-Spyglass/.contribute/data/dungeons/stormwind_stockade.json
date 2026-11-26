@@ -1,0 +1,250 @@
+{
+  "map": 34,
+  "name": "Stormwind Stockade",
+  "minLevel": 24,
+  "maxLevel": 32,
+  "requiredLevel": 15,
+  "zone": 1453,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenStormwindStockade",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1453, 52, 70],
+  "encounters": [
+    {
+      "id": 2756,
+      "name": "Targorr the Dread",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\targorr_the_dread.blp",
+      "displayID": 517,
+      "loot": [
+        {
+          "item": 273804,
+          "name": "Executioner Mantle"
+        },
+        {
+          "item": 273805,
+          "name": "Blackrock Harness"
+        },
+        {
+          "item": 273806,
+          "name": "Dark Horde Band"
+        },
+        {
+          "item": 251380,
+          "name": "Plans: Veteran's Silvered Chain Helm"
+        },
+        {
+          "item": 251382,
+          "name": "Plans: Protector's Silvered Chain Helm"
+        },
+        {
+          "item": 253942,
+          "name": "Pattern: Filigreed Flame Leggings"
+        }
+      ]
+    },
+    {
+      "id": 2757,
+      "name": "Kam Deepfury",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\kam_deepfury.blp",
+      "displayID": 825,
+      "loot": [
+        {
+          "item": 2280,
+          "name": "Kam's Walking Stick"
+        },
+        {
+          "item": 273808,
+          "name": "Bridgebreaker Bindings"
+        },
+        {
+          "item": 273807,
+          "name": "Demolition Girdle"
+        },
+        {
+          "item": 251379,
+          "name": "Plans: Crusader's Silvered Chain Leggings"
+        },
+        {
+          "item": 252825,
+          "name": "Pattern: Wisdom's Leather Leggings"
+        },
+        {
+          "item": 252512,
+          "name": "Brawler's Leather Helm"
+        },
+        {
+          "item": 252513,
+          "name": "Trapper's Leather Helm"
+        },
+        {
+          "item": 252455,
+          "name": "Defender's Leather Helm"
+        },
+        {
+          "item": 252515,
+          "name": "Wisdom's Leather Helm"
+        }
+      ]
+    },
+    {
+      "id": 2758,
+      "name": "Hamhock",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\hamhock.blp",
+      "displayID": 3250,
+      "loot": [
+        {
+          "item": 273809,
+          "name": "Hamhock's Cleaver"
+        },
+        {
+          "item": 273810,
+          "name": "Ogre Grips"
+        },
+        {
+          "item": 273811,
+          "name": "Repurposed Rack"
+        },
+        {
+          "item": 251377,
+          "name": "Plans: Protector's Silvered Chain Leggings"
+        },
+        {
+          "item": 252513,
+          "name": "Trapper's Leather Helm"
+        }
+      ]
+    },
+    {
+      "id": -1720,
+      "name": "Bruegal Ironknuckle",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\bruegal_ironknuckle.blp",
+      "displayID": 2142,
+      "npc": 1720,
+      "rare": true,
+      "loot": [
+        {
+          "item": 3228,
+          "name": "Jimmied Handcuffs"
+        },
+        {
+          "item": 2942,
+          "name": "Iron Knuckles"
+        },
+        {
+          "item": 2941,
+          "name": "Prison Shank"
+        }
+      ]
+    },
+    {
+      "id": 2759,
+      "name": "Dextren Ward",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\dextren_ward.blp",
+      "displayID": 2149,
+      "loot": [
+        {
+          "item": 273817,
+          "name": "Graverobber's Shovel"
+        },
+        {
+          "item": 273819,
+          "name": "Boneslicer"
+        },
+        {
+          "item": 273820,
+          "name": "Nightskulker Ring"
+        },
+        {
+          "item": 251375,
+          "name": "Plans: Veteran's Silvered Chain Leggings"
+        },
+        {
+          "item": 251376,
+          "name": "Plans: Guard's Silvered Chain Leggings"
+        },
+        {
+          "item": 252820,
+          "name": "Pattern: Brawler's Leather Legguards"
+        },
+        {
+          "item": 252821,
+          "name": "Pattern: Trapper's Leather Legguards"
+        },
+        {
+          "item": 252512,
+          "name": "Brawler's Leather Helm"
+        },
+        {
+          "item": 252456,
+          "name": "Totemic Leather Helm"
+        },
+        {
+          "item": 252514,
+          "name": "Stormrider's Leather Helm"
+        },
+        {
+          "item": 252515,
+          "name": "Wisdom's Leather Helm"
+        }
+      ]
+    },
+    {
+      "id": 2760,
+      "name": "Bazil Thredd",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\bazil_thredd.blp",
+      "displayID": 1621,
+      "loot": [
+        {
+          "item": 273824,
+          "name": "Defias Jailbreakers"
+        },
+        {
+          "item": 273825,
+          "name": "Red Wool Cloak"
+        },
+        {
+          "item": 273827,
+          "name": "Debt Collector"
+        },
+        {
+          "item": 273829,
+          "name": "Concealed Hand Crossbow"
+        },
+        {
+          "item": 252824,
+          "name": "Pattern: Stormrider's Leather Kilt"
+        },
+        {
+          "item": 253976,
+          "name": "Pattern: Filigreed Pristine Circlet"
+        },
+        {
+          "item": 253986,
+          "name": "Pattern: Filigreed Shining Circlet"
+        },
+        {
+          "item": 252455,
+          "name": "Defender's Leather Helm"
+        },
+        {
+          "item": 252456,
+          "name": "Totemic Leather Helm"
+        },
+        {
+          "item": 252515,
+          "name": "Wisdom's Leather Helm"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 274092,
+      "name": "Sharpened Cutlery"
+    },
+    {
+      "item": 1076,
+      "name": "Defias Renegade Ring"
+    }
+  ],
+  "quests": [386, 377, 387, 388, 391, 378]
+}

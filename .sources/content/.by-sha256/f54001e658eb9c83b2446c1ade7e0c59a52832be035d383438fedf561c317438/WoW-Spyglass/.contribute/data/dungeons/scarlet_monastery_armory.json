@@ -1,0 +1,211 @@
+{
+  "map": 189,
+  "id": 18903,
+  "name": "Scarlet Monastery: Armory",
+  "displayName": "SM: Armory",
+  "minLevel": 36,
+  "maxLevel": 44,
+  "requiredLevel": 20,
+  "zone": 1420,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenScarletMonastery2",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1420, 83, 34],
+  "encounters": [
+    {
+      "id": 448,
+      "name": "Herod",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Herod",
+      "npc": 3975,
+      "level": 40,
+      "loot": [
+        {
+          "item": 7718,
+          "name": "Herod's Shoulder"
+        },
+        {
+          "item": 7719,
+          "name": "Raging Berserker's Helm"
+        },
+        {
+          "item": 7717,
+          "name": "Ravager"
+        },
+        {
+          "item": 10330,
+          "name": "Scarlet Leggings"
+        },
+        {
+          "item": 274295,
+          "name": "Band of Crimson Light"
+        },
+        {
+          "item": 251398,
+          "name": "Plans: Officer's Boots"
+        },
+        {
+          "item": 251399,
+          "name": "Plans: Sentinel's Boots"
+        },
+        {
+          "item": 251400,
+          "name": "Plans: Warder's Boots"
+        },
+        {
+          "item": 251401,
+          "name": "Plans: Prefect's Boots"
+        },
+        {
+          "item": 251402,
+          "name": "Plans: Justicar's Boots"
+        },
+        {
+          "item": 252843,
+          "name": "Pattern: Prowler's Leather Shoes"
+        },
+        {
+          "item": 252844,
+          "name": "Pattern: Skulker's Leather Shoes"
+        },
+        {
+          "item": 252845,
+          "name": "Pattern: Warden's Leather Shoes"
+        },
+        {
+          "item": 252846,
+          "name": "Pattern: Skycaller's Leather Shoes"
+        },
+        {
+          "item": 252847,
+          "name": "Pattern: Mender's Leather Shoes"
+        },
+        {
+          "item": 252896,
+          "name": "Pattern: Stalker's Mail Boots"
+        },
+        {
+          "item": 252897,
+          "name": "Pattern: Skycaller's Mail Boots"
+        },
+        {
+          "item": 252898,
+          "name": "Pattern: Skirmisher's Mail Boots"
+        },
+        {
+          "item": 252899,
+          "name": "Pattern: Mender's Mail Boots"
+        },
+        {
+          "item": 254038,
+          "name": "Pattern: Gilded Cord"
+        },
+        {
+          "item": 254040,
+          "name": "Pattern: Frothing Cord"
+        },
+        {
+          "item": 254042,
+          "name": "Pattern: Fiery Cord"
+        },
+        {
+          "item": 254044,
+          "name": "Pattern: Black Cord"
+        },
+        {
+          "item": 254046,
+          "name": "Pattern: Golden Cord"
+        },
+        {
+          "item": 254048,
+          "name": "Pattern: Radiant Cord"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 10329,
+      "name": "Scarlet Belt"
+    },
+    {
+      "item": 10332,
+      "name": "Scarlet Boots"
+    },
+    {
+      "item": 5819,
+      "name": "Sunblaze Coif"
+    },
+    {
+      "item": 7730,
+      "name": "Cobalt Crusher"
+    },
+    {
+      "item": 7757,
+      "name": "Windweaver Staff"
+    },
+    {
+      "item": 7761,
+      "name": "Steelclaw Reaver"
+    },
+    {
+      "item": 7787,
+      "name": "Resplendent Guardian"
+    },
+    {
+      "item": 5756,
+      "name": "Sliverblade"
+    },
+    {
+      "item": 2262,
+      "name": "Mark of Kern"
+    },
+    {
+      "item": 7727,
+      "name": "Watchman Pauldrons"
+    },
+    {
+      "item": 7728,
+      "name": "Beguiler Robes"
+    },
+    {
+      "item": 7729,
+      "name": "Chesterfall Musket"
+    },
+    {
+      "item": 7736,
+      "name": "Fight Club"
+    },
+    {
+      "item": 7753,
+      "name": "Bloodspiller"
+    },
+    {
+      "item": 7755,
+      "name": "Flintrock Shoulders"
+    },
+    {
+      "item": 7758,
+      "name": "Ruthless Shiv"
+    },
+    {
+      "item": 7759,
+      "name": "Archon Chestpiece"
+    },
+    {
+      "item": 7760,
+      "name": "Warchief Kilt"
+    },
+    {
+      "item": 8225,
+      "name": "Tainted Pierce"
+    },
+    {
+      "item": 8226,
+      "name": "The Butcher"
+    },
+    {
+      "item": 1992,
+      "name": "Swampchill Fetish"
+    }
+  ],
+  "quests": [1048, 1053, 1113]
+}

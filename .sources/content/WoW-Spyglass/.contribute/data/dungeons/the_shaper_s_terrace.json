@@ -1,0 +1,240 @@
+{
+  "map": 3001,
+  "name": "The Shaper's Terrace",
+  "minLevel": 58,
+  "maxLevel": 60,
+  "zone": 1449,
+  "icon": "Interface\\Icons\\INV_Misc_Gem_Crystal_02",
+  "background": 7963783,
+  "backgroundCoords": [0, 1, 0.154, 0.846],
+  "entrance": [1449, 48.1, 6.1],
+  "encounters": [
+    {
+      "id": 3498,
+      "name": "Titanosaur",
+      "displayID": 142989,
+      "npc": 253201,
+      "level": 61,
+      "loot": [
+        {
+          "item": 280009,
+          "name": "Titanosaur Scale Pendant"
+        },
+        {
+          "item": 280011,
+          "name": "Deeproar Cord"
+        },
+        {
+          "item": 280010,
+          "name": "Gargantuan Wristguards"
+        }
+      ]
+    },
+    {
+      "id": 3499,
+      "name": "Ravasaur Hunters",
+      "displayID": 143040,
+      "npc": 253218,
+      "level": 61,
+      "loot": [
+        {
+          "item": 280014,
+          "name": "Raptorscale Bulwark"
+        },
+        {
+          "item": 280013,
+          "name": "Frostfang Mail Vest"
+        },
+        {
+          "item": 280012,
+          "name": "Talon of Tor'Rel"
+        }
+      ]
+    },
+    {
+      "id": 3500,
+      "name": "Thunderhoof",
+      "displayID": 144514,
+      "npc": 261812,
+      "level": 61,
+      "loot": [
+        {
+          "item": 280020,
+          "name": "Deep Jungle Rifle"
+        },
+        {
+          "item": 280019,
+          "name": "Dinofrill Casque"
+        },
+        {
+          "item": 280018,
+          "name": "Hammer of Thundering Hooves"
+        }
+      ]
+    },
+    {
+      "id": 3501,
+      "name": "Venomridge",
+      "displayID": 144511,
+      "npc": 261813,
+      "level": 61,
+      "quests": [95924],
+      "loot": [
+        {
+          "item": 280015,
+          "name": "Venomvessel Ring"
+        },
+        {
+          "item": 280017,
+          "name": "Octoclaw Chain Boots"
+        },
+        {
+          "item": 280016,
+          "name": "Spiderchitin Wrap"
+        }
+      ]
+    },
+    {
+      "id": 3502,
+      "name": "Nanaya",
+      "displayID": 143832,
+      "npc": 261809,
+      "level": 62,
+      "loot": [
+        {
+          "item": 280023,
+          "name": "Nanaya's Control Spire"
+        },
+        {
+          "item": 280025,
+          "name": "Leggings of Curation"
+        },
+        {
+          "item": 273128,
+          "name": "Maker's Spark"
+        },
+        {
+          "item": 280024,
+          "name": "Legplates of Reinforced Crystal"
+        },
+        {
+          "item": 273116,
+          "name": "Blueprint: Arcane Forge"
+        }
+      ]
+    },
+    {
+      "id": 3503,
+      "name": "Cinder",
+      "displayID": 143035,
+      "npc": 261974,
+      "level": 61,
+      "loot": [
+        {
+          "item": 280029,
+          "name": "Cinderedge Crescent"
+        },
+        {
+          "item": 280028,
+          "name": "Heartflame Gauntlets"
+        }
+      ]
+    },
+    {
+      "id": 3504,
+      "name": "King Op",
+      "loot": []
+    },
+    {
+      "id": 3505,
+      "name": "Bolt",
+      "displayID": 143063,
+      "npc": 262081,
+      "level": 62,
+      "loot": [
+        {
+          "item": 280032,
+          "name": "Bolt's Charged Eyeball"
+        },
+        {
+          "item": 280031,
+          "name": "Sparklance Wand"
+        }
+      ]
+    },
+    {
+      "id": 3507,
+      "name": "Direhorn Matriarch",
+      "displayID": 144515,
+      "npc": 262127,
+      "level": 61,
+      "loot": [
+        {
+          "item": 280022,
+          "name": "Scaleguard Scimitar"
+        },
+        {
+          "item": 280021,
+          "name": "Tooth of the Matriarch"
+        },
+        {
+          "item": 280045,
+          "name": "Regal Direhorn Drape"
+        }
+      ]
+    },
+    {
+      "id": 3597,
+      "name": "Snowtalon",
+      "displayID": 143122,
+      "npc": 262297,
+      "level": 62,
+      "loot": [
+        {
+          "item": 280026,
+          "name": "Albinofur Grips"
+        },
+        {
+          "item": 280027,
+          "name": "Crownroar Chestplate"
+        }
+      ]
+    },
+    {
+      "id": 3600,
+      "name": "Vitrix",
+      "displayID": 147098,
+      "npc": 272561,
+      "level": 62,
+      "loot": [
+        {
+          "item": 280031,
+          "name": "Sparklance Wand"
+        },
+        {
+          "item": 280028,
+          "name": "Heartflame Gauntlets"
+        },
+        {
+          "item": 280032,
+          "name": "Bolt's Charged Eyeball"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 287037,
+      "name": "Shaper's Robe"
+    },
+    {
+      "item": 287044,
+      "name": "Predator's Shroud"
+    },
+    {
+      "item": 287045,
+      "name": "Ancient Mattock"
+    }
+  ],
+  "quests": [95928, 97049, 95926, 95924, 95925, 95790]
+}

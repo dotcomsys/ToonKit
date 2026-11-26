@@ -1,0 +1,64 @@
+guide forever/class/rogue/the-horn-of-xelthos
+title The Horn of Xelthos
+category Class
+class Rogue
+folder Rogue
+levels 23-26
+zone Silverpine Forest
+keywords The Horn of Xelthos, C's dead drop, Dead Drop, Pyrewood Village, Veenix, Goblin Lockpicks, Venture Co. Work Order, Breaching Charge, Shadowfang Keep, Pyrewood Signet Ring, Rogue, solo dungeon
+reward item 277210
+why The Pyrewood Signet Ring, C's payment for a solo job inside Shadowfang Keep.
+
+# C's first job, for Rogues of both factions: The Horn of Xelthos (78261)
+# from the Dead Drop near Pyrewood Village, Goblin Lockpicks (78270) with
+# Veenix in the Stonetalon Mountains for a Breaching Charge, the horn from
+# inside Shadowfang Keep, then C's payment (78307) from the same Dead Drop.
+# Forever changes (Forever's Rogue class quest list,
+# data/local/quest-audit/): 78261 now has the
+# "find Veenix" objective; 78307 pays 2300 experience and 30 silver and adds
+# the Pyrewood Signet Ring. The list's row also lists Rune of Deadly Brew
+# (203994) among 78307's rewards, a Season of Discovery rune; the guide shows
+# only the ring.
+# Sources: quests.json and objects.json (the Dead Drop, object 410369, starts
+# and ends both Horn quests; Forever's quest chain data agrees), npcs.json
+# for Veenix, items.json for the Venture Co. Work Order (Venture Co. Loggers;
+# picked from their pockets, not a drop: Erá's in-game check, #1130);
+# Forever's item data (item 210186) for the Breaching Charge, Goblin
+# Lockpicks' reward; the quest texts in Forever's quest data for Veenix's request and the solo rule; the Shadowfang
+# Keep entrance from data/forever/dungeons.json (Silverpine Forest
+# 44.8,67.8, live frame). The data has no position for the horn inside the
+# keep.
+# The quest says you must do the job alone: Shadowfang Keep is a dungeon
+# full of elites; stealth through.
+
+# Interior route: Forever player reports on quest 78261 and object
+# 410369
+# (checked 2026-10-20); item 210212/210213 Forever tooltips confirm
+# combining the half-keys. Reports are not an in-game test of this guide.
+
+# Follow-up, 2026-10-21: a player's report on Forever quest 78261 describes
+# Vanish as help at the door, not a proven second-key method; Forever spell
+# 1856 lists Flash Powder. Prepare it only if Vanish is learned.
+
+step C's dead drop
+  tip The Dead Drop is a chest in a house just outside Pyrewood Village in southern Silverpine, south of Shadowfang Keep. Open it and read C's note: the job has to be done alone, out of any group.
+  level 23
+  accept 78261 object 410369                  -- Dead Drop
+
+step Veenix
+  zone Stonetalon Mountains
+  tip Veenix, a goblin friendly to both factions, stands among the Venture Co. in the Windshear Crag, east Stonetalon, a short way north-east of Sun Rock Retreat. Horde fly to Sun Rock Retreat; Alliance to Stonetalon Peak. He wants a Venture Co. Work Order before he hands over explosives: the Venture Co. Loggers (level 18) working around him carry them in their pockets. Stealth up behind one and Pick Pocket it; killing them does not give it.
+  talk 4086                                   -- Veenix
+  accept 78270
+  collect 210187 x1 "Pick Pocket a Venture Co. Logger for a Venture Co. Work Order"
+  turnin 78270 reward 210186 "Breaching Charge"
+
+step Shadowfang Keep
+  zone Silverpine Forest
+  tip Go in alone and use the Breaching Charge at the courtyard gate. Players also report a freed prisoner opening the courtyard door for you: if you die while he is opening it, stay dead until it is open; it stays open once you release. If you know Vanish, bring Flash Powder and check its cooldown before entering; keep it ready for a failed approach. Pickpocket the sister in the dining hall for the Sister's Half-Key, then the brother in the room reached by turning right at the top of the stairs for the Brother's Half-Key (a level 20 rogue without Vanish may need ranks in Master of Deception to reach the second one unseen). Combine them somewhere safe: this breaks stealth. Free a bag slot first: opening the chest with full bags can use up the key without giving the horn. Return to the courtyard stables and use the combined key on the chest for the horn. Stay clear of the nearby elites; the minimum quest level does not guarantee a safe approach.
+  collect 210183 quest 78261.1 @44.8,67.8 live -- Horn of Xelthos, inside Shadowfang Keep
+
+step Back to the dead drop
+  tip Open the Dead Drop again, the chest outside Pyrewood you took the job from, and hand in the horn there. C's payment is a second hand-in at the same chest, with nothing to accept first, and it may not be there right away: players have waited from a quarter of an hour to two hours. Check a capital mailbox for C's follow-up letter on your next planned city visit, then return to this chest for it. Do not repeat the dungeon just because the payment is not yet offered.
+  turnin 78261 object 410369                  -- Dead Drop
+  turnin 78307 object 410369 direct reward 277210 -- Pyrewood Signet Ring

@@ -1,0 +1,132 @@
+{
+  "map": 229,
+  "id": 22902,
+  "name": "Blackrock Spire: Upper",
+  "minLevel": 59,
+  "maxLevel": 60,
+  "requiredLevel": 45,
+  "zone": 1428,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenBlackrockSpire",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1428, 29, 38],
+  "encounters": [
+    {
+      "id": 3062,
+      "name": "Pyroguard Emberseer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Pyroguard Emberseer",
+      "loot": [
+        {
+          "item": 16672,
+          "name": "Gauntlets of Elements"
+        }
+      ]
+    },
+    {
+      "id": 3063,
+      "name": "Warchief Rend Blackhand",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Warchief Rend Blackhand",
+      "loot": [
+        {
+          "item": 16733,
+          "name": "Spaulders of Valor"
+        },
+        {
+          "item": 16669,
+          "name": "Pauldrons of Elements"
+        }
+      ]
+    },
+    {
+      "id": 3068,
+      "name": "The Beast",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-The Beast",
+      "loot": [
+        {
+          "item": 16729,
+          "name": "Lightforge Spaulders"
+        }
+      ]
+    },
+    {
+      "id": 3069,
+      "name": "General Drakkisath",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-General Drakkisath",
+      "loot": [
+        {
+          "item": 16666,
+          "name": "Vest of Elements"
+        },
+        {
+          "item": 16674,
+          "name": "Beaststalker's Tunic"
+        },
+        {
+          "item": 16688,
+          "name": "Magister's Robes"
+        },
+        {
+          "item": 16690,
+          "name": "Devout Robe"
+        },
+        {
+          "item": 16700,
+          "name": "Dreadmist Robe"
+        },
+        {
+          "item": 16706,
+          "name": "Wildheart Vest"
+        },
+        {
+          "item": 16721,
+          "name": "Shadowcraft Tunic"
+        },
+        {
+          "item": 16726,
+          "name": "Lightforge Breastplate"
+        },
+        {
+          "item": 16730,
+          "name": "Breastplate of Valor"
+        }
+      ]
+    },
+    {
+      "id": 3070,
+      "name": "Lord Valthalak",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\lord_valthalak.blp",
+      "displayID": 14308,
+      "loot": []
+    }
+  ],
+  "trash": [
+    {
+      "item": 16673,
+      "name": "Cord of Elements"
+    },
+    {
+      "item": 16680,
+      "name": "Beaststalker's Belt"
+    },
+    {
+      "item": 16696,
+      "name": "Devout Belt"
+    },
+    {
+      "item": 16713,
+      "name": "Shadowcraft Belt"
+    },
+    {
+      "item": 16683,
+      "name": "Magister's Bindings"
+    },
+    {
+      "item": 16703,
+      "name": "Dreadmist Bracers"
+    },
+    {
+      "item": 16735,
+      "name": "Bracers of Valor"
+    }
+  ],
+  "quests": []
+}

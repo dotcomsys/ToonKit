@@ -1,0 +1,546 @@
+{
+  "map": 229,
+  "id": 22901,
+  "name": "Blackrock Spire: Lower",
+  "minLevel": 55,
+  "maxLevel": 60,
+  "requiredLevel": 45,
+  "zone": 1428,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenBlackrockSpire",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1428, 29, 38],
+  "encounters": [
+    {
+      "id": 267,
+      "name": "Highlord Omokk",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Highlord Omokk",
+      "npc": 9196,
+      "level": 59,
+      "loot": [
+        {
+          "item": 16670,
+          "name": "Boots of Elements"
+        },
+        {
+          "item": 12336,
+          "name": "Gemstone of Spirestone"
+        },
+        {
+          "item": 13166,
+          "name": "Slamshot Shoulders"
+        },
+        {
+          "item": 13167,
+          "name": "Fist of Omokk"
+        },
+        {
+          "item": 13168,
+          "name": "Plate of the Shaman King"
+        },
+        {
+          "item": 13169,
+          "name": "Tressermane Leggings"
+        },
+        {
+          "item": 13170,
+          "name": "Skyshroud Leggings"
+        }
+      ]
+    },
+    {
+      "id": 268,
+      "name": "Shadow Hunter Vosh'gajin",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Shadow Hunter Voshgajin",
+      "npc": 9236,
+      "level": 58,
+      "loot": [
+        {
+          "item": 16712,
+          "name": "Shadowcraft Gloves"
+        },
+        {
+          "item": 13255,
+          "name": "Trueaim Gauntlets"
+        },
+        {
+          "item": 12626,
+          "name": "Funeral Cuffs"
+        },
+        {
+          "item": 13257,
+          "name": "Demonic Runed Spaulders"
+        },
+        {
+          "item": 12651,
+          "name": "Blackcrow"
+        },
+        {
+          "item": 12653,
+          "name": "Riphook"
+        },
+        {
+          "item": 12654,
+          "name": "Doomshot"
+        }
+      ]
+    },
+    {
+      "id": 269,
+      "name": "War Master Voone",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-War Master Voone",
+      "npc": 9237,
+      "level": 59,
+      "loot": [
+        {
+          "item": 16676,
+          "name": "Beaststalker's Gloves"
+        },
+        {
+          "item": 12335,
+          "name": "Gemstone of Smolderthorn"
+        },
+        {
+          "item": 13177,
+          "name": "Talisman of Evasion"
+        },
+        {
+          "item": 13179,
+          "name": "Brazecore Armguards"
+        },
+        {
+          "item": 12582,
+          "name": "Keris of Zul'Serak"
+        },
+        {
+          "item": 22231,
+          "name": "Kayser's Boots of Precision"
+        },
+        {
+          "item": 13173,
+          "name": "Flightblade Throwing Axe"
+        }
+      ]
+    },
+    {
+      "id": 270,
+      "name": "Mother Smolderweb",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Mother Smolderweb",
+      "npc": 10596,
+      "level": 59,
+      "loot": [
+        {
+          "item": 16715,
+          "name": "Wildheart Boots"
+        },
+        {
+          "item": 13244,
+          "name": "Gilded Gauntlets"
+        },
+        {
+          "item": 13213,
+          "name": "Smolderweb's Eye"
+        },
+        {
+          "item": 13183,
+          "name": "Venomspitter"
+        },
+        {
+          "item": 249521,
+          "name": "Formula: Dormant Heart of the Mountain"
+        }
+      ]
+    },
+    {
+      "id": 271,
+      "name": "Urok Doomhowl",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Urok Doomhowl",
+      "npc": 10584,
+      "level": 60,
+      "loot": [
+        {
+          "item": 13258,
+          "name": "Slaghide Gauntlets"
+        },
+        {
+          "item": 13259,
+          "name": "Ribsteel Footguards"
+        },
+        {
+          "item": 22232,
+          "name": "Marksman's Girdle"
+        },
+        {
+          "item": 13178,
+          "name": "Rosewine Circle"
+        },
+        {
+          "item": 13053,
+          "name": "Doombringer"
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "name": "Quartermaster Zigris",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Quartermaster Zigris",
+      "npc": 9736,
+      "level": 59,
+      "loot": [
+        {
+          "item": 13252,
+          "name": "Cloudrunner Girdle"
+        },
+        {
+          "item": 13253,
+          "name": "Hands of Power"
+        },
+        {
+          "item": 12835,
+          "name": "Plans: Annihilator"
+        },
+        {
+          "item": 273115,
+          "name": "Blueprint: Iron Oven"
+        },
+        {
+          "item": 16673,
+          "name": "Cord of Elements"
+        },
+        {
+          "item": 16680,
+          "name": "Beaststalker's Belt"
+        },
+        {
+          "item": 16683,
+          "name": "Magister's Bindings"
+        },
+        {
+          "item": 16696,
+          "name": "Devout Belt"
+        },
+        {
+          "item": 16703,
+          "name": "Dreadmist Bracers"
+        },
+        {
+          "item": 16713,
+          "name": "Shadowcraft Belt"
+        },
+        {
+          "item": 16735,
+          "name": "Bracers of Valor"
+        },
+        {
+          "item": 16716,
+          "name": "Wildheart Belt"
+        }
+      ]
+    },
+    {
+      "id": 274,
+      "name": "Halycon",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Halycon",
+      "npc": 10220,
+      "level": 59,
+      "loot": [
+        {
+          "item": 13212,
+          "name": "Halycon's Spiked Collar"
+        },
+        {
+          "item": 13211,
+          "name": "Slashclaw Bracers"
+        },
+        {
+          "item": 13210,
+          "name": "Pads of the Dread Wolf"
+        },
+        {
+          "item": 22313,
+          "name": "Ironweave Bracers"
+        }
+      ]
+    },
+    {
+      "id": 273,
+      "name": "Gizrul the Slavener",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Gizrul the Slavener",
+      "npc": 10268,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16718,
+          "name": "Wildheart Spaulders"
+        },
+        {
+          "item": 13206,
+          "name": "Wolfshear Leggings"
+        },
+        {
+          "item": 13205,
+          "name": "Rhombeard Protector"
+        },
+        {
+          "item": 13208,
+          "name": "Bleak Howler Armguards"
+        }
+      ]
+    },
+    {
+      "id": 275,
+      "name": "Overlord Wyrmthalak",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Overlord Wyrmthalak",
+      "npc": 9568,
+      "level": 60,
+      "loot": [
+        {
+          "item": 13164,
+          "name": "Heart of the Scale"
+        },
+        {
+          "item": 16679,
+          "name": "Beaststalker's Mantle"
+        },
+        {
+          "item": 12337,
+          "name": "Gemstone of Bloodaxe"
+        },
+        {
+          "item": 13161,
+          "name": "Trindlehaven Staff"
+        },
+        {
+          "item": 13162,
+          "name": "Reiver Claws"
+        },
+        {
+          "item": 13163,
+          "name": "Relentless Scythe"
+        },
+        {
+          "item": 22321,
+          "name": "Heart of Wyrmthalak"
+        },
+        {
+          "item": 13143,
+          "name": "Mark of the Dragon Lord"
+        }
+      ]
+    },
+    {
+      "id": -9219,
+      "name": "Spirestone Butcher",
+      "displayID": 11574,
+      "npc": 9219,
+      "level": 57,
+      "loot": [
+        {
+          "item": 12608,
+          "name": "Butcher's Apron"
+        },
+        {
+          "item": 13286,
+          "name": "Rivenspike"
+        }
+      ]
+    },
+    {
+      "id": -9218,
+      "name": "Spirestone Battle Lord",
+      "displayID": 11576,
+      "npc": 9218,
+      "level": 58,
+      "loot": [
+        {
+          "item": 13284,
+          "name": "Swiftdart Battleboots"
+        },
+        {
+          "item": 13285,
+          "name": "The Blackrock Slicer"
+        }
+      ]
+    },
+    {
+      "id": -9217,
+      "name": "Spirestone Lord Magus",
+      "displayID": 11578,
+      "npc": 9217,
+      "level": 58,
+      "loot": [
+        {
+          "item": 13283,
+          "name": "Magus Ring"
+        },
+        {
+          "item": 13282,
+          "name": "Ogreseer Tower Boots"
+        },
+        {
+          "item": 13261,
+          "name": "Globe of D'sak"
+        }
+      ]
+    },
+    {
+      "id": -10376,
+      "name": "Crystal Fang",
+      "displayID": 9755,
+      "npc": 10376,
+      "level": 60,
+      "loot": [
+        {
+          "item": 13185,
+          "name": "Sunderseer Mantle"
+        },
+        {
+          "item": 13184,
+          "name": "Fallbrush Handgrips"
+        },
+        {
+          "item": 13218,
+          "name": "Fang of the Crystal Spider"
+        }
+      ]
+    },
+    {
+      "id": -9596,
+      "name": "Bannok Grimaxe",
+      "displayID": 9668,
+      "npc": 9596,
+      "level": 59,
+      "loot": [
+        {
+          "item": 12634,
+          "name": "Chiselbrand Girdle"
+        },
+        {
+          "item": 12637,
+          "name": "Backusarian Gauntlets"
+        },
+        {
+          "item": 12621,
+          "name": "Demonfork"
+        },
+        {
+          "item": 12838,
+          "name": "Plans: Arcanite Reaper"
+        }
+      ]
+    },
+    {
+      "id": -9718,
+      "name": "Ghok Bashguud",
+      "displayID": 11809,
+      "npc": 9718,
+      "level": 59,
+      "loot": [
+        {
+          "item": 13203,
+          "name": "Armswake Cloak"
+        },
+        {
+          "item": 13204,
+          "name": "Bashguuder"
+        },
+        {
+          "item": 13198,
+          "name": "Hurd Smasher"
+        }
+      ]
+    },
+    {
+      "id": -16080,
+      "name": "Mor Grayhoof",
+      "npc": 16080,
+      "loot": [
+        {
+          "item": 22306,
+          "name": "Ironweave Belt"
+        },
+        {
+          "item": 22319,
+          "name": "Tome of Divine Right"
+        },
+        {
+          "item": 22322,
+          "name": "The Jaw Breaker"
+        },
+        {
+          "item": 22325,
+          "name": "Belt of the Trickster"
+        },
+        {
+          "item": 22398,
+          "name": "Idol of Rejuvenation"
+        }
+      ]
+    },
+    {
+      "id": -10263,
+      "name": "Burning Felguard",
+      "npc": 10263,
+      "loot": [
+        {
+          "item": 13181,
+          "name": "Demonskin Gloves"
+        },
+        {
+          "item": 13182,
+          "name": "Phase Blade"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 16673,
+      "name": "Cord of Elements"
+    },
+    {
+      "item": 16680,
+      "name": "Beaststalker's Belt"
+    },
+    {
+      "item": 16696,
+      "name": "Devout Belt"
+    },
+    {
+      "item": 16713,
+      "name": "Shadowcraft Belt"
+    },
+    {
+      "item": 16683,
+      "name": "Magister's Bindings"
+    },
+    {
+      "item": 16703,
+      "name": "Dreadmist Bracers"
+    },
+    {
+      "item": 16735,
+      "name": "Bracers of Valor"
+    },
+    {
+      "item": 14513,
+      "name": "Pattern: Robe of the Archmage"
+    },
+    {
+      "item": 251451,
+      "name": "Plans: Stalwart Helm"
+    },
+    {
+      "item": 15775,
+      "name": "Pattern: Volcanic Shoulders"
+    },
+    {
+      "item": 16250,
+      "name": "Formula: Enchant Weapon - Superior Striking"
+    },
+    {
+      "item": 16244,
+      "name": "Formula: Enchant Gloves - Greater Strength"
+    }
+  ],
+  "quests": [4742, 4981, 4982, 5081, 4903, 4701, 4724, 4729, 4862, 4866, 4867, 5089, 4788]
+}

@@ -1,0 +1,364 @@
+{
+  "map": 70,
+  "name": "Uldaman",
+  "minLevel": 41,
+  "maxLevel": 51,
+  "requiredLevel": 30,
+  "zone": 1418,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenUldaman",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1418, 45, 12],
+  "encounters": [
+    {
+      "id": 547,
+      "name": "Revelosh",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Revelosh",
+      "npc": 6910,
+      "level": 40,
+      "loot": [
+        {
+          "item": 9389,
+          "name": "Revelosh's Spaulders"
+        },
+        {
+          "item": 9388,
+          "name": "Revelosh's Armguards"
+        },
+        {
+          "item": 9387,
+          "name": "Revelosh's Boots"
+        },
+        {
+          "item": 9390,
+          "name": "Revelosh's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 548,
+      "name": "The Lost Dwarves",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-The Lost Dwarves",
+      "npc": 6906,
+      "level": 41,
+      "loot": [
+        {
+          "item": 9400,
+          "name": "Baelog's Shortbow"
+        },
+        {
+          "item": 9401,
+          "name": "Nordic Longshank"
+        },
+        {
+          "item": 9398,
+          "name": "Worn Running Boots"
+        },
+        {
+          "item": 9394,
+          "name": "Horned Viking Helmet"
+        },
+        {
+          "item": 9403,
+          "name": "Battered Viking Shield"
+        },
+        {
+          "item": 9404,
+          "name": "Olaf's All Purpose Shield"
+        },
+        {
+          "item": 9399,
+          "name": "Precision Arrow"
+        },
+        {
+          "item": 251400,
+          "name": "Plans: Warder's Boots"
+        },
+        {
+          "item": 252896,
+          "name": "Pattern: Stalker's Mail Boots"
+        }
+      ]
+    },
+    {
+      "id": 549,
+      "name": "Ironaya",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Ironaya",
+      "npc": 7228,
+      "level": 40,
+      "loot": [
+        {
+          "item": 9407,
+          "name": "Stoneweaver Leggings"
+        },
+        {
+          "item": 9409,
+          "name": "Ironaya's Bracers"
+        },
+        {
+          "item": 9408,
+          "name": "Ironshod Bludgeon"
+        },
+        {
+          "item": 274484,
+          "name": "Axe of Inevitable Ruin"
+        }
+      ]
+    },
+    {
+      "id": 1887,
+      "name": "Obsidian Sentinel",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Obsidian Sentinel",
+      "npc": 7023,
+      "level": 42,
+      "loot": [
+        {
+          "item": 274430,
+          "name": "Rock Sentinel Slicer"
+        },
+        {
+          "item": 274428,
+          "name": "Dark Golem Breastplate"
+        },
+        {
+          "item": 274425,
+          "name": "White Obsidian Wand"
+        },
+        {
+          "item": 274485,
+          "name": "Axe of Lingering Dread"
+        },
+        {
+          "item": 251400,
+          "name": "Plans: Warder's Boots"
+        }
+      ]
+    },
+    {
+      "id": 551,
+      "name": "Ancient Stone Keeper",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Ancient Stone Keeper",
+      "npc": 7206,
+      "level": 44,
+      "loot": [
+        {
+          "item": 9410,
+          "name": "Cragfists"
+        },
+        {
+          "item": 9411,
+          "name": "Rockshard Pauldrons"
+        },
+        {
+          "item": 274431,
+          "name": "Sandstorm Staff"
+        }
+      ]
+    },
+    {
+      "id": 552,
+      "name": "Galgann Firehammer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Galgann Firehammer",
+      "npc": 7291,
+      "level": 45,
+      "loot": [
+        {
+          "item": 11311,
+          "name": "Emberscale Cape"
+        },
+        {
+          "item": 11310,
+          "name": "Flameseer Mantle"
+        },
+        {
+          "item": 9419,
+          "name": "Galgann's Firehammer"
+        },
+        {
+          "item": 9412,
+          "name": "Galgann's Fireblaster"
+        },
+        {
+          "item": 251402,
+          "name": "Plans: Justicar's Boots"
+        }
+      ]
+    },
+    {
+      "id": 553,
+      "name": "Grimlok",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Grimlok",
+      "npc": 4854,
+      "level": 45,
+      "loot": [
+        {
+          "item": 9415,
+          "name": "Grimlok's Tribal Vestments"
+        },
+        {
+          "item": 9414,
+          "name": "Oilskin Leggings"
+        },
+        {
+          "item": 9416,
+          "name": "Grimlok's Charge"
+        }
+      ]
+    },
+    {
+      "id": 554,
+      "name": "Archaedas",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Archaedas",
+      "npc": 2748,
+      "level": 47,
+      "loot": [
+        {
+          "item": 11118,
+          "name": "Archaedic Stone"
+        },
+        {
+          "item": 9413,
+          "name": "The Rockpounder"
+        },
+        {
+          "item": 9418,
+          "name": "Stoneslayer"
+        },
+        {
+          "item": 274432,
+          "name": "Stone Keeper Spire"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 254100,
+          "name": "Pattern: Fiery Gloves"
+        },
+        {
+          "item": 252871,
+          "name": "Pattern: Mender's Leather Gauntlets"
+        },
+        {
+          "item": 254096,
+          "name": "Pattern: Gilded Gloves"
+        },
+        {
+          "item": 254106,
+          "name": "Pattern: Radiant Gloves"
+        },
+        {
+          "item": 252870,
+          "name": "Pattern: Skycaller's Leather Gauntlets"
+        },
+        {
+          "item": 252919,
+          "name": "Pattern: Skycaller's Mail Gauntlets"
+        },
+        {
+          "item": 251404,
+          "name": "Plans: Sentinel's Gloves"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 9425,
+      "name": "Pendulum of Doom"
+    },
+    {
+      "item": 9431,
+      "name": "Papal Fez"
+    },
+    {
+      "item": 9396,
+      "name": "Legguards of the Vault"
+    },
+    {
+      "item": 9393,
+      "name": "Beacon of Hope"
+    },
+    {
+      "item": 9429,
+      "name": "Miner's Hat of the Deep"
+    },
+    {
+      "item": 9424,
+      "name": "Ginn-su Sword"
+    },
+    {
+      "item": 9427,
+      "name": "Stonevault Bonebreaker"
+    },
+    {
+      "item": 9426,
+      "name": "Monolithic Bow"
+    },
+    {
+      "item": 9422,
+      "name": "Shadowforge Bushmaster"
+    },
+    {
+      "item": 9465,
+      "name": "Digmaster 5000"
+    },
+    {
+      "item": 9423,
+      "name": "The Jackhammer"
+    },
+    {
+      "item": 9391,
+      "name": "The Shoveler"
+    },
+    {
+      "item": 9392,
+      "name": "Annealed Blade"
+    },
+    {
+      "item": 9383,
+      "name": "Obsidian Cleaver"
+    },
+    {
+      "item": 9381,
+      "name": "Earthen Rod"
+    },
+    {
+      "item": 9386,
+      "name": "Excavator's Brand"
+    },
+    {
+      "item": 9384,
+      "name": "Stonevault Shiv"
+    },
+    {
+      "item": 9430,
+      "name": "Spaulders of a Lost Age"
+    },
+    {
+      "item": 9432,
+      "name": "Skullplate Bracers"
+    },
+    {
+      "item": 9397,
+      "name": "Energy Cloak"
+    },
+    {
+      "item": 9420,
+      "name": "Adventurer's Pith Helmet"
+    },
+    {
+      "item": 9406,
+      "name": "Spirewind Fetter"
+    },
+    {
+      "item": 9428,
+      "name": "Unearthed Bands"
+    }
+  ],
+  "quests": [2240, 704, 17, 2202, 709, 2418, 1360, 2342, 1139, 2204, 2339, 2279, 2280, 1956, 2361, 2341, 2439]
+}

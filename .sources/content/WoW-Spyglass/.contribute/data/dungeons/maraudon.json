@@ -1,0 +1,63 @@
+{
+  "map": 349,
+  "name": "Maraudon",
+  "minLevel": 46,
+  "maxLevel": 55,
+  "requiredLevel": 30,
+  "zone": 1443,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenMaraudon",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1443, 29, 63],
+  "encounters": [
+    {
+      "id": 422,
+      "name": "Noxxion",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Noxxion",
+      "loot": []
+    },
+    {
+      "id": 423,
+      "name": "Razorlash",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Razorlash",
+      "loot": []
+    },
+    {
+      "id": 427,
+      "name": "Tinkerer Gizlock",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Tinkerer Gizlock",
+      "loot": []
+    },
+    {
+      "id": 424,
+      "name": "Lord Vyletongue",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Vyletongue",
+      "loot": []
+    },
+    {
+      "id": 425,
+      "name": "Celebras the Cursed",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Celebras the Cursed",
+      "loot": []
+    },
+    {
+      "id": 426,
+      "name": "Landslide",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Landslide",
+      "loot": []
+    },
+    {
+      "id": 428,
+      "name": "Rotgrip",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Rotgrip",
+      "loot": []
+    },
+    {
+      "id": 429,
+      "name": "Princess Theradras",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Princess Theradras",
+      "loot": []
+    }
+  ],
+  "trash": [],
+  "quests": []
+}

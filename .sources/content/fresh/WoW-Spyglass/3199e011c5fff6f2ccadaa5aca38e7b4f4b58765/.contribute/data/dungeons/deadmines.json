@@ -1,0 +1,514 @@
+{
+  "map": 36,
+  "name": "Deadmines",
+  "minLevel": 17,
+  "maxLevel": 26,
+  "requiredLevel": 10,
+  "zone": 1436,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenDeadmines",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1436, 43, 72],
+  "encounters": [
+    {
+      "id": 2741,
+      "name": "Rhahk'Zor",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-RhahkZor",
+      "displayID": 14403,
+      "npc": 644,
+      "level": 19,
+      "loot": [
+        {
+          "item": 872,
+          "name": "Rockslicer"
+        },
+        {
+          "item": 273289,
+          "name": "Ogre Loincloth"
+        },
+        {
+          "item": 5187,
+          "name": "Rhahk'Zor's Hammer"
+        },
+        {
+          "item": 251362,
+          "name": "Plans: Protector's Gloves"
+        },
+        {
+          "item": 251364,
+          "name": "Plans: Crusader's Gloves"
+        },
+        {
+          "item": 253906,
+          "name": "Pattern: Filigreed Flame Gown"
+        },
+        {
+          "item": 251363,
+          "name": "Plans: Acolyte's Gloves"
+        }
+      ]
+    },
+    {
+      "id": -642,
+      "name": "Sneed's Shredder",
+      "displayID": 1269,
+      "npc": 642,
+      "level": 20,
+      "loot": [
+        {
+          "item": 1937,
+          "name": "Buzz Saw"
+        },
+        {
+          "item": 2169,
+          "name": "Buzzer Blade"
+        },
+        {
+          "item": 285292,
+          "name": "Dull Sawblade"
+        }
+      ]
+    },
+    {
+      "id": 2742,
+      "name": "Sneed",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Sneed",
+      "displayID": 7125,
+      "npc": 643,
+      "level": 20,
+      "loot": [
+        {
+          "item": 5194,
+          "name": "Taskmaster Axe"
+        },
+        {
+          "item": 5195,
+          "name": "Gold-flecked Gloves"
+        },
+        {
+          "item": 273293,
+          "name": "Bandsaw Wristbands"
+        },
+        {
+          "item": 273092,
+          "name": "Blueprint: Repair Bot"
+        },
+        {
+          "item": 251360,
+          "name": "Plans: Veteran's Gloves"
+        },
+        {
+          "item": 251364,
+          "name": "Plans: Crusader's Gloves"
+        },
+        {
+          "item": 253902,
+          "name": "Pattern: Filigreed Pristine Gown"
+        },
+        {
+          "item": 251361,
+          "name": "Plans: Guard's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 3676,
+      "name": "Miner Johnson",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\miner_johnson.blp",
+      "displayID": 556,
+      "npc": 3586,
+      "level": 19,
+      "rare": true,
+      "loot": [
+        {
+          "item": 5444,
+          "name": "Miner's Cape"
+        },
+        {
+          "item": 5443,
+          "name": "Gold-plated Buckler"
+        }
+      ]
+    },
+    {
+      "id": 2743,
+      "name": "Gilnid",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Gilnid",
+      "displayID": 7124,
+      "npc": 1763,
+      "level": 20,
+      "loot": [
+        {
+          "item": 273297,
+          "name": "Goblin Hammer"
+        },
+        {
+          "item": 1156,
+          "name": "Lavishly Jeweled Ring"
+        },
+        {
+          "item": 5199,
+          "name": "Smelting Pants"
+        },
+        {
+          "item": 252777,
+          "name": "Pattern: Brawler's Leather Gloves"
+        },
+        {
+          "item": 252778,
+          "name": "Pattern: Trapper's Leather Gloves"
+        },
+        {
+          "item": 252780,
+          "name": "Pattern: Totemic Leather Gloves"
+        },
+        {
+          "item": 252782,
+          "name": "Pattern: Wisdom's Leather Gloves"
+        },
+        {
+          "item": 253904,
+          "name": "Pattern: Filigreed Silky Gown"
+        },
+        {
+          "item": 253906,
+          "name": "Pattern: Filigreed Flame Gown"
+        },
+        {
+          "item": 273086,
+          "name": "Blueprint: Anvil"
+        },
+        {
+          "item": 251340,
+          "name": "Plans: Veteran's Chain Shirt"
+        },
+        {
+          "item": 251341,
+          "name": "Plans: Guard's Chain Shirt"
+        },
+        {
+          "item": 251342,
+          "name": "Plans: Protector's Chain Shirt"
+        },
+        {
+          "item": 251343,
+          "name": "Plans: Acolyte's Chain Shirt"
+        },
+        {
+          "item": 251344,
+          "name": "Plans: Crusader's Chain Shirt"
+        },
+        {
+          "item": 252771,
+          "name": "Pattern: Brawler's Leather Armor"
+        },
+        {
+          "item": 252772,
+          "name": "Pattern: Trapper's Leather Armor"
+        },
+        {
+          "item": 252773,
+          "name": "Pattern: Defender's Leather Armor"
+        },
+        {
+          "item": 252774,
+          "name": "Pattern: Totemic Leather Armor"
+        },
+        {
+          "item": 252775,
+          "name": "Pattern: Stormrider's Leather Armor"
+        },
+        {
+          "item": 252776,
+          "name": "Pattern: Wisdom's Leather Armor"
+        },
+        {
+          "item": 253908,
+          "name": "Pattern: Filigreed Shadow Gown"
+        }
+      ]
+    },
+    {
+      "id": 2744,
+      "name": "Captain Greenskin",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-CaptainGreenskin",
+      "displayID": 7113,
+      "npc": 647,
+      "level": 20,
+      "loot": [
+        {
+          "item": 5200,
+          "name": "Impaling Harpoon"
+        },
+        {
+          "item": 5201,
+          "name": "Emberstone Staff"
+        },
+        {
+          "item": 10403,
+          "name": "Blackened Defias Belt"
+        }
+      ]
+    },
+    {
+      "id": 2745,
+      "name": "Mr. Smite",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-MrSmite",
+      "displayID": 2026,
+      "npc": 646,
+      "level": 20,
+      "loot": [
+        {
+          "item": 7230,
+          "name": "Smite's Mighty Hammer"
+        },
+        {
+          "item": 5192,
+          "name": "Thief's Blade"
+        },
+        {
+          "item": 284715,
+          "name": "First Mate Band"
+        },
+        {
+          "item": 5196,
+          "name": "Smite's Reaver"
+        },
+        {
+          "item": 251362,
+          "name": "Plans: Protector's Gloves"
+        },
+        {
+          "item": 252779,
+          "name": "Pattern: Defender's Leather Gloves"
+        },
+        {
+          "item": 252780,
+          "name": "Pattern: Totemic Leather Gloves"
+        },
+        {
+          "item": 252781,
+          "name": "Pattern: Stormrider's Leather Gloves"
+        },
+        {
+          "item": 252782,
+          "name": "Pattern: Wisdom's Leather Gloves"
+        }
+      ]
+    },
+    {
+      "id": 2746,
+      "name": "Cookie",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Cookie",
+      "displayID": 1305,
+      "npc": 645,
+      "level": 20,
+      "loot": [
+        {
+          "item": 273298,
+          "name": "Lookie's Spyglass"
+        },
+        {
+          "item": 5198,
+          "name": "Cookie's Stirring Rod"
+        },
+        {
+          "item": 5197,
+          "name": "Cookie's Tenderizer"
+        },
+        {
+          "item": 251360,
+          "name": "Plans: Veteran's Gloves"
+        },
+        {
+          "item": 252778,
+          "name": "Pattern: Trapper's Leather Gloves"
+        },
+        {
+          "item": 252779,
+          "name": "Pattern: Defender's Leather Gloves"
+        },
+        {
+          "item": 253910,
+          "name": "Pattern: Filigreed Pearly Gown"
+        },
+        {
+          "item": 253912,
+          "name": "Pattern: Filigreed Shining Gown"
+        },
+        {
+          "item": 273102,
+          "name": "Blueprint: Cookie's Feast"
+        }
+      ]
+    },
+    {
+      "id": 2747,
+      "name": "Edwin VanCleef",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-EdwinVancleef",
+      "displayID": 2029,
+      "npc": 639,
+      "level": 21,
+      "loot": [
+        {
+          "item": 5191,
+          "name": "Cruel Barb"
+        },
+        {
+          "item": 5193,
+          "name": "Cape of the Brotherhood"
+        },
+        {
+          "item": 5202,
+          "name": "Corsair's Overshirt"
+        },
+        {
+          "item": 10399,
+          "name": "Blackened Defias Armor"
+        },
+        {
+          "item": 2874,
+          "name": "An Unsent Letter"
+        },
+        {
+          "item": 252799,
+          "name": "Pattern: Trapper's Leather Hood"
+        },
+        {
+          "item": 252800,
+          "name": "Pattern: Defender's Leather Hood"
+        },
+        {
+          "item": 252801,
+          "name": "Pattern: Totemic Leather Hood"
+        },
+        {
+          "item": 252803,
+          "name": "Pattern: Wisdom's Leather Hood"
+        },
+        {
+          "item": 253938,
+          "name": "Pattern: Filigreed Pristine Leggings"
+        },
+        {
+          "item": 253948,
+          "name": "Pattern: Filigreed Shining Leggings"
+        },
+        {
+          "item": 251345,
+          "name": "Plans: Veteran's Chain Leggings"
+        },
+        {
+          "item": 251346,
+          "name": "Plans: Guard's Chain Leggings"
+        },
+        {
+          "item": 251347,
+          "name": "Plans: Protector's Chain Leggings"
+        },
+        {
+          "item": 251348,
+          "name": "Plans: Acolyte's Chain Leggings"
+        },
+        {
+          "item": 251349,
+          "name": "Plans: Crusader's Chain Leggings"
+        },
+        {
+          "item": 251383,
+          "name": "Plans: Acolyte's Silvered Chain Helm"
+        },
+        {
+          "item": 252792,
+          "name": "Pattern: Brawler's Leather Pants"
+        },
+        {
+          "item": 252793,
+          "name": "Pattern: Trapper's Leather Pants"
+        },
+        {
+          "item": 252794,
+          "name": "Pattern: Defender's Leather Pants"
+        },
+        {
+          "item": 252795,
+          "name": "Pattern: Totemic Leather Pants"
+        },
+        {
+          "item": 252796,
+          "name": "Pattern: Stormrider's Leather Pants"
+        },
+        {
+          "item": 252797,
+          "name": "Pattern: Wisdom's Leather Pants"
+        },
+        {
+          "item": 253940,
+          "name": "Pattern: Filigreed Silky Leggings"
+        },
+        {
+          "item": 253942,
+          "name": "Pattern: Filigreed Flame Leggings"
+        },
+        {
+          "item": 253944,
+          "name": "Pattern: Filigreed Shadow Leggings"
+        },
+        {
+          "item": 253946,
+          "name": "Pattern: Filigreed Pearly Leggings"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 1934,
+      "name": "Stonemason Trousers"
+    },
+    {
+      "item": 10402,
+      "name": "Blackened Defias Boots"
+    },
+    {
+      "item": 1943,
+      "name": "Goblin Mail Leggings"
+    },
+    {
+      "item": 1951,
+      "name": "Blackwater Cutlass"
+    },
+    {
+      "item": 10400,
+      "name": "Blackened Defias Leggings"
+    },
+    {
+      "item": 10401,
+      "name": "Blackened Defias Gloves"
+    },
+    {
+      "item": 1929,
+      "name": "Silk-threaded Trousers"
+    },
+    {
+      "item": 1930,
+      "name": "Stonemason Cloak"
+    },
+    {
+      "item": 1936,
+      "name": "Goblin Screwdriver"
+    },
+    {
+      "item": 1944,
+      "name": "Metalworking Gloves"
+    },
+    {
+      "item": 1945,
+      "name": "Woodworking Gloves"
+    },
+    {
+      "item": 1925,
+      "name": "Defias Rapier"
+    }
+  ],
+  "quests": [166, 168, 167, 214, 2040, 92753, 373, 1806, 92819, 95140]
+}

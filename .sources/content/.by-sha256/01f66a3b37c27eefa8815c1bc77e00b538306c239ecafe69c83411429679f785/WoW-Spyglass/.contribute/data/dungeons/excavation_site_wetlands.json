@@ -1,0 +1,125 @@
+{
+  "map": 2998,
+  "name": "Excavation Site: Wetlands",
+  "minLevel": 26,
+  "maxLevel": 33,
+  "zone": 1437,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\Camelot160\\Main\\LoadScreen_Camelot_Excavation",
+  "backgroundCoords": [0, 1, 0.154, 0.846],
+  "entrance": [1437, 42, 60],
+  "encounters": [
+    {
+      "id": 3480,
+      "name": "Saltspine",
+      "displayID": 144209,
+      "npc": 260322,
+      "level": 28,
+      "loot": [
+        {
+          "item": 273022,
+          "name": "Supple Bellyskin Leggings"
+        },
+        {
+          "item": 273023,
+          "name": "Saltscale Girdle"
+        },
+        {
+          "item": 273024,
+          "name": "Glinteye Slippers"
+        }
+      ]
+    },
+    {
+      "id": 3481,
+      "name": "Shadetooth",
+      "displayID": 144210,
+      "npc": 260325,
+      "level": 29,
+      "loot": [
+        {
+          "item": 273025,
+          "name": "Raptorclaw Greaves"
+        },
+        {
+          "item": 273026,
+          "name": "Garb of Florid Feathers"
+        },
+        {
+          "item": 273027,
+          "name": "Raptor's Gaze"
+        },
+        {
+          "item": 273106,
+          "name": "Blueprint: Greenhouse"
+        }
+      ]
+    },
+    {
+      "id": 3644,
+      "name": "Highland Horror",
+      "displayID": 9010,
+      "npc": 260808,
+      "loot": []
+    },
+    {
+      "id": 3482,
+      "name": "Relic Guardian",
+      "displayID": 144224,
+      "npc": 260326,
+      "level": 31,
+      "loot": [
+        {
+          "item": 273028,
+          "name": "Reliquary Mantle"
+        },
+        {
+          "item": 273029,
+          "name": "Golemsight Long Gun"
+        },
+        {
+          "item": 273030,
+          "name": "Ring of Power Regulation"
+        },
+        {
+          "item": 270866,
+          "name": "Titan Relic"
+        },
+        {
+          "item": 270865,
+          "name": "Titan Relic"
+        },
+        {
+          "item": 273097,
+          "name": "Blueprint: Rock Garden"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 286982,
+      "name": "Unearthed Barrier"
+    },
+    {
+      "item": 286983,
+      "name": "Ancient Cleaver"
+    },
+    {
+      "item": 286984,
+      "name": "Mark of the Marsh"
+    },
+    {
+      "item": 286985,
+      "name": "Thicket Bindings"
+    },
+    {
+      "item": 286986,
+      "name": "Abandoned Leggings"
+    },
+    {
+      "item": 287068,
+      "name": "Excavated Dagger"
+    }
+  ],
+  "quests": [95682, 95697, 98815, 95772, 95646, 95809, 98824, 98823, 95795, 95647]
+}

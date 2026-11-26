@@ -1,0 +1,456 @@
+{
+  "map": 48,
+  "name": "Blackfathom Deeps",
+  "minLevel": 24,
+  "maxLevel": 32,
+  "requiredLevel": 15,
+  "zone": 1440,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenBlackFathomDeeps",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1440, 15, 14],
+  "encounters": [
+    {
+      "id": 2916,
+      "name": "Ghamoo-ra",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Ghamoo Ra",
+      "displayID": 5027,
+      "npc": 4887,
+      "level": 25,
+      "loot": [
+        {
+          "item": 6907,
+          "name": "Tortoise Armor"
+        },
+        {
+          "item": 6908,
+          "name": "Ghamoo-ra's Bind"
+        },
+        {
+          "item": 273839,
+          "name": "Spiked Shell Band"
+        },
+        {
+          "item": 251382,
+          "name": "Plans: Protector's Silvered Chain Helm"
+        },
+        {
+          "item": 252801,
+          "name": "Pattern: Totemic Leather Hood"
+        },
+        {
+          "item": 253940,
+          "name": "Pattern: Filigreed Silky Leggings"
+        },
+        {
+          "item": 253942,
+          "name": "Pattern: Filigreed Flame Leggings"
+        }
+      ]
+    },
+    {
+      "id": 2915,
+      "name": "Lady Sarevess",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lady Sarevess",
+      "displayID": 4979,
+      "npc": 4831,
+      "level": 25,
+      "loot": [
+        {
+          "item": 888,
+          "name": "Naga Battle Gloves"
+        },
+        {
+          "item": 3078,
+          "name": "Naga Heartpiercer"
+        },
+        {
+          "item": 11121,
+          "name": "Darkwater Talwar"
+        },
+        {
+          "item": 252798,
+          "name": "Pattern: Brawler's Leather Hood"
+        },
+        {
+          "item": 251382,
+          "name": "Plans: Protector's Silvered Chain Helm"
+        },
+        {
+          "item": 251383,
+          "name": "Plans: Acolyte's Silvered Chain Helm"
+        },
+        {
+          "item": 253944,
+          "name": "Pattern: Filigreed Shadow Leggings"
+        }
+      ]
+    },
+    {
+      "id": 2914,
+      "name": "Geilhast",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\geilhast.blp",
+      "displayID": 1773,
+      "npc": 6243,
+      "level": 26,
+      "loot": [
+        {
+          "item": 6906,
+          "name": "Algae Fists"
+        },
+        {
+          "item": 6905,
+          "name": "Reef Axe"
+        },
+        {
+          "item": 1470,
+          "name": "Murloc Skin Bag"
+        },
+        {
+          "item": 273840,
+          "name": "Cursed Murloc Eye"
+        },
+        {
+          "item": 251375,
+          "name": "Plans: Veteran's Silvered Chain Leggings"
+        },
+        {
+          "item": 251377,
+          "name": "Plans: Protector's Silvered Chain Leggings"
+        },
+        {
+          "item": 252820,
+          "name": "Pattern: Brawler's Leather Legguards"
+        },
+        {
+          "item": 252821,
+          "name": "Pattern: Trapper's Leather Legguards"
+        },
+        {
+          "item": 252825,
+          "name": "Pattern: Wisdom's Leather Leggings"
+        },
+        {
+          "item": 253978,
+          "name": "Pattern: Filigreed Silky Circlet"
+        },
+        {
+          "item": 253980,
+          "name": "Pattern: Filigreed Flame Circlet"
+        },
+        {
+          "item": 273141,
+          "name": "Blueprint: Fishing Rack"
+        },
+        {
+          "item": 252512,
+          "name": "Brawler's Leather Helm"
+        },
+        {
+          "item": 252513,
+          "name": "Trapper's Leather Helm"
+        },
+        {
+          "item": 252456,
+          "name": "Totemic Leather Helm"
+        },
+        {
+          "item": 252514,
+          "name": "Stormrider's Leather Helm"
+        },
+        {
+          "item": 252515,
+          "name": "Wisdom's Leather Helm"
+        }
+      ]
+    },
+    {
+      "id": 2913,
+      "name": "Lorgus Jett",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lorgus Jett",
+      "displayID": 12822,
+      "npc": 12902,
+      "level": 26,
+      "loot": [
+        {
+          "item": 273843,
+          "name": "Fallenroot Longbow"
+        },
+        {
+          "item": 273841,
+          "name": "Twilight Maul"
+        },
+        {
+          "item": 273842,
+          "name": "Treacherous Treads"
+        },
+        {
+          "item": 253978,
+          "name": "Pattern: Filigreed Silky Circlet"
+        },
+        {
+          "item": 253982,
+          "name": "Pattern: Filigreed Shadow Circlet"
+        },
+        {
+          "item": 251377,
+          "name": "Plans: Protector's Silvered Chain Leggings"
+        },
+        {
+          "item": 252512,
+          "name": "Brawler's Leather Helm"
+        },
+        {
+          "item": 252513,
+          "name": "Trapper's Leather Helm"
+        },
+        {
+          "item": 252455,
+          "name": "Defender's Leather Helm"
+        }
+      ]
+    },
+    {
+      "id": -12876,
+      "name": "Baron Aquanis",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\baron_aquanis.blp",
+      "displayID": 110,
+      "npc": 12876,
+      "level": 28,
+      "loot": [
+        {
+          "item": 16782,
+          "name": "Strange Water Globe"
+        }
+      ]
+    },
+    {
+      "id": 2912,
+      "name": "Old Serra'kis",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Old Serrakis",
+      "displayID": 1816,
+      "npc": 4830,
+      "level": 26,
+      "loot": [
+        {
+          "item": 6901,
+          "name": "Glowing Thresher Cape"
+        },
+        {
+          "item": 6904,
+          "name": "Bite of Serra'kis"
+        },
+        {
+          "item": 6902,
+          "name": "Bands of Serra'kis"
+        },
+        {
+          "item": 251375,
+          "name": "Plans: Veteran's Silvered Chain Leggings"
+        },
+        {
+          "item": 252825,
+          "name": "Pattern: Wisdom's Leather Leggings"
+        },
+        {
+          "item": 253978,
+          "name": "Pattern: Filigreed Silky Circlet"
+        },
+        {
+          "item": 253982,
+          "name": "Pattern: Filigreed Shadow Circlet"
+        },
+        {
+          "item": 252455,
+          "name": "Defender's Leather Helm"
+        },
+        {
+          "item": 252456,
+          "name": "Totemic Leather Helm"
+        }
+      ]
+    },
+    {
+      "id": 2911,
+      "name": "Twilight Lord Kelris",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Twilight Lord Kelris",
+      "displayID": 4939,
+      "npc": 4832,
+      "level": 27,
+      "loot": [
+        {
+          "item": 1155,
+          "name": "Rod of the Sleepwalker"
+        },
+        {
+          "item": 6903,
+          "name": "Gaze Dreamer Pants"
+        },
+        {
+          "item": 273846,
+          "name": "Twilight Lord Girdle"
+        },
+        {
+          "item": 252820,
+          "name": "Pattern: Brawler's Leather Legguards"
+        },
+        {
+          "item": 252821,
+          "name": "Pattern: Trapper's Leather Legguards"
+        },
+        {
+          "item": 252822,
+          "name": "Pattern: Defender's Leather Kilt"
+        },
+        {
+          "item": 252823,
+          "name": "Pattern: Totemic Leather Leggings"
+        },
+        {
+          "item": 252825,
+          "name": "Pattern: Wisdom's Leather Leggings"
+        },
+        {
+          "item": 253982,
+          "name": "Pattern: Filigreed Shadow Circlet"
+        },
+        {
+          "item": 252513,
+          "name": "Trapper's Leather Helm"
+        },
+        {
+          "item": 252455,
+          "name": "Defender's Leather Helm"
+        },
+        {
+          "item": 252456,
+          "name": "Totemic Leather Helm"
+        },
+        {
+          "item": 252515,
+          "name": "Wisdom's Leather Helm"
+        }
+      ]
+    },
+    {
+      "id": 2910,
+      "name": "Aku'mai",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Akumai",
+      "displayID": 2837,
+      "npc": 4829,
+      "level": 28,
+      "loot": [
+        {
+          "item": 6909,
+          "name": "Strike of the Hydra"
+        },
+        {
+          "item": 6911,
+          "name": "Moss Cinch"
+        },
+        {
+          "item": 6910,
+          "name": "Leech Pants"
+        },
+        {
+          "item": 251376,
+          "name": "Plans: Guard's Silvered Chain Leggings"
+        },
+        {
+          "item": 251377,
+          "name": "Plans: Protector's Silvered Chain Leggings"
+        },
+        {
+          "item": 251378,
+          "name": "Plans: Acolyte's Silvered Chain Leggings"
+        },
+        {
+          "item": 252821,
+          "name": "Pattern: Trapper's Leather Legguards"
+        },
+        {
+          "item": 252824,
+          "name": "Pattern: Stormrider's Leather Kilt"
+        },
+        {
+          "item": 253980,
+          "name": "Pattern: Filigreed Flame Circlet"
+        },
+        {
+          "item": 253984,
+          "name": "Pattern: Filigreed Pearly Circlet"
+        },
+        {
+          "item": 252512,
+          "name": "Brawler's Leather Helm"
+        },
+        {
+          "item": 252455,
+          "name": "Defender's Leather Helm"
+        },
+        {
+          "item": 252456,
+          "name": "Totemic Leather Helm"
+        },
+        {
+          "item": 252514,
+          "name": "Stormrider's Leather Helm"
+        },
+        {
+          "item": 252515,
+          "name": "Wisdom's Leather Helm"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 1454,
+      "name": "Axe of the Enforcer"
+    },
+    {
+      "item": 3414,
+      "name": "Crested Scepter"
+    },
+    {
+      "item": 3416,
+      "name": "Martyr's Chain"
+    },
+    {
+      "item": 3417,
+      "name": "Onyx Claymore"
+    },
+    {
+      "item": 1481,
+      "name": "Grimclaw"
+    },
+    {
+      "item": 1491,
+      "name": "Ring of Precision"
+    },
+    {
+      "item": 3413,
+      "name": "Doomspike"
+    },
+    {
+      "item": 1486,
+      "name": "Tree Bark Jacket"
+    },
+    {
+      "item": 3415,
+      "name": "Staff of the Friar"
+    },
+    {
+      "item": 2034,
+      "name": "Scholarly Robes"
+    },
+    {
+      "item": 2271,
+      "name": "Staff of the Blessed Seer"
+    },
+    {
+      "item": 2567,
+      "name": "Evocator's Blade"
+    }
+  ],
+  "quests": [1200, 6561, 1199, 6565, 1275, 1740, 971, 6563, 6562, 1198, 6921, 6922, 6564, 1806]
+}

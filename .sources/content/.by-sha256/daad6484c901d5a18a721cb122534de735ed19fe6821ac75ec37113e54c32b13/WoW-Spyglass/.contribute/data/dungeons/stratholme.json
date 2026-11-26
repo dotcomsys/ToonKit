@@ -1,0 +1,851 @@
+{
+  "map": 329,
+  "name": "Stratholme",
+  "minLevel": 48,
+  "maxLevel": 58,
+  "requiredLevel": 45,
+  "zone": 1423,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenStrathome",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1423, 31, 16],
+  "encounters": [
+    {
+      "id": 473,
+      "name": "Hearthsinger Forresten",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Hearthsinger Forresten",
+      "npc": 10558,
+      "level": 57,
+      "loot": [
+        {
+          "item": 16682,
+          "name": "Magister's Boots"
+        },
+        {
+          "item": 13378,
+          "name": "Songbird Blouse"
+        },
+        {
+          "item": 13379,
+          "name": "Piccolo of the Flaming Fire"
+        },
+        {
+          "item": 13384,
+          "name": "Rainbow Girdle"
+        },
+        {
+          "item": 13383,
+          "name": "Woollies of the Prancing Minstrel"
+        }
+      ]
+    },
+    {
+      "id": 474,
+      "name": "Timmy the Cruel",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Timmy the Cruel",
+      "npc": 10808,
+      "level": 58,
+      "loot": [
+        {
+          "item": 13400,
+          "name": "Vambraces of the Sadist"
+        },
+        {
+          "item": 13402,
+          "name": "Timmy's Galoshes"
+        },
+        {
+          "item": 13401,
+          "name": "The Cruel Hand of Timmy"
+        },
+        {
+          "item": 13403,
+          "name": "Grimgore Noose"
+        },
+        {
+          "item": 16724,
+          "name": "Lightforge Gauntlets"
+        }
+      ]
+    },
+    {
+      "id": 476,
+      "name": "Malor the Zealous",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Commander Malor",
+      "npc": 11032,
+      "level": 60,
+      "loot": [
+        {
+          "item": 276398,
+          "name": "Scarlet Malice"
+        },
+        {
+          "item": 276399,
+          "name": "Plate of the Scarlet Bastion"
+        },
+        {
+          "item": 12845,
+          "name": "Medallion of Faith"
+        },
+        {
+          "item": 276397,
+          "name": "Hand of the Zealous"
+        }
+      ]
+    },
+    {
+      "id": 475,
+      "name": "Cannon Master Willey",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Willey Hopebreaker",
+      "npc": 10997,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16708,
+          "name": "Shadowcraft Spaulders"
+        },
+        {
+          "item": 22403,
+          "name": "Nacreous Shell Necklace"
+        },
+        {
+          "item": 13380,
+          "name": "Willey's Portable Howitzer"
+        },
+        {
+          "item": 13382,
+          "name": "Cannonball Runner"
+        },
+        {
+          "item": 18721,
+          "name": "Barrage Girdle"
+        },
+        {
+          "item": 22407,
+          "name": "Helm of the New Moon"
+        },
+        {
+          "item": 13381,
+          "name": "Master Cannoneer Boots"
+        },
+        {
+          "item": 22405,
+          "name": "Mantle of the Scarlet Crusade"
+        },
+        {
+          "item": 22404,
+          "name": "Willey's Back Scratcher"
+        },
+        {
+          "item": 22406,
+          "name": "Redemption"
+        },
+        {
+          "item": 12839,
+          "name": "Plans: Heartseeker"
+        },
+        {
+          "item": 13377,
+          "name": "Miniature Cannon Balls"
+        }
+      ]
+    },
+    {
+      "id": 477,
+      "name": "Archivist Galford",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Instructor Galford",
+      "npc": 10811,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16692,
+          "name": "Devout Gloves"
+        },
+        {
+          "item": 13387,
+          "name": "Foresight Girdle"
+        },
+        {
+          "item": 13386,
+          "name": "Archivist Cape"
+        },
+        {
+          "item": 18716,
+          "name": "Ash Covered Boots"
+        },
+        {
+          "item": 13385,
+          "name": "Tome of Knowledge"
+        }
+      ]
+    },
+    {
+      "id": 478,
+      "name": "Balnazzar",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Balnazzar",
+      "npc": 10813,
+      "level": 62,
+      "loot": [
+        {
+          "item": 13353,
+          "name": "Book of the Dead"
+        },
+        {
+          "item": 13348,
+          "name": "Demonshear"
+        },
+        {
+          "item": 13358,
+          "name": "Wyrmtongue Shoulders"
+        },
+        {
+          "item": 13359,
+          "name": "Crown of Tyranny"
+        },
+        {
+          "item": 18718,
+          "name": "Grand Crusader's Helm"
+        },
+        {
+          "item": 18720,
+          "name": "Shroud of the Nathrezim"
+        },
+        {
+          "item": 13360,
+          "name": "Gift of the Elven Magi"
+        },
+        {
+          "item": 12103,
+          "name": "Star of Mystaria"
+        },
+        {
+          "item": 18717,
+          "name": "Hammer of the Grand Crusader"
+        },
+        {
+          "item": 13369,
+          "name": "Fire Striders"
+        },
+        {
+          "item": 16725,
+          "name": "Lightforge Boots"
+        },
+        {
+          "item": 14512,
+          "name": "Pattern: Truefaith Vestments"
+        },
+        {
+          "item": 13520,
+          "name": "Recipe: Flask of Distilled Wisdom"
+        }
+      ]
+    },
+    {
+      "id": 472,
+      "name": "The Unforgiven",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-The Unforgiven",
+      "npc": 10516,
+      "level": 57,
+      "loot": [
+        {
+          "item": 13405,
+          "name": "Wailing Nightbane Pauldrons"
+        },
+        {
+          "item": 13404,
+          "name": "Mask of the Unforgiven"
+        },
+        {
+          "item": 13408,
+          "name": "Soul Breaker"
+        },
+        {
+          "item": 13409,
+          "name": "Tearfall Bracers"
+        },
+        {
+          "item": 16717,
+          "name": "Wildheart Gloves"
+        }
+      ]
+    },
+    {
+      "id": 479,
+      "name": "Baroness Anastari",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Baroness Anastari",
+      "npc": 10436,
+      "level": 59,
+      "loot": [
+        {
+          "item": 16704,
+          "name": "Dreadmist Sandals"
+        },
+        {
+          "item": 13534,
+          "name": "Banshee Finger"
+        },
+        {
+          "item": 18728,
+          "name": "Anastari Heirloom"
+        },
+        {
+          "item": 18730,
+          "name": "Shadowy Laced Handwraps"
+        },
+        {
+          "item": 18729,
+          "name": "Screeching Bow"
+        },
+        {
+          "item": 13514,
+          "name": "Wail of the Banshee"
+        },
+        {
+          "item": 13535,
+          "name": "Coldtouch Phantom Wraps"
+        },
+        {
+          "item": 13537,
+          "name": "Chillhide Bracers"
+        },
+        {
+          "item": 13538,
+          "name": "Windshrieker Pauldrons"
+        },
+        {
+          "item": 13539,
+          "name": "Banshee's Touch"
+        },
+        {
+          "item": 273124,
+          "name": "Blueprint: Loom"
+        }
+      ]
+    },
+    {
+      "id": 480,
+      "name": "Nerub'enkan",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Nerubenkan",
+      "npc": 10437,
+      "level": 60,
+      "loot": [
+        {
+          "item": 16675,
+          "name": "Beaststalker's Boots"
+        },
+        {
+          "item": 13529,
+          "name": "Husk of Nerub'enkan"
+        },
+        {
+          "item": 18738,
+          "name": "Carapace Spine Crossbow"
+        },
+        {
+          "item": 18739,
+          "name": "Chitinous Plate Legguards"
+        },
+        {
+          "item": 18740,
+          "name": "Thuzadin Sash"
+        },
+        {
+          "item": 13530,
+          "name": "Fangdrip Runners"
+        },
+        {
+          "item": 13531,
+          "name": "Crypt Stalker Leggings"
+        },
+        {
+          "item": 13532,
+          "name": "Darkspinner Claws"
+        },
+        {
+          "item": 13533,
+          "name": "Acid-etched Pauldrons"
+        },
+        {
+          "item": 13508,
+          "name": "Eye of Arachnida"
+        }
+      ]
+    },
+    {
+      "id": 481,
+      "name": "Maleki the Pallid",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Maleki the Pallid",
+      "npc": 10438,
+      "level": 61,
+      "loot": [
+        {
+          "item": 16691,
+          "name": "Devout Sandals"
+        },
+        {
+          "item": 18737,
+          "name": "Bone Slicing Hatchet"
+        },
+        {
+          "item": 13524,
+          "name": "Skull of Burning Shadows"
+        },
+        {
+          "item": 18734,
+          "name": "Pale Moon Cloak"
+        },
+        {
+          "item": 18735,
+          "name": "Maleki's Footwraps"
+        },
+        {
+          "item": 12833,
+          "name": "Plans: Hammer of the Titans"
+        },
+        {
+          "item": 13525,
+          "name": "Darkbind Fingers"
+        },
+        {
+          "item": 13526,
+          "name": "Flamescarred Girdle"
+        },
+        {
+          "item": 13527,
+          "name": "Lavawalker Greaves"
+        },
+        {
+          "item": 13528,
+          "name": "Twilight Void Bracers"
+        }
+      ]
+    },
+    {
+      "id": 482,
+      "name": "Magistrate Barthilas",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Magistrate Barthilas",
+      "npc": 10435,
+      "level": 58,
+      "loot": [
+        {
+          "item": 18722,
+          "name": "Death Grips"
+        },
+        {
+          "item": 13376,
+          "name": "Royal Tribunal Cloak"
+        },
+        {
+          "item": 18725,
+          "name": "Peacemaker"
+        },
+        {
+          "item": 18727,
+          "name": "Crimson Felt Hat"
+        },
+        {
+          "item": 18726,
+          "name": "Magistrate's Cuffs"
+        },
+        {
+          "item": 23198,
+          "name": "Idol of Brutality"
+        }
+      ]
+    },
+    {
+      "id": 483,
+      "name": "Ramstein the Gorger",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Ramstein the Gorger",
+      "npc": 10439,
+      "level": 61,
+      "loot": [
+        {
+          "item": 16737,
+          "name": "Gauntlets of Valor"
+        },
+        {
+          "item": 13372,
+          "name": "Slavedriver's Cane"
+        },
+        {
+          "item": 13373,
+          "name": "Band of Flesh"
+        },
+        {
+          "item": 13374,
+          "name": "Soulstealer Mantle"
+        },
+        {
+          "item": 13375,
+          "name": "Crest of Retribution"
+        },
+        {
+          "item": 13515,
+          "name": "Ramstein's Lightning Bolts"
+        },
+        {
+          "item": 18723,
+          "name": "Animated Chain Necklace"
+        }
+      ]
+    },
+    {
+      "id": 484,
+      "name": "Baron Rivendare",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Aurius Rivendare",
+      "npc": 10440,
+      "level": 62,
+      "loot": [
+        {
+          "item": 16668,
+          "name": "Kilt of Elements"
+        },
+        {
+          "item": 16678,
+          "name": "Beaststalker's Pants"
+        },
+        {
+          "item": 16687,
+          "name": "Magister's Leggings"
+        },
+        {
+          "item": 16694,
+          "name": "Devout Skirt"
+        },
+        {
+          "item": 16699,
+          "name": "Dreadmist Leggings"
+        },
+        {
+          "item": 16709,
+          "name": "Shadowcraft Pants"
+        },
+        {
+          "item": 16719,
+          "name": "Wildheart Kilt"
+        },
+        {
+          "item": 16728,
+          "name": "Lightforge Legplates"
+        },
+        {
+          "item": 16732,
+          "name": "Legplates of Valor"
+        },
+        {
+          "item": 13340,
+          "name": "Cape of the Black Baron"
+        },
+        {
+          "item": 22408,
+          "name": "Ritssyn's Wand of Bad Mojo"
+        },
+        {
+          "item": 22409,
+          "name": "Tunic of the Crescent Moon"
+        },
+        {
+          "item": 13346,
+          "name": "Robes of the Exalted"
+        },
+        {
+          "item": 22412,
+          "name": "Thuzadin Mantle"
+        },
+        {
+          "item": 13344,
+          "name": "Dracorian Gauntlets"
+        },
+        {
+          "item": 13349,
+          "name": "Scepter of the Unholy"
+        },
+        {
+          "item": 22410,
+          "name": "Gauntlets of Deftness"
+        },
+        {
+          "item": 22411,
+          "name": "Helm of the Executioner"
+        },
+        {
+          "item": 13345,
+          "name": "Seal of Rivendare"
+        },
+        {
+          "item": 13505,
+          "name": "Runeblade of Baron Rivendare"
+        },
+        {
+          "item": 13361,
+          "name": "Skullforge Reaver"
+        },
+        {
+          "item": 13368,
+          "name": "Bonescraper"
+        },
+        {
+          "item": 13251,
+          "name": "Head of Baron Rivendare"
+        }
+      ]
+    },
+    {
+      "id": 2795,
+      "name": "Black Guard Swordsmith",
+      "loot": []
+    },
+    {
+      "id": 2796,
+      "name": "Crimson Hammersmith",
+      "loot": []
+    },
+    {
+      "id": 2797,
+      "name": "Ezra Grimm",
+      "loot": [
+        {
+          "item": 276396,
+          "name": "Ezra's Seal of Authenticity"
+        },
+        {
+          "item": 276395,
+          "name": "Grimm's Packing Gloves"
+        },
+        {
+          "item": 276394,
+          "name": "Luxurious Smoking Jacket"
+        },
+        {
+          "item": 13172,
+          "name": "Grimm's Premium Tobacco"
+        },
+        {
+          "item": 273129,
+          "name": "Essence of Anarchy"
+        },
+        {
+          "item": 273117,
+          "name": "Blueprint: Anarchist's Workbench"
+        }
+      ]
+    },
+    {
+      "id": 2798,
+      "name": "Postmaster Malown",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-PostmasterMalown",
+      "npc": 11143,
+      "level": 60,
+      "loot": [
+        {
+          "item": 13392,
+          "name": "The Postmaster's Seal"
+        },
+        {
+          "item": 13388,
+          "name": "The Postmaster's Tunic"
+        },
+        {
+          "item": 13389,
+          "name": "The Postmaster's Trousers"
+        },
+        {
+          "item": 13391,
+          "name": "The Postmaster's Treads"
+        },
+        {
+          "item": 13393,
+          "name": "Malown's Slam"
+        },
+        {
+          "item": 13390,
+          "name": "The Postmaster's Band"
+        }
+      ]
+    },
+    {
+      "id": 2799,
+      "name": "Skul",
+      "displayID": 2606,
+      "npc": 10393,
+      "level": 58,
+      "loot": [
+        {
+          "item": 13394,
+          "name": "Skul's Cold Embrace"
+        },
+        {
+          "item": 13396,
+          "name": "Skul's Ghastly Touch"
+        },
+        {
+          "item": 13395,
+          "name": "Skul's Fingerbone Claws"
+        }
+      ]
+    },
+    {
+      "id": 2800,
+      "name": "Stonespine",
+      "displayID": 7856,
+      "npc": 10809,
+      "level": 60,
+      "loot": [
+        {
+          "item": 13399,
+          "name": "Gargoyle Shredder Talons"
+        },
+        {
+          "item": 13397,
+          "name": "Stoneskin Gargoyle Cape"
+        },
+        {
+          "item": 13954,
+          "name": "Verdant Footpads"
+        }
+      ]
+    },
+    {
+      "id": -16101,
+      "name": "Jarien and Sothos",
+      "npc": 16101,
+      "loot": [
+        {
+          "item": 22301,
+          "name": "Ironweave Robe"
+        },
+        {
+          "item": 22327,
+          "name": "Amulet of the Redeemed"
+        },
+        {
+          "item": 22328,
+          "name": "Legplates of Vigilance"
+        },
+        {
+          "item": 22329,
+          "name": "Scepter of Interminable Focus"
+        },
+        {
+          "item": 22334,
+          "name": "Band of Mending"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 16725,
+      "name": "Lightforge Boots"
+    },
+    {
+      "item": 16723,
+      "name": "Lightforge Belt"
+    },
+    {
+      "item": 16697,
+      "name": "Devout Bracers"
+    },
+    {
+      "item": 16685,
+      "name": "Magister's Belt"
+    },
+    {
+      "item": 16702,
+      "name": "Dreadmist Belt"
+    },
+    {
+      "item": 16714,
+      "name": "Wildheart Bracers"
+    },
+    {
+      "item": 16710,
+      "name": "Shadowcraft Bracers"
+    },
+    {
+      "item": 16681,
+      "name": "Beaststalker's Bindings"
+    },
+    {
+      "item": 16671,
+      "name": "Bindings of Elements"
+    },
+    {
+      "item": 16736,
+      "name": "Belt of Valor"
+    },
+    {
+      "item": 18743,
+      "name": "Gracious Cape"
+    },
+    {
+      "item": 18745,
+      "name": "Sacred Cloth Leggings"
+    },
+    {
+      "item": 18736,
+      "name": "Plaguehound Leggings"
+    },
+    {
+      "item": 18741,
+      "name": "Morlune's Bracer"
+    },
+    {
+      "item": 18742,
+      "name": "Stratholme Militia Shoulderguard"
+    },
+    {
+      "item": 18744,
+      "name": "Plaguebat Fur Gloves"
+    },
+    {
+      "item": 17061,
+      "name": "Juno's Shadow"
+    },
+    {
+      "item": 16248,
+      "name": "Formula: Enchant Weapon - Unholy Weapon"
+    },
+    {
+      "item": 14495,
+      "name": "Pattern: Ghostweave Pants"
+    },
+    {
+      "item": 15768,
+      "name": "Pattern: Wicked Leather Belt"
+    },
+    {
+      "item": 12735,
+      "name": "Frayed Abomination Stitching"
+    },
+    {
+      "item": 16249,
+      "name": "Formula: Enchant 2H Weapon - Major Intellect"
+    },
+    {
+      "item": 15777,
+      "name": "Pattern: Runic Leather Shoulders"
+    },
+    {
+      "item": 18658,
+      "name": "Schematic: Ultra-Flash Shadow Reflector"
+    },
+    {
+      "item": 16052,
+      "name": "Schematic: Voice Amplification Modulator"
+    },
+    {
+      "item": 12811,
+      "name": "Righteous Orb"
+    },
+    {
+      "item": 12827,
+      "name": "Plans: Serenity"
+    },
+    {
+      "item": 12830,
+      "name": "Plans: Corruption"
+    }
+  ],
+  "quests": [5263, 5213, 5282, 6163, 5125, 8945, 5463, 5262, 5212, 5243, 5214, 5848, 5122]
+}

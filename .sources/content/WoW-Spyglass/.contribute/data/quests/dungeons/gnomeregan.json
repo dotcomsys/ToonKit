@@ -1,0 +1,408 @@
+{
+  "quests": [
+    {
+      "id": 2904,
+      "name": "A Fine Mess",
+      "side": "Both",
+      "requiredLevel": 24,
+      "xp": 2450,
+      "objective": "Escort Kernobee to the Clockwerk Run exit, then report to Scooty in Booty Bay.",
+      "start": {
+        "npc": "Kernobee",
+        "description": "Kernobee, inside Gnomeregan"
+      },
+      "turnIn": {
+        "npc": "Scooty",
+        "description": "Scooty, Booty Bay, Stranglethorn Vale"
+      },
+      "items": [
+        {
+          "item": 9535,
+          "name": "Fire-welded Bracers"
+        },
+        {
+          "item": 9536,
+          "name": "Fairywing Mantle"
+        },
+        {
+          "item": 270042,
+          "name": "Technician's Bracers"
+        }
+      ]
+    },
+    {
+      "id": 2928,
+      "name": "Gyrodrillmatic Excavationators",
+      "side": "Alliance",
+      "requiredLevel": 20,
+      "xp": 2450,
+      "objective": "Bring twenty-four Robo-mechanical Guts to Shoni in Stormwind.",
+      "start": {
+        "npc": "Shoni the Shilent",
+        "location": [1453, 63, 34],
+        "description": "Shoni the Shilent, Stormwind City"
+      },
+      "turnIn": {
+        "npc": "Shoni the Shilent",
+        "location": [1453, 63, 34],
+        "description": "Shoni the Shilent, Stormwind City"
+      },
+      "items": [
+        {
+          "item": 9608,
+          "name": "Shoni's Disarming Tool"
+        },
+        {
+          "item": 9609,
+          "name": "Shilly Mitts"
+        },
+        {
+          "item": 270045,
+          "name": "Operator's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 2922,
+      "name": "Save Techbot's Brain!",
+      "side": "Alliance",
+      "requiredLevel": 20,
+      "xp": 2650,
+      "objective": "Bring Techbot's Memory Core to Tinkmaster Overspark in Ironforge.",
+      "start": {
+        "npc": "Tinkmaster Overspark",
+        "location": [1455, 69, 50],
+        "description": "Tinkmaster Overspark, Ironforge"
+      },
+      "turnIn": {
+        "npc": "Tinkmaster Overspark",
+        "location": [1455, 69, 50],
+        "description": "Tinkmaster Overspark, Ironforge"
+      },
+      "items": []
+    },
+    {
+      "id": 2923,
+      "name": "Tinkmaster Overspark",
+      "items": []
+    },
+    {
+      "id": 2926,
+      "name": "Gnogaine",
+      "side": "Alliance",
+      "requiredLevel": 20,
+      "xp": 2200,
+      "objective": "Use the Empty Leaden Collection Phial on Irradiated Invaders or Irradiated Pillagers, then take the full phial back to Ozzie Togglevolt.",
+      "description": "Required before The Only Cure is More Green Glow.",
+      "start": {
+        "npc": "Ozzie Togglevolt",
+        "location": [1426, 45, 49],
+        "description": "Ozzie Togglevolt, Kharanos, Dun Morogh"
+      },
+      "turnIn": {
+        "npc": "Ozzie Togglevolt",
+        "location": [1426, 45, 49],
+        "description": "Ozzie Togglevolt, Kharanos, Dun Morogh"
+      },
+      "items": []
+    },
+    {
+      "id": 2927,
+      "name": "The Day After",
+      "items": []
+    },
+    {
+      "id": 2842,
+      "name": "Chief Engineer Scooty",
+      "side": "Horde",
+      "requiredLevel": 20,
+      "objective": "Speak with Scooty in Booty Bay.",
+      "requires": [2841],
+      "start": {
+        "location": [1454, 75.6, 25.2],
+        "description": "Sovik, Valley of Honor, Orgrimmar"
+      },
+      "turnIn": {
+        "description": "Scooty, Booty Bay, Stranglethorn Vale"
+      },
+      "items": []
+    },
+    {
+      "id": 2843,
+      "name": "Gnomer-gooooone!",
+      "side": "Horde",
+      "requiredLevel": 20,
+      "objective": "Wait for Scooty to calibrate the Goblin Transponder.",
+      "requires": [2842],
+      "start": {
+        "npc": "Scooty",
+        "location": [1434, 28, 77],
+        "description": "Scooty, Booty Bay, Stranglethorn Vale"
+      },
+      "turnIn": {
+        "npc": "Scooty",
+        "location": [1434, 28, 77],
+        "description": "Scooty, Booty Bay, Stranglethorn Vale"
+      },
+      "items": [
+        {
+          "item": 9173,
+          "name": "Goblin Transponder"
+        }
+      ]
+    },
+    {
+      "id": 2962,
+      "name": "The Only Cure is More Green Glow",
+      "side": "Alliance",
+      "requiredLevel": 20,
+      "xp": 2450,
+      "objective": "Bring High Potency Radioactive Fallout and the Heavy Leaden Collection Phial back to Ozzie. The fallout collapses quickly.",
+      "requires": [2926],
+      "start": {
+        "npc": "Ozzie Togglevolt",
+        "location": [1426, 45, 49],
+        "description": "Kharanos, Dun Morogh."
+      },
+      "turnIn": {
+        "npc": "Ozzie Togglevolt",
+        "location": [1426, 45, 49],
+        "description": "Kharanos, Dun Morogh."
+      },
+      "items": []
+    },
+    {
+      "id": 2924,
+      "name": "Essential Artificials",
+      "side": "Alliance",
+      "requiredLevel": 24,
+      "xp": 3050,
+      "objective": "Bring 12 Essential Artificials to Klockmort Spannerspan in Ironforge.",
+      "start": {
+        "npc": "Klockmort Spannerspan",
+        "location": [1455, 67, 46],
+        "description": "Ironforge."
+      },
+      "turnIn": {
+        "npc": "Klockmort Spannerspan",
+        "location": [1455, 67, 46],
+        "description": "Ironforge."
+      },
+      "items": []
+    },
+    {
+      "id": 2930,
+      "name": "Data Rescue",
+      "side": "Alliance",
+      "requiredLevel": 25,
+      "xp": 3650,
+      "objective": "Bring a Prismatic Punch Card to Master Mechanic Castpipe in Ironforge.",
+      "start": {
+        "npc": "Master Mechanic Castpipe",
+        "location": [1455, 69, 48],
+        "description": "Ironforge."
+      },
+      "turnIn": {
+        "npc": "Master Mechanic Castpipe",
+        "location": [1455, 69, 48],
+        "description": "Ironforge."
+      },
+      "items": [
+        {
+          "item": 9605,
+          "name": "Repairman's Cape"
+        },
+        {
+          "item": 9604,
+          "name": "Mechanic's Pipehammer"
+        }
+      ]
+    },
+    {
+      "id": 2929,
+      "name": "The Grand Betrayal",
+      "side": "Alliance",
+      "requiredLevel": 25,
+      "xp": 2750,
+      "objective": "Kill Mekgineer Thermaplugg and return to High Tinker Mekkatorque.",
+      "start": {
+        "npc": "High Tinker Mekkatorque",
+        "location": [1455, 68, 49],
+        "description": "Ironforge."
+      },
+      "turnIn": {
+        "npc": "High Tinker Mekkatorque",
+        "location": [1455, 68, 49],
+        "description": "Ironforge."
+      },
+      "items": [
+        {
+          "item": 9623,
+          "name": "Civinad Robes"
+        },
+        {
+          "item": 9624,
+          "name": "Triprunner Dungarees"
+        },
+        {
+          "item": 9625,
+          "name": "Dual Reinforced Leggings"
+        }
+      ]
+    },
+    {
+      "id": 2841,
+      "name": "Rig Wars",
+      "side": "Horde",
+      "requiredLevel": 25,
+      "xp": 2750,
+      "objective": "Retrieve the Rig Blueprints and Thermaplugg's Safe Combination and bring them to Nogg in Orgrimmar.",
+      "description": "Accept Rig Wars first; completion is not required for Chief Engineer Scooty. Accept Rig Wars before Chief Engineer Scooty. If Rig Wars disappears, abandon Chief Engineer Scooty and it will reappear.",
+      "start": {
+        "npc": "Nogg",
+        "location": [1454, 76, 25],
+        "description": "Valley of Honor, Orgrimmar."
+      },
+      "turnIn": {
+        "npc": "Nogg",
+        "location": [1454, 76, 25],
+        "description": "Orgrimmar."
+      },
+      "items": [
+        {
+          "item": 9623,
+          "name": "Civinad Robes"
+        },
+        {
+          "item": 9624,
+          "name": "Triprunner Dungarees"
+        },
+        {
+          "item": 9625,
+          "name": "Dual Reinforced Leggings"
+        }
+      ]
+    },
+    {
+      "id": 2951,
+      "name": "The Sparklematic 5200!",
+      "side": "Both",
+      "requiredLevel": 25,
+      "objective": "Insert a Grime-Encrusted Object into the Sparklematic 5200, with three silver coins to start the machine.",
+      "start": {
+        "npc": "The Sparklematic 5200",
+        "description": "Inside Gnomeregan."
+      },
+      "turnIn": {
+        "npc": "The Sparklematic 5200",
+        "description": "Inside Gnomeregan."
+      },
+      "items": [
+        {
+          "item": 9363,
+          "name": "Sparklematic-Wrapped Box"
+        }
+      ]
+    },
+    {
+      "id": 2948,
+      "name": "Gnome Improvement",
+      "side": "Alliance",
+      "requiredLevel": 28,
+      "xp": 2750,
+      "objective": "Bring the Brilliant Gold Ring, a Silver Bar, a Moss Agate, and 30 silver coins to Talvash del Kissel in Ironforge.",
+      "requires": [2947],
+      "start": {
+        "npc": "Talvash del Kissel",
+        "location": [1455, 35.7, 4],
+        "description": "Mystic Ward, Ironforge."
+      },
+      "turnIn": {
+        "npc": "Talvash del Kissel",
+        "location": [1455, 35.7, 4],
+        "description": "Mystic Ward, Ironforge."
+      },
+      "items": [
+        {
+          "item": 9538,
+          "name": "Talvash's Gold Ring"
+        }
+      ]
+    },
+    {
+      "id": 2945,
+      "name": "Grime-Encrusted Ring",
+      "side": "Horde",
+      "requiredLevel": 28,
+      "objective": "Find a way to remove the grime from the Grime-Encrusted Ring by using the Sparklematic 5200.",
+      "start": {
+        "item": 9326,
+        "description": "Dropped by Dark Iron dwarves in Gnomeregan."
+      },
+      "turnIn": {
+        "npc": "The Sparklematic 5200",
+        "description": "Inside Gnomeregan."
+      },
+      "items": []
+    },
+    {
+      "id": 2947,
+      "name": "Return of the Ring",
+      "requiredLevel": 28,
+      "objective": "Take the Brilliant Gold Ring to Talvash del Kissel in Ironforge.",
+      "description": "Alliance step required before Gnome Improvement.",
+      "requires": [2945],
+      "start": {
+        "npc": "The Sparklematic 5200",
+        "description": "Inside Gnomeregan."
+      },
+      "turnIn": {
+        "npc": "Talvash del Kissel",
+        "description": "Mystic Ward, Ironforge."
+      },
+      "items": []
+    },
+    {
+      "id": 2950,
+      "name": "Nogg's Ring Redo",
+      "side": "Horde",
+      "requiredLevel": 28,
+      "xp": 2750,
+      "objective": "Bring the Brilliant Gold Ring, a Silver Bar, a Moss Agate, and 30 silver coins to Nogg in Orgrimmar.",
+      "requires": [2949],
+      "start": {
+        "npc": "Nogg",
+        "location": [1454, 76, 25],
+        "description": "Valley of Honor, Orgrimmar."
+      },
+      "turnIn": {
+        "npc": "Nogg",
+        "location": [1454, 76, 25],
+        "description": "Valley of Honor, Orgrimmar."
+      },
+      "items": [
+        {
+          "item": 9588,
+          "name": "Nogg's Gold Ring"
+        }
+      ]
+    },
+    {
+      "id": 2949,
+      "name": "Return of the Ring",
+      "side": "Horde",
+      "requiredLevel": 28,
+      "objective": "Take the Brilliant Gold Ring to Nogg in Orgrimmar.",
+      "requires": [2945],
+      "start": {
+        "npc": "The Sparklematic 5200",
+        "description": "Inside Gnomeregan."
+      },
+      "turnIn": {
+        "npc": "Nogg",
+        "description": "Valley of Honor, Orgrimmar."
+      },
+      "items": []
+    }
+  ]
+}

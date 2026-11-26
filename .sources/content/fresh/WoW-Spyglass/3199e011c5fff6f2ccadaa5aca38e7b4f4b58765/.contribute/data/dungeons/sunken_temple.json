@@ -1,0 +1,625 @@
+{
+  "map": 109,
+  "name": "Sunken Temple",
+  "minLevel": 50,
+  "maxLevel": 60,
+  "requiredLevel": 35,
+  "zone": 1435,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenSunkenTemple",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1435, 70, 54],
+  "encounters": [
+    {
+      "id": 3582,
+      "name": "Atal'alarion",
+      "displayID": 7873,
+      "npc": 8580,
+      "level": 50,
+      "loot": [
+        {
+          "item": 10800,
+          "name": "Darkwater Bracers"
+        },
+        {
+          "item": 10798,
+          "name": "Atal'alarion's Tusk Ring"
+        },
+        {
+          "item": 10799,
+          "name": "Headspike"
+        }
+      ]
+    },
+    {
+      "id": 3583,
+      "name": "Avatar of Hakkar",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Avatar of Hakkar",
+      "npc": 8443,
+      "level": 55,
+      "loot": [
+        {
+          "item": 10838,
+          "name": "Might of Hakkar"
+        },
+        {
+          "item": 10842,
+          "name": "Windscale Sarong"
+        },
+        {
+          "item": 10843,
+          "name": "Featherskin Cape"
+        },
+        {
+          "item": 10844,
+          "name": "Spire of Hakkar"
+        },
+        {
+          "item": 10845,
+          "name": "Warrior's Embrace"
+        },
+        {
+          "item": 10846,
+          "name": "Bloodshot Greaves"
+        },
+        {
+          "item": 10663,
+          "name": "Essence of Hakkar"
+        },
+        {
+          "item": 12462,
+          "name": "Embrace of the Wind Serpent"
+        }
+      ]
+    },
+    {
+      "id": 3584,
+      "name": "Shade of Eranikus",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Shade of Eranikus",
+      "npc": 5709,
+      "level": 55,
+      "loot": [
+        {
+          "item": 10829,
+          "name": "Dragon's Eye"
+        },
+        {
+          "item": 10833,
+          "name": "Horns of Eranikus"
+        },
+        {
+          "item": 10835,
+          "name": "Crest of Supremacy"
+        },
+        {
+          "item": 10836,
+          "name": "Rod of Corrosion"
+        },
+        {
+          "item": 10828,
+          "name": "Dire Nail"
+        },
+        {
+          "item": 10837,
+          "name": "Tooth of Eranikus"
+        },
+        {
+          "item": 10847,
+          "name": "Dragon's Call"
+        },
+        {
+          "item": 254106,
+          "name": "Pattern: Radiant Gloves"
+        },
+        {
+          "item": 252919,
+          "name": "Pattern: Skycaller's Mail Gauntlets"
+        },
+        {
+          "item": 251403,
+          "name": "Plans: Officer's Gloves"
+        },
+        {
+          "item": 10454,
+          "name": "Essence of Eranikus"
+        }
+      ]
+    },
+    {
+      "id": 3585,
+      "name": "Hazzas",
+      "displayID": 9584,
+      "npc": 5722,
+      "loot": [
+        {
+          "item": 12465,
+          "name": "Nightfall Drape"
+        },
+        {
+          "item": 12466,
+          "name": "Dawnspire Cord"
+        },
+        {
+          "item": 12243,
+          "name": "Smoldering Claw"
+        },
+        {
+          "item": 10795,
+          "name": "Drakeclaw Band"
+        },
+        {
+          "item": 10796,
+          "name": "Drakestone"
+        },
+        {
+          "item": 10797,
+          "name": "Firebreather"
+        },
+        {
+          "item": 12463,
+          "name": "Drakefang Butcher"
+        },
+        {
+          "item": 12464,
+          "name": "Bloodfire Talons"
+        }
+      ]
+    },
+    {
+      "id": 3586,
+      "name": "Morphaz",
+      "displayID": 7975,
+      "npc": 5719,
+      "loot": [
+        {
+          "item": 12465,
+          "name": "Nightfall Drape"
+        },
+        {
+          "item": 12466,
+          "name": "Dawnspire Cord"
+        },
+        {
+          "item": 12243,
+          "name": "Smoldering Claw"
+        },
+        {
+          "item": 10795,
+          "name": "Drakeclaw Band"
+        },
+        {
+          "item": 10796,
+          "name": "Drakestone"
+        },
+        {
+          "item": 10797,
+          "name": "Firebreather"
+        },
+        {
+          "item": 12463,
+          "name": "Drakefang Butcher"
+        },
+        {
+          "item": 12464,
+          "name": "Bloodfire Talons"
+        },
+        {
+          "item": 20019,
+          "name": "Tooth of Morphaz"
+        },
+        {
+          "item": 20022,
+          "name": "Azure Key"
+        },
+        {
+          "item": 20025,
+          "name": "Blood of Morphaz"
+        },
+        {
+          "item": 20085,
+          "name": "Arcane Shard"
+        }
+      ]
+    },
+    {
+      "id": 3587,
+      "name": "Weaver",
+      "displayID": 6375,
+      "npc": 5720,
+      "loot": [
+        {
+          "item": 12465,
+          "name": "Nightfall Drape"
+        },
+        {
+          "item": 12466,
+          "name": "Dawnspire Cord"
+        },
+        {
+          "item": 12243,
+          "name": "Smoldering Claw"
+        },
+        {
+          "item": 10795,
+          "name": "Drakeclaw Band"
+        },
+        {
+          "item": 10796,
+          "name": "Drakestone"
+        },
+        {
+          "item": 10797,
+          "name": "Firebreather"
+        },
+        {
+          "item": 12463,
+          "name": "Drakefang Butcher"
+        },
+        {
+          "item": 12464,
+          "name": "Bloodfire Talons"
+        }
+      ]
+    },
+    {
+      "id": 3588,
+      "name": "Dreamscythe",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Dreamscythe",
+      "npc": 5721,
+      "loot": [
+        {
+          "item": 12465,
+          "name": "Nightfall Drape"
+        },
+        {
+          "item": 12466,
+          "name": "Dawnspire Cord"
+        },
+        {
+          "item": 12243,
+          "name": "Smoldering Claw"
+        },
+        {
+          "item": 10795,
+          "name": "Drakeclaw Band"
+        },
+        {
+          "item": 10796,
+          "name": "Drakestone"
+        },
+        {
+          "item": 10797,
+          "name": "Firebreather"
+        },
+        {
+          "item": 12463,
+          "name": "Drakefang Butcher"
+        },
+        {
+          "item": 12464,
+          "name": "Bloodfire Talons"
+        }
+      ]
+    },
+    {
+      "id": 3589,
+      "name": "Jammal'an the Prophet",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Jammalan the Prophet",
+      "npc": 5710,
+      "level": 54,
+      "loot": [
+        {
+          "item": 10806,
+          "name": "Vestments of the Atal'ai Prophet"
+        },
+        {
+          "item": 10807,
+          "name": "Kilt of the Atal'ai Prophet"
+        },
+        {
+          "item": 10808,
+          "name": "Gloves of the Atal'ai Prophet"
+        },
+        {
+          "item": 254102,
+          "name": "Pattern: Black Gloves"
+        },
+        {
+          "item": 252919,
+          "name": "Pattern: Skycaller's Mail Gauntlets"
+        },
+        {
+          "item": 252918,
+          "name": "Pattern: Stalker's Mail Gauntlets"
+        },
+        {
+          "item": 252869,
+          "name": "Pattern: Warden's Leather Gauntlets"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        },
+        {
+          "item": 273119,
+          "name": "Blueprint: Fishing Hut"
+        }
+      ]
+    },
+    {
+      "id": -5711,
+      "name": "Ogom the Wretched",
+      "displayID": 6709,
+      "npc": 5711,
+      "level": 53,
+      "loot": [
+        {
+          "item": 10804,
+          "name": "Fist of the Damned"
+        },
+        {
+          "item": 10803,
+          "name": "Blade of the Wretched"
+        },
+        {
+          "item": 10805,
+          "name": "Eater of the Dead"
+        }
+      ]
+    },
+    {
+      "id": -5713,
+      "name": "Gasher",
+      "npc": 5713,
+      "level": 51,
+      "loot": [
+        {
+          "item": 10783,
+          "name": "Atal'ai Spaulders"
+        },
+        {
+          "item": 10784,
+          "name": "Atal'ai Breastplate"
+        },
+        {
+          "item": 10787,
+          "name": "Atal'ai Gloves"
+        },
+        {
+          "item": 10785,
+          "name": "Atal'ai Leggings"
+        },
+        {
+          "item": 10786,
+          "name": "Atal'ai Boots"
+        },
+        {
+          "item": 10788,
+          "name": "Atal'ai Girdle"
+        }
+      ]
+    },
+    {
+      "id": -5715,
+      "name": "Hukku",
+      "npc": 5715,
+      "level": 52,
+      "loot": [
+        {
+          "item": 10783,
+          "name": "Atal'ai Spaulders"
+        },
+        {
+          "item": 10784,
+          "name": "Atal'ai Breastplate"
+        },
+        {
+          "item": 10787,
+          "name": "Atal'ai Gloves"
+        },
+        {
+          "item": 10785,
+          "name": "Atal'ai Leggings"
+        },
+        {
+          "item": 10786,
+          "name": "Atal'ai Boots"
+        },
+        {
+          "item": 10788,
+          "name": "Atal'ai Girdle"
+        }
+      ]
+    },
+    {
+      "id": -5714,
+      "name": "Loro",
+      "npc": 5714,
+      "level": 51,
+      "loot": [
+        {
+          "item": 10783,
+          "name": "Atal'ai Spaulders"
+        },
+        {
+          "item": 10784,
+          "name": "Atal'ai Breastplate"
+        },
+        {
+          "item": 10787,
+          "name": "Atal'ai Gloves"
+        },
+        {
+          "item": 10785,
+          "name": "Atal'ai Leggings"
+        },
+        {
+          "item": 10786,
+          "name": "Atal'ai Boots"
+        },
+        {
+          "item": 10788,
+          "name": "Atal'ai Girdle"
+        }
+      ]
+    },
+    {
+      "id": -5717,
+      "name": "Mijan",
+      "npc": 5717,
+      "level": 52,
+      "loot": [
+        {
+          "item": 10783,
+          "name": "Atal'ai Spaulders"
+        },
+        {
+          "item": 10784,
+          "name": "Atal'ai Breastplate"
+        },
+        {
+          "item": 10787,
+          "name": "Atal'ai Gloves"
+        },
+        {
+          "item": 10785,
+          "name": "Atal'ai Leggings"
+        },
+        {
+          "item": 10786,
+          "name": "Atal'ai Boots"
+        },
+        {
+          "item": 10788,
+          "name": "Atal'ai Girdle"
+        }
+      ]
+    },
+    {
+      "id": -5712,
+      "name": "Zolo",
+      "npc": 5712,
+      "level": 51,
+      "loot": [
+        {
+          "item": 10783,
+          "name": "Atal'ai Spaulders"
+        },
+        {
+          "item": 10784,
+          "name": "Atal'ai Breastplate"
+        },
+        {
+          "item": 10787,
+          "name": "Atal'ai Gloves"
+        },
+        {
+          "item": 10785,
+          "name": "Atal'ai Leggings"
+        },
+        {
+          "item": 10786,
+          "name": "Atal'ai Boots"
+        },
+        {
+          "item": 10788,
+          "name": "Atal'ai Girdle"
+        }
+      ]
+    },
+    {
+      "id": -5716,
+      "name": "Zul'Lor",
+      "npc": 5716,
+      "level": 52,
+      "loot": [
+        {
+          "item": 10783,
+          "name": "Atal'ai Spaulders"
+        },
+        {
+          "item": 10784,
+          "name": "Atal'ai Breastplate"
+        },
+        {
+          "item": 10787,
+          "name": "Atal'ai Gloves"
+        },
+        {
+          "item": 10785,
+          "name": "Atal'ai Leggings"
+        },
+        {
+          "item": 10786,
+          "name": "Atal'ai Boots"
+        },
+        {
+          "item": 10788,
+          "name": "Atal'ai Girdle"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 10630,
+      "name": "Soulcatcher Halo"
+    },
+    {
+      "item": 10629,
+      "name": "Mistwalker Boots"
+    },
+    {
+      "item": 10631,
+      "name": "Murkwater Gauntlets"
+    },
+    {
+      "item": 10632,
+      "name": "Slimescale Bracers"
+    },
+    {
+      "item": 10633,
+      "name": "Silvershell Leggings"
+    },
+    {
+      "item": 10634,
+      "name": "Mindseye Circle"
+    },
+    {
+      "item": 10623,
+      "name": "Winter's Bite"
+    },
+    {
+      "item": 10625,
+      "name": "Stealthblade"
+    },
+    {
+      "item": 10626,
+      "name": "Ragehammer"
+    },
+    {
+      "item": 10628,
+      "name": "Deathblow"
+    },
+    {
+      "item": 10627,
+      "name": "Bludgeon of the Grinning Dog"
+    },
+    {
+      "item": 10624,
+      "name": "Stinging Bow"
+    },
+    {
+      "item": 10801,
+      "name": "Slitherscale Boots"
+    },
+    {
+      "item": 15733,
+      "name": "Pattern: Green Dragonscale Leggings"
+    },
+    {
+      "item": 16216,
+      "name": "Formula: Enchant Cloak - Greater Resistance"
+    }
+  ],
+  "quests": [1475, 1445, 3446, 3447, 1446, 3528, 3373, 4143, 4146, 9053, 8232, 8253, 8418, 8257, 8236, 8413, 8422, 8425]
+}

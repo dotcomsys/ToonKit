@@ -1,0 +1,106 @@
+{
+  "map": 3065,
+  "name": "The Hall of Thanes",
+  "minLevel": 13,
+  "maxLevel": 20,
+  "zone": 1455,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\Camelot160\\Main\\LoadScreen_Camelot_OldIronforge",
+  "backgroundCoords": [0, 1, 0.154, 0.846],
+  "entrance": [1455, 43, 51],
+  "encounters": [
+    {
+      "id": 3493,
+      "name": "Faldrim Anvilmar",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\faldrim_anvilmar.blp",
+      "displayID": 142826,
+      "npc": 261306,
+      "level": 16,
+      "loot": [
+        {
+          "item": 270227,
+          "name": "Ephemeral Choker"
+        },
+        {
+          "item": 271096,
+          "name": "Aetherwisp Bracers"
+        },
+        {
+          "item": 271097,
+          "name": "Spiritwraith Drape"
+        }
+      ]
+    },
+    {
+      "id": 3495,
+      "name": "Magmatus",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\magmatus.blp",
+      "displayID": 1070,
+      "npc": 261316,
+      "level": 16,
+      "loot": [
+        {
+          "item": 270230,
+          "name": "Kindlegem Girdle"
+        },
+        {
+          "item": 270231,
+          "name": "Flamefist Grips"
+        },
+        {
+          "item": 271095,
+          "name": "Fang of Magmatus"
+        }
+      ]
+    },
+    {
+      "id": 3494,
+      "name": "Plunder",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\plunder.blp",
+      "displayID": 142840,
+      "npc": 261311,
+      "level": 16,
+      "loot": [
+        {
+          "item": 270228,
+          "name": "Golemheart Stave"
+        },
+        {
+          "item": 270229,
+          "name": "Treads of the Protector Golem"
+        },
+        {
+          "item": 271098,
+          "name": "Golemguard Chest"
+        }
+      ]
+    },
+    {
+      "id": 3496,
+      "name": "Durgen Dirgehammer",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\durgen_dirgehammer.blp",
+      "displayID": 142837,
+      "npc": 261319,
+      "level": 16,
+      "loot": [
+        {
+          "item": 270256,
+          "name": "Durgen's Crescent Axe"
+        },
+        {
+          "item": 270260,
+          "name": "Direhammer Leggings"
+        },
+        {
+          "item": 270261,
+          "name": "Robes of the Disgraced Thane"
+        },
+        {
+          "item": 274286,
+          "name": "Durgen Dirgehammer's Head"
+        }
+      ]
+    }
+  ],
+  "trash": [],
+  "quests": [96393, 96395, 96403, 96394, 98423]
+}

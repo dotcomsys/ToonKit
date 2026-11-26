@@ -1,0 +1,47 @@
+{
+  "map": 429,
+  "id": 42901,
+  "name": "Dire Maul: East",
+  "minLevel": 54,
+  "maxLevel": 60,
+  "requiredLevel": 45,
+  "zone": 1444,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenDireMaul",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1444, 65, 30],
+  "encounters": [
+    {
+      "id": 343,
+      "name": "Zevrim Thornhoof",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Zevrim Thornhoof",
+      "loot": []
+    },
+    {
+      "id": 344,
+      "name": "Hydrospawn",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Hydrospawn",
+      "loot": []
+    },
+    {
+      "id": 345,
+      "name": "Lethtendris",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lethtendris",
+      "loot": []
+    },
+    {
+      "id": 2792,
+      "name": "Pusillin",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\pusillin.blp",
+      "displayID": 7552,
+      "loot": []
+    },
+    {
+      "id": 346,
+      "name": "Alzzin the Wildshaper",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Alzzin the Wildshaper",
+      "loot": []
+    }
+  ],
+  "trash": [],
+  "quests": []
+}

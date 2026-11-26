@@ -1,0 +1,5 @@
+# ToonKit field journal icon
+
+Generated with the built-in imagegen tool on 2026-10-18. Production master: `ToonKit-master-v2.png`. The original master remains preserved. Runtime asset: `ToonKit/Media/ToonKit.tga`, uncompressed 256 x 256 BGRA.
+
+Create a single original premium fantasy game addon app icon for ToonKit. Square composition, no letters or words. A bold ivory compass spear/wayfinder needle integrated into the clasp of a dark oxblood leather adventurer's field journal, forming one distinctive easily recognizable emblem. Antique bronze sculpted rim, restrained turquoise enamel accent, warm hand-painted 2004 fantasy RPG inventory icon craftsmanship. Strong graphic silhouette readable at 32 pixels; rich tactile brushwork and bevelled metal, dark charcoal background, minimal large shapes, centered emblem fills 85 percent of canvas. Not a screenshot or mockup. No existing game logos, no ornate tiny ornament, no extra objects. Finished official brand icon, beautiful aged materials, confident restrained lighting.

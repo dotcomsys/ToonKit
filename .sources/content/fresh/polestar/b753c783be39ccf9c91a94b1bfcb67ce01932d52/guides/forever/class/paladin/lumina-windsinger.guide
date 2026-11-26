@@ -1,0 +1,169 @@
+guide forever/class/paladin/lumina-windsinger
+title Moonsilver Blade and Wolfsbane (Forsaken)
+category Class
+class Paladin
+folder Paladin
+faction Horde
+race Undead
+levels 18-26
+zone Tirisfal Glades
+keywords Lumina Windsinger, Diplomatic Incident, Trevan Rol, Deathguard Baldren, Fenris Isle, Fenris Keep, Fenris Isle Key, The Windshaper's Wrath, The Debt, A Moon-Kissed Blade, Enchanted Silver Ingot, Whitestone Oak Lumber, Seeking the Kor Gem, Ulric Frostveil, Purified Kor Gem, An Underrated Talent, Ott, Ott's Masterwork, Moonsilver Blade, Old Fire-Eye, Wolfsbane, Shadowfang Keep, Deadmines, Blackfathom Deeps, Danitha Morr, Forsaken Paladin, class quest, class weapon
+reward item 268484
+reward item 267369
+why The Forsaken paladin's two-handed sword: rescue Lumina Windsinger, gather three parts, slay Old Fire-Eye.
+
+# The Forsaken paladins' Silverpine story, new in Forever, from Lumina
+# Windsinger's rescue to the Moonsilver Blade and its blessing, Wolfsbane:
+# - The rescue (18): Diplomatic Incident (91858) from Danitha Morr at
+#   Bandarion Keep, A Curious Pair (91859), A Grim Fate (91860, ends at the
+#   Charred Remains), Into Fenris Keep (91861, starts there), Lumina Windsinger
+#   (91862, the Fenris Isle Key), The Windshaper's Wrath (96204, an escort) and
+#   The Debt (95034).
+# - The blade (20): A Moon-Kissed Blade (95036: Whitestone Oak Lumber from the
+#   Deadmines, the Enchanted Silver Ingot in Shadowfang Keep, the Purified Kor
+#   Gem from Seeking the Kor Gem 95042 at Zoram'gar Outpost), An Underrated
+#   Talent (95111, to Ott in Tarren Mill), Ott's Masterwork (95125, he forges
+#   it), The Moonsilver Blade (95126, back to Trevan Rol) and Old Fire-Eye
+#   (95140, a level 25 elite worgen; Lumina blesses the blade into Wolfsbane).
+# Sources: Forever's quest data (quests.json, the knowledge base) for givers,
+# enders, objectives, rewards (Moonsilver Blade 268484 from 95126, Wolfsbane
+# 267369 from 95140, Purified Kor Gem 272448 from 95042), mob levels, elites
+# and drop rates (Whitestone Oak Lumber every Goblin Woodcarver, the
+# Corrupted Kor Gem one naga in two); the Forever quest page for A Moon-Kissed
+# Blade's four parts (Trevan's Weapon Notes, the lumber, the ingot, the gem);
+# players' notes on the Forever quest pages for the places and tricks: the
+# ingot on the table next to Arugal at the end of Shadowfang Keep (a cleared
+# instance will do), the lumber in Sneed's room, Trevan Rol in the
+# Sepulcher's lower part, Lumina caged in Fenris Keep's basement, the key
+# before the escort, Old Fire-Eye's shield that the blade's first swing
+# breaks, two-handed sword skill from Archibald in the Undercity, one group of
+# two and one solo kill at 25. Earlier this guide stopped at The Debt because
+# no source placed the ingot; the players' reports above settle it.
+# The data has no prerequisites for these quests; the order is the story's
+# (each quest's text sends you to the next).
+# The leveling route passes the Sepulcher in forever/horde/03-silverpine-forest
+# (levels 16-20). Alliance paladins have their own level 20 weapon chain,
+# Verigan's Fist (forever/class/paladin/verigans-fist), which shares the
+# lumber and the Kor Gem idea.
+
+# ---------------------------------------------------------------- Lumina Windsinger
+
+step Danitha Morr
+  tip At 18 Danitha Morr, inside Bandarion Keep on the bluffs north-west of the Solliden Farmstead, sends you south to the Sepulcher in Silverpine Forest.
+  level 18
+  accept 91858                        -- Danitha Morr
+
+step The Sepulcher
+  zone Silverpine Forest
+  tip Trevan Rol stands in the lower part of the Sepulcher, below the surface; Deathguard Baldren keeps watch near the town's entrance.
+  level 21
+  turnin 91858                        -- Trevan Rol
+  accept 91859
+  turnin 91859                        -- Deathguard Baldren
+  accept 91860
+
+step The pyre on Fenris Isle
+  tip Fenris Isle lies in the lake north-east of the Sepulcher. The gnolls' pyre, with the Charred Remains, is on its shore: click the remains to hand in, and click them again for the next quest. The body is a tauren's, not the elf's.
+  turnin 91860 object 566037          -- Charred Remains
+  accept 91861                        -- from the Charred Remains
+
+step Fenris Keep
+  tip Lumina Windsinger is caged in the basement of Fenris Keep, at the north end of the isle. The Rot Hide gnolls (level 18-19) fill the keep: they pull in big groups across floors and players report very fast respawns, so clear a path and keep moving. Any of them can carry the Fenris Isle Key (often the first kill); the rare Rot Hide Bruiser (22) and Snarlmane (23) can too. If her cage is empty, another player is escorting her: wait for her to come back.
+  level 22
+  turnin 91861                        -- Lumina Windsinger
+  accept 91862
+  collect 267412 quest 91862.1        -- Fenris Isle Key, from the Rot Hide gnolls
+
+step Free Lumina
+  tip Hand in the key first: starting the escort before that gives the key quest no credit. Then open the cage: Lumina walks out through the keep and its courtyard while the gnolls attack, then runs for the dock and makes her own way back to the Sepulcher. Stay close and keep her alive; if she dies, take the quest again when she is back in her cage.
+  level 21
+  turnin 91862                        -- Lumina Windsinger
+  accept 96204
+  complete 96204 @65.7,29.7
+
+step Back to the Sepulcher
+  tip Lumina waits beside Trevan Rol in the Sepulcher (a different Lumina from the one you escorted). For The Debt, click through every line of her story.
+  level 23
+  turnin 96204                        -- Lumina Windsinger, the Sepulcher
+  accept 95034
+  talk 259620 quest 95034.1           -- Lumina Windsinger: hear her story to the end
+  turnin 95034
+
+# ---------------------------------------------------------------- A Moon-Kissed Blade
+
+step A Moon-Kissed Blade
+  tip At 20 Lumina asks for a blade that can kill Old Fire-Eye. Talk to Trevan Rol beside her for his Weapon Notes, which list the parts, and keep them: he wants them back with the parts. Three parts, in any order: two from dungeons (a group of five each) and a gem from elite naga outside a third.
+  level 24
+  accept 95036                        -- Lumina Windsinger
+  collect 267454 npc 248840           -- Trevan's Weapon Notes: talk to Trevan Rol
+
+step The Enchanted Silver Ingot
+  tip Shadowfang Keep is the dungeon in south Silverpine, for a group of five in the low to mid 20s. The ingot sits on the table next to Archmage Arugal at the very end. A friend's cleared instance works: walk in and run to the table.
+  level 25
+  goto 44.8,67.8 live "Shadowfang Keep"
+  collect 267361 quest 95036.3 @44.8,67.8 live -- Enchanted Silver Ingot, on Arugal's table
+
+step Whitestone Oak Lumber
+  zone Westfall
+  tip The Deadmines lies under Moonbrook in Westfall, Alliance land: a group of five at about 17-24. From the Undercity take the zeppelin to Grom'gol in Stranglethorn Vale and go north through Duskwood into Westfall. The way in is the Moonbrook mine. The Goblin Woodcarvers (elite, level 18-19) in Sneed's mast room drop the lumber every time.
+  level 25
+  goto 42.5,71.7 live "The Deadmines, in the Moonbrook mine"
+  collect 6994 quest 95036.2 @42.5,71.7 live -- Goblin Woodcarvers, inside
+
+step Ulric Frostveil
+  zone Ashenvale
+  tip Ulric Frostveil waits at Zoram'gar Outpost on Ashenvale's west coast: take the zeppelin from Grom'gol (or the Undercity) to Orgrimmar, then go north through the Barrens into Ashenvale and west along the road. Andruk, the outpost's wind rider master, saves you the walk next time. Take Ulric's quest before you hunt the naga: the Kor Gem only drops while you have it.
+  level 24
+  accept 95042                        -- Ulric Frostveil, Zoram'gar Outpost
+
+step The Corrupted Kor Gem
+  zone Ashenvale
+  tip The naga stand in the flooded ruins and passages around the Blackfathom Deeps entrance, just north of Zoram'gar: you do not need to enter the instance (its first naga drop the gem too). Tide Priestesses (level 20-21), Oracles (21-22) and Sea Witches (23-24) drop the Corrupted Kor Gem, one in two. All are elite: grouping up is encouraged. Players solo them one at a time, with difficulty; a group of three makes it easy. They heal themselves, run for help at low health, and the Sea Witches cast Frost Nova up close. Some players report no drop while in a raid group.
+  level 25
+  collect 6995 quest 95042.1          -- Corrupted Kor Gem
+
+step The Purified Kor Gem
+  zone Ashenvale
+  tip Back to Ulric at Zoram'gar: he cleanses the gem. Keep the Purified Kor Gem for Trevan.
+  turnin 95042 reward 272448          -- Ulric Frostveil: Purified Kor Gem
+
+step Trevan Rol
+  zone Silverpine Forest
+  tip Bring the lumber, the ingot and the gem to Trevan in the Sepulcher. He gives you a Bundle of Blacksmithing Materials for a smith in Tarren Mill: keep it in your bags.
+  turnin 95036                        -- Trevan Rol
+  accept 95111
+
+# ---------------------------------------------------------------- Ott's Masterwork
+
+step Ott
+  zone Hillsbrad Foothills
+  tip Ott, the weaponsmith, stands just south of Tarren Mill in Hillsbrad Foothills. Accepting Ott's Masterwork starts the forging: step back and wait near him until he is done.
+  turnin 95111                        -- Ott, Tarren Mill
+  level 24
+  accept 95125
+  complete 95125                      -- Watch Ott forge the blade
+  turnin 95125
+  accept 95126                        -- Ott gives you Ott's Masterwork
+
+step The Moonsilver Blade
+  zone Silverpine Forest
+  tip Back to Trevan Rol in the Sepulcher's lower part: he hands you the Moonsilver Blade, a two-handed sword.
+  turnin 95126 reward 268484          -- Trevan Rol: Moonsilver Blade
+
+# ---------------------------------------------------------------- Old Fire-Eye
+
+step Two-Handed Swords
+  zone Undercity
+  tip The blade is a two-handed sword, and you need the skill to hit a level 25 elite with it. Archibald, the weapon master in the Undercity's War Quarter, teaches Two-Handed Swords for a small fee; then swing it on easy mobs until the skill is near its cap (five points per level).
+  train 11870 optional                -- Archibald, War Quarter: Two-Handed Swords
+
+step Old Fire-Eye
+  zone Silverpine Forest
+  tip Equip the Moonsilver Blade. Old Fire-Eye, the great worgen, roams the woods south of the Sepulcher toward the gates of Gilneas. He is elite (level 25): the guide waits for level 25 first, and grouping up is encouraged; players have killed him from 22 up, one needed a second, another soloed him at 25. A purple shield guards him until your first swing with the blade lands: a message tells you it broke.
+  accept 95140                        -- Lumina Windsinger, the Sepulcher
+  level 25
+  kill 259897 quest 95140.1 @47.91,85.33 -- Old Fire-Eye, with the Moonsilver Blade equipped
+
+step Wolfsbane
+  tip Back to Lumina in the Sepulcher with the Moonsilver Blade (the quest asks for it): she takes it and blesses it with the magic of her people into Wolfsbane.
+  turnin 95140 reward 267369          -- Lumina Windsinger: Wolfsbane

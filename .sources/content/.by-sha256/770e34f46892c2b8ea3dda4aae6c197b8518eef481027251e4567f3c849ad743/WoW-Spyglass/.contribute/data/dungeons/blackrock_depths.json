@@ -1,0 +1,897 @@
+{
+  "map": 230,
+  "name": "Blackrock Depths",
+  "minLevel": 52,
+  "maxLevel": 60,
+  "requiredLevel": 40,
+  "zone": 1428,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenBlackrockDepths",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1428, 29, 38],
+  "encounters": [
+    {
+      "id": 227,
+      "name": "High Interrogator Gerstahn",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-High Interrogator Gerstahn",
+      "npc": 9018,
+      "level": 52,
+      "loot": [
+        {
+          "item": 11624,
+          "name": "Kentic Amice"
+        },
+        {
+          "item": 11625,
+          "name": "Enthralled Sphere"
+        },
+        {
+          "item": 11626,
+          "name": "Blackveil Cape"
+        },
+        {
+          "item": 22240,
+          "name": "Greaves of Withering Despair"
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "name": "Lord Roccor",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Roccor",
+      "npc": 9025,
+      "level": 51,
+      "loot": [
+        {
+          "item": 11632,
+          "name": "Earthslag Shoulders"
+        },
+        {
+          "item": 11631,
+          "name": "Stoneshell Guard"
+        },
+        {
+          "item": 22234,
+          "name": "Mantle of Lost Hope"
+        },
+        {
+          "item": 22397,
+          "name": "Idol of Ferocity"
+        },
+        {
+          "item": 11630,
+          "name": "Rockshard Pellets"
+        },
+        {
+          "item": 11813,
+          "name": "Formula: Smoking Heart of the Mountain"
+        }
+      ]
+    },
+    {
+      "id": 229,
+      "name": "Houndmaster Grebmar",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Houndmaster Grebmar",
+      "npc": 9319,
+      "level": 52,
+      "loot": [
+        {
+          "item": 11627,
+          "name": "Fleetfoot Greaves"
+        },
+        {
+          "item": 11623,
+          "name": "Spritecaster Cape"
+        },
+        {
+          "item": 11628,
+          "name": "Houndmaster's Bow"
+        },
+        {
+          "item": 11629,
+          "name": "Houndmaster's Rifle"
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "name": "Ring of Law",
+      "loot": []
+    },
+    {
+      "id": 231,
+      "name": "Pyromancer Loregrain",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Pyromancer Loregrain",
+      "npc": 9024,
+      "level": 52,
+      "loot": [
+        {
+          "item": 11747,
+          "name": "Flamestrider Robes"
+        },
+        {
+          "item": 11748,
+          "name": "Pyric Caduceus"
+        },
+        {
+          "item": 11749,
+          "name": "Searingscale Leggings"
+        },
+        {
+          "item": 11750,
+          "name": "Kindling Stave"
+        },
+        {
+          "item": 11207,
+          "name": "Formula: Enchant Weapon - Fiery Weapon"
+        }
+      ]
+    },
+    {
+      "id": 232,
+      "name": "Lord Incendius",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Incendius",
+      "npc": 9017,
+      "level": 55,
+      "loot": [
+        {
+          "item": 11764,
+          "name": "Cinderhide Armsplints"
+        },
+        {
+          "item": 11765,
+          "name": "Pyremail Wristguards"
+        },
+        {
+          "item": 11766,
+          "name": "Flameweave Cuffs"
+        },
+        {
+          "item": 11767,
+          "name": "Emberplate Armguards"
+        },
+        {
+          "item": 11768,
+          "name": "Incendic Bracers"
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "name": "Warder Stilgiss",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Warder Stilgiss",
+      "npc": 9041,
+      "level": 56,
+      "loot": [
+        {
+          "item": 11782,
+          "name": "Boreal Mantle"
+        },
+        {
+          "item": 11783,
+          "name": "Chillsteel Girdle"
+        },
+        {
+          "item": 11784,
+          "name": "Arbiter's Blade"
+        },
+        {
+          "item": 22241,
+          "name": "Dark Warder's Pauldrons"
+        },
+        {
+          "item": 11755,
+          "name": "Verek's Collar"
+        },
+        {
+          "item": 22242,
+          "name": "Verek's Leash"
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "name": "Fineous Darkvire",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Fineous Darkvire",
+      "npc": 9056,
+      "level": 54,
+      "loot": [
+        {
+          "item": 11841,
+          "name": "Senior Designer's Pantaloons"
+        },
+        {
+          "item": 11842,
+          "name": "Lead Surveyor's Mantle"
+        },
+        {
+          "item": 11839,
+          "name": "Chief Architect's Monocle"
+        },
+        {
+          "item": 22223,
+          "name": "Foreman's Head Protector"
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "name": "Bael'Gar",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-BaelGar",
+      "npc": 9016,
+      "level": 54,
+      "loot": [
+        {
+          "item": 11802,
+          "name": "Lavacrest Leggings"
+        },
+        {
+          "item": 11803,
+          "name": "Force of Magma"
+        },
+        {
+          "item": 11805,
+          "name": "Rubidium Hammer"
+        },
+        {
+          "item": 11807,
+          "name": "Sash of the Burning Heart"
+        }
+      ]
+    },
+    {
+      "id": 236,
+      "name": "General Angerforge",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-General Angerforge",
+      "npc": 9033,
+      "level": 57,
+      "loot": [
+        {
+          "item": 11816,
+          "name": "Angerforge's Battle Axe"
+        },
+        {
+          "item": 11820,
+          "name": "Royal Decorated Armor"
+        },
+        {
+          "item": 11821,
+          "name": "Warstrife Leggings"
+        },
+        {
+          "item": 11817,
+          "name": "Lord General's Sword"
+        },
+        {
+          "item": 11810,
+          "name": "Force of Will"
+        }
+      ]
+    },
+    {
+      "id": 237,
+      "name": "Golem Lord Argelmach",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Golem Lord Argelmach",
+      "npc": 8983,
+      "level": 57,
+      "loot": [
+        {
+          "item": 11822,
+          "name": "Omnicast Boots"
+        },
+        {
+          "item": 11823,
+          "name": "Luminary Kilt"
+        },
+        {
+          "item": 11669,
+          "name": "Naglering"
+        },
+        {
+          "item": 11819,
+          "name": "Second Wind"
+        },
+        {
+          "item": 273113,
+          "name": "Blueprint: Master Forge"
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "name": "Hurley Blackbreath",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Hurley Blackbreath",
+      "npc": 9537,
+      "level": 55,
+      "loot": [
+        {
+          "item": 18044,
+          "name": "Hurley's Tankard"
+        },
+        {
+          "item": 18043,
+          "name": "Coal Miner Boots"
+        },
+        {
+          "item": 22275,
+          "name": "Firemoss Boots"
+        },
+        {
+          "item": 11735,
+          "name": "Ragefury Eyepatch"
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "name": "Phalanx",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Phalanx",
+      "npc": 9502,
+      "level": 55,
+      "loot": [
+        {
+          "item": 11745,
+          "name": "Fists of Phalanx"
+        },
+        {
+          "item": 11744,
+          "name": "Bloodfist"
+        },
+        {
+          "item": 22212,
+          "name": "Golem Fitted Pauldrons"
+        },
+        {
+          "item": 11746,
+          "name": "Golem Skull Helm"
+        },
+        {
+          "item": 11743,
+          "name": "Rockfist"
+        },
+        {
+          "item": 276879,
+          "name": "Backroom Bulwark"
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "name": "Ribbly Screwspigot",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Ribbly Screwspigot",
+      "npc": 9543,
+      "level": 53,
+      "loot": [
+        {
+          "item": 11612,
+          "name": "Plans: Dark Iron Plate"
+        },
+        {
+          "item": 11742,
+          "name": "Wayfarer's Knapsack"
+        },
+        {
+          "item": 2662,
+          "name": "Ribbly's Quiver"
+        },
+        {
+          "item": 2663,
+          "name": "Ribbly's Bandolier"
+        }
+      ]
+    },
+    {
+      "id": 241,
+      "name": "Plugger Spazzring",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Plugger Spazzring",
+      "npc": 9499,
+      "level": 55,
+      "loot": [
+        {
+          "item": 12793,
+          "name": "Mixologist's Tunic"
+        },
+        {
+          "item": 12791,
+          "name": "Barman Shanker"
+        },
+        {
+          "item": 18653,
+          "name": "Schematic: Goblin Jumper Cables XL"
+        },
+        {
+          "item": 276877,
+          "name": "Brewmancer Nightcap"
+        }
+      ]
+    },
+    {
+      "id": 2791,
+      "name": "The Vault",
+      "loot": []
+    },
+    {
+      "id": 242,
+      "name": "Ambassador Flamelash",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Ambassador Flamelash",
+      "npc": 9156,
+      "level": 57,
+      "loot": [
+        {
+          "item": 11812,
+          "name": "Cape of the Fire Salamander"
+        },
+        {
+          "item": 11814,
+          "name": "Molten Fists"
+        },
+        {
+          "item": 11809,
+          "name": "Flame Wrath"
+        },
+        {
+          "item": 11832,
+          "name": "Burst of Knowledge"
+        },
+        {
+          "item": 11808,
+          "name": "Circle of Flame"
+        },
+        {
+          "item": 273122,
+          "name": "Blueprint: Molten Foundry"
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "name": "The Seven",
+      "displayID": 8687,
+      "npc": 9039,
+      "level": 57,
+      "loot": [
+        {
+          "item": 11920,
+          "name": "Wraith Scythe"
+        },
+        {
+          "item": 11921,
+          "name": "Impervious Giant"
+        },
+        {
+          "item": 11922,
+          "name": "Blood-Etched Blade"
+        },
+        {
+          "item": 11926,
+          "name": "Deathdealer Breastplate"
+        },
+        {
+          "item": 11927,
+          "name": "Legplates of the Eternal Guardian"
+        },
+        {
+          "item": 11923,
+          "name": "The Hammer of Grace"
+        },
+        {
+          "item": 11925,
+          "name": "Ghostshroud"
+        },
+        {
+          "item": 11929,
+          "name": "Haunting Specter Leggings"
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "name": "Magmus",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Magmus",
+      "npc": 9938,
+      "level": 57,
+      "loot": [
+        {
+          "item": 11935,
+          "name": "Magmus Stone"
+        },
+        {
+          "item": 22208,
+          "name": "Lavastone Hammer"
+        },
+        {
+          "item": 22395,
+          "name": "Totem of Rage"
+        },
+        {
+          "item": 22400,
+          "name": "Libram of Truth"
+        },
+        {
+          "item": 11746,
+          "name": "Golem Skull Helm"
+        },
+        {
+          "item": 277129,
+          "name": "Fragment of the Firelands"
+        }
+      ]
+    },
+    {
+      "id": 2789,
+      "name": "Princess Moira Bronzebeard",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Princess Moira Bronzebeard",
+      "npc": 8929,
+      "level": 58,
+      "loot": [
+        {
+          "item": 12553,
+          "name": "Swiftwalker Boots"
+        },
+        {
+          "item": 12554,
+          "name": "Hands of the Exalted Herald"
+        },
+        {
+          "item": 12556,
+          "name": "High Priestess Boots"
+        },
+        {
+          "item": 12557,
+          "name": "Ebonsteel Spaulders"
+        }
+      ]
+    },
+    {
+      "id": 2790,
+      "name": "Emperor Dagran Thaurissan",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Emperor Thaurissan",
+      "npc": 9019,
+      "level": 59,
+      "loot": [
+        {
+          "item": 11815,
+          "name": "Hand of Justice"
+        },
+        {
+          "item": 11924,
+          "name": "Robes of the Royal Crown"
+        },
+        {
+          "item": 11928,
+          "name": "Thaurissan's Royal Scepter"
+        },
+        {
+          "item": 11930,
+          "name": "The Emperor's New Cape"
+        },
+        {
+          "item": 11931,
+          "name": "Dreadforge Retaliator"
+        },
+        {
+          "item": 11932,
+          "name": "Guiding Stave of Wisdom"
+        },
+        {
+          "item": 11933,
+          "name": "Imperial Jewel"
+        },
+        {
+          "item": 11934,
+          "name": "Emperor's Seal"
+        },
+        {
+          "item": 22204,
+          "name": "Wristguards of Renown"
+        },
+        {
+          "item": 22207,
+          "name": "Sash of the Grand Hunt"
+        },
+        {
+          "item": 11684,
+          "name": "Ironfoe"
+        }
+      ]
+    },
+    {
+      "id": -9027,
+      "name": "Gorosh the Dervish",
+      "displayID": 8760,
+      "npc": 9027,
+      "level": 56,
+      "loot": [
+        {
+          "item": 11726,
+          "name": "Savage Gladiator Chain"
+        },
+        {
+          "item": 22257,
+          "name": "Bloodclot Band"
+        },
+        {
+          "item": 22266,
+          "name": "Flarethorn"
+        },
+        {
+          "item": 22271,
+          "name": "Leggings of Frenzied Magic"
+        }
+      ]
+    },
+    {
+      "id": -9028,
+      "name": "Grizzle",
+      "displayID": 7873,
+      "npc": 9028,
+      "level": 54,
+      "loot": [
+        {
+          "item": 11702,
+          "name": "Grizzle's Skinner"
+        },
+        {
+          "item": 11703,
+          "name": "Stonewall Girdle"
+        },
+        {
+          "item": 11722,
+          "name": "Dregmetal Spaulders"
+        },
+        {
+          "item": 22270,
+          "name": "Entrenching Boots"
+        },
+        {
+          "item": 11610,
+          "name": "Plans: Dark Iron Pulverizer"
+        },
+        {
+          "item": 277117,
+          "name": "Savage Gladiator Shoulders"
+        }
+      ]
+    },
+    {
+      "id": -9029,
+      "name": "Eviscerator",
+      "displayID": 523,
+      "npc": 9029,
+      "level": 54,
+      "loot": [
+        {
+          "item": 11679,
+          "name": "Rubicund Armguards"
+        },
+        {
+          "item": 11685,
+          "name": "Splinthide Shoulders"
+        },
+        {
+          "item": 11686,
+          "name": "Girdle of Beastial Fury"
+        },
+        {
+          "item": 11730,
+          "name": "Savage Gladiator Grips"
+        }
+      ]
+    },
+    {
+      "id": -9030,
+      "name": "Ok'thor the Breaker",
+      "displayID": 11538,
+      "npc": 9030,
+      "level": 53,
+      "loot": [
+        {
+          "item": 11662,
+          "name": "Ban'thok Sash"
+        },
+        {
+          "item": 11665,
+          "name": "Ogreseer Fists"
+        },
+        {
+          "item": 11824,
+          "name": "Cyclopean Band"
+        },
+        {
+          "item": 11728,
+          "name": "Savage Gladiator Leggings"
+        }
+      ]
+    },
+    {
+      "id": -9031,
+      "name": "Anub'shiah",
+      "displayID": 3004,
+      "npc": 9031,
+      "level": 54,
+      "loot": [
+        {
+          "item": 11675,
+          "name": "Shadefiend Boots"
+        },
+        {
+          "item": 11677,
+          "name": "Graverot Cape"
+        },
+        {
+          "item": 11678,
+          "name": "Carapace of Anub'shiah"
+        },
+        {
+          "item": 11731,
+          "name": "Savage Gladiator Greaves"
+        }
+      ]
+    },
+    {
+      "id": -9032,
+      "name": "Hedrum the Creeper",
+      "displayID": 8271,
+      "npc": 9032,
+      "level": 53,
+      "loot": [
+        {
+          "item": 11633,
+          "name": "Spiderfang Carapace"
+        },
+        {
+          "item": 11634,
+          "name": "Silkweb Gloves"
+        },
+        {
+          "item": 11635,
+          "name": "Hookfang Shanker"
+        },
+        {
+          "item": 11729,
+          "name": "Savage Gladiator Helm"
+        }
+      ]
+    },
+    {
+      "id": -8923,
+      "name": "Panzor the Invincible",
+      "displayID": 8270,
+      "npc": 8923,
+      "level": 57,
+      "loot": [
+        {
+          "item": 11787,
+          "name": "Shalehusk Boots"
+        },
+        {
+          "item": 11786,
+          "name": "Stone of the Earth"
+        },
+        {
+          "item": 11785,
+          "name": "Rock Golem Bulwark"
+        },
+        {
+          "item": 22245,
+          "name": "Soot Encrusted Footwear"
+        }
+      ]
+    },
+    {
+      "id": -16059,
+      "name": "Theldren",
+      "npc": 16059,
+      "level": 60,
+      "rare": true,
+      "quests": [9015],
+      "loot": [
+        {
+          "item": 22305,
+          "name": "Ironweave Mantle"
+        },
+        {
+          "item": 22330,
+          "name": "Shroud of Arcane Mastery"
+        },
+        {
+          "item": 22317,
+          "name": "Lefty's Brass Knuckle"
+        },
+        {
+          "item": 22318,
+          "name": "Malgen's Long Bow"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 12549,
+      "name": "Braincage"
+    },
+    {
+      "item": 12542,
+      "name": "Funeral Pyre Vestment"
+    },
+    {
+      "item": 12546,
+      "name": "Aristocratic Cuffs"
+    },
+    {
+      "item": 12550,
+      "name": "Runed Golem Shackles"
+    },
+    {
+      "item": 12555,
+      "name": "Battlechaser's Greaves"
+    },
+    {
+      "item": 12527,
+      "name": "Ribsplitter"
+    },
+    {
+      "item": 12531,
+      "name": "Searing Needle"
+    },
+    {
+      "item": 12547,
+      "name": "Mar Alom's Grip"
+    },
+    {
+      "item": 12551,
+      "name": "Stoneshield Cloak"
+    },
+    {
+      "item": 12552,
+      "name": "Blisterbane Wrap"
+    },
+    {
+      "item": 12535,
+      "name": "Doomforged Straightedge"
+    },
+    {
+      "item": 12528,
+      "name": "The Judge's Gavel"
+    },
+    {
+      "item": 12532,
+      "name": "Spire of the Stoneshaper"
+    },
+    {
+      "item": 11611,
+      "name": "Plans: Dark Iron Sunderer"
+    },
+    {
+      "item": 11614,
+      "name": "Plans: Dark Iron Mail"
+    },
+    {
+      "item": 11615,
+      "name": "Plans: Dark Iron Shoulders"
+    },
+    {
+      "item": 16049,
+      "name": "Schematic: Dark Iron Bomb"
+    },
+    {
+      "item": 16048,
+      "name": "Schematic: Dark Iron Rifle"
+    },
+    {
+      "item": 18654,
+      "name": "Schematic: Gnomish Alarm-O-Bot"
+    },
+    {
+      "item": 16053,
+      "name": "Schematic: Master Engineer's Goggles"
+    },
+    {
+      "item": 18661,
+      "name": "Schematic: World Enlarger"
+    }
+  ],
+  "quests": [
+    3802, 4123, 4083, 4136, 4201, 4126, 4134, 4263, 3907, 7201, 4322, 4063, 4132, 4024, 4362, 4003, 4286, 7848, 7604,
+    4295, 97197, 9015
+  ]
+}

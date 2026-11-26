@@ -1,0 +1,4 @@
+/release/
+/Share-*/
+__pycache__/
+*.pyc

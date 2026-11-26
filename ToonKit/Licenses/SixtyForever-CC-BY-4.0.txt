@@ -1,0 +1,7 @@
+Library data: Sixty Forever, https://sixtyforever.com/data/books.json
+License: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+License statement: https://sixtyforever.com/about/
+sixtyforever.com; locations from Wowhead's World of Warcraft: Forever database and beta player reports; names and item text © Blizzard Entertainment
+Source updated: 2026-09-24
+Changes: merged with Library Guide Forever MIT data, normalized to Lua; older/unconfirmed donation IDs are not substituted for confirmed Forever IDs. No game artwork redistributed.
+Additional requested attribution: https://talentsforever.com

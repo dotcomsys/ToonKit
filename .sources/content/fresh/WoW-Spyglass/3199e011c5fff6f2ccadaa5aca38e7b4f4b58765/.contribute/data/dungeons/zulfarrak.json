@@ -1,0 +1,547 @@
+{
+  "map": 209,
+  "name": "Zul'Farrak",
+  "minLevel": 44,
+  "maxLevel": 54,
+  "requiredLevel": 35,
+  "zone": 1446,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenZulFarrak",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1446, 39, 20],
+  "encounters": [
+    {
+      "id": 593,
+      "name": "Hydromancer Velratha",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Hydromancer Velratha",
+      "npc": 7795,
+      "level": 46,
+      "loot": [
+        {
+          "item": 274653,
+          "name": "Deep Ritual Girdle"
+        },
+        {
+          "item": 274651,
+          "name": "Zealot Plate"
+        },
+        {
+          "item": 274652,
+          "name": "Wall of Water"
+        }
+      ]
+    },
+    {
+      "id": 594,
+      "name": "Gahz'rilla",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Gahzrilla",
+      "npc": 7273,
+      "level": 46,
+      "loot": [
+        {
+          "item": 9467,
+          "name": "Gahz'rilla Fang"
+        },
+        {
+          "item": 9469,
+          "name": "Gahz'rilla Scale Armor"
+        },
+        {
+          "item": 274657,
+          "name": "Hydra Leather Legs"
+        },
+        {
+          "item": 254096,
+          "name": "Pattern: Gilded Gloves"
+        },
+        {
+          "item": 252871,
+          "name": "Pattern: Mender's Leather Gauntlets"
+        },
+        {
+          "item": 254106,
+          "name": "Pattern: Radiant Gloves"
+        },
+        {
+          "item": 254098,
+          "name": "Pattern: Frothing Gloves"
+        },
+        {
+          "item": 252867,
+          "name": "Pattern: Prowler's Leather Gauntlets"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 252869,
+          "name": "Pattern: Warden's Leather Gauntlets"
+        }
+      ]
+    },
+    {
+      "id": 595,
+      "name": "Antu'sul",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Antusul",
+      "npc": 8127,
+      "level": 48,
+      "loot": [
+        {
+          "item": 9640,
+          "name": "Vice Grips"
+        },
+        {
+          "item": 9639,
+          "name": "The Hand of Antu'sul"
+        },
+        {
+          "item": 9641,
+          "name": "Lifeblood Amulet"
+        },
+        {
+          "item": 9379,
+          "name": "Sang'thraze the Deflector"
+        },
+        {
+          "item": 251407,
+          "name": "Plans: Justicar's Gloves"
+        },
+        {
+          "item": 252920,
+          "name": "Pattern: Skirmisher's Mail Gauntlets"
+        },
+        {
+          "item": 252869,
+          "name": "Pattern: Warden's Leather Gauntlets"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 252870,
+          "name": "Pattern: Skycaller's Leather Gauntlets"
+        },
+        {
+          "item": 251403,
+          "name": "Plans: Officer's Gloves"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        },
+        {
+          "item": 9484,
+          "name": "Spellshock Leggings"
+        }
+      ]
+    },
+    {
+      "id": 596,
+      "name": "Theka the Martyr",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Theka the Martyr",
+      "npc": 7272,
+      "level": 46,
+      "loot": [
+        {
+          "item": 274641,
+          "name": "Theka's Last Breath"
+        },
+        {
+          "item": 274639,
+          "name": "Sacrificial Chain Vest"
+        },
+        {
+          "item": 274638,
+          "name": "Sandfury Pauldrons"
+        },
+        {
+          "item": 254098,
+          "name": "Pattern: Frothing Gloves"
+        },
+        {
+          "item": 254096,
+          "name": "Pattern: Gilded Gloves"
+        },
+        {
+          "item": 252920,
+          "name": "Pattern: Skirmisher's Mail Gauntlets"
+        },
+        {
+          "item": 251403,
+          "name": "Plans: Officer's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 597,
+      "name": "Witch Doctor Zum'rah",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Witch Doctor Zumrah",
+      "npc": 7271,
+      "level": 46,
+      "loot": [
+        {
+          "item": 18082,
+          "name": "Zum'rah's Vexing Cane"
+        },
+        {
+          "item": 18083,
+          "name": "Jumanza Grips"
+        },
+        {
+          "item": 274642,
+          "name": "Blood Ritual Ring"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 252918,
+          "name": "Pattern: Stalker's Mail Gauntlets"
+        },
+        {
+          "item": 252869,
+          "name": "Pattern: Warden's Leather Gauntlets"
+        },
+        {
+          "item": 251403,
+          "name": "Plans: Officer's Gloves"
+        },
+        {
+          "item": 252871,
+          "name": "Pattern: Mender's Leather Gauntlets"
+        },
+        {
+          "item": 254106,
+          "name": "Pattern: Radiant Gloves"
+        },
+        {
+          "item": 252870,
+          "name": "Pattern: Skycaller's Leather Gauntlets"
+        },
+        {
+          "item": 251404,
+          "name": "Plans: Sentinel's Gloves"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 598,
+      "name": "Nekrum Gutchewer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Nekrum Gutchewer",
+      "npc": 7796,
+      "level": 45,
+      "loot": [
+        {
+          "item": 274644,
+          "name": "Undying Headdress"
+        },
+        {
+          "item": 274645,
+          "name": "Desert Ziggurat Drape"
+        },
+        {
+          "item": 274643,
+          "name": "Gutcutter Hatchet"
+        },
+        {
+          "item": 252871,
+          "name": "Pattern: Mender's Leather Gauntlets"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 251400,
+          "name": "Plans: Warder's Boots"
+        }
+      ]
+    },
+    {
+      "id": 599,
+      "name": "Shadowpriest Sezz'ziz",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Shadowpriest Sezzizz",
+      "npc": 7275,
+      "level": 47,
+      "loot": [
+        {
+          "item": 9470,
+          "name": "Bad Mojo Mask"
+        },
+        {
+          "item": 9473,
+          "name": "Jinxed Hoodoo Skin"
+        },
+        {
+          "item": 9474,
+          "name": "Jinxed Hoodoo Kilt"
+        },
+        {
+          "item": 9475,
+          "name": "Diabolic Skiver"
+        },
+        {
+          "item": 254102,
+          "name": "Pattern: Black Gloves"
+        },
+        {
+          "item": 251404,
+          "name": "Plans: Sentinel's Gloves"
+        },
+        {
+          "item": 254098,
+          "name": "Pattern: Frothing Gloves"
+        },
+        {
+          "item": 252919,
+          "name": "Pattern: Skycaller's Mail Gauntlets"
+        },
+        {
+          "item": 252918,
+          "name": "Pattern: Stalker's Mail Gauntlets"
+        },
+        {
+          "item": 251407,
+          "name": "Plans: Justicar's Gloves"
+        },
+        {
+          "item": 251403,
+          "name": "Plans: Officer's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 600,
+      "name": "Chief Ukorz Sandscalp",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Chief Ukorz Sandscalp",
+      "npc": 7267,
+      "level": 48,
+      "loot": [
+        {
+          "item": 9476,
+          "name": "Big Bad Pauldrons"
+        },
+        {
+          "item": 9477,
+          "name": "The Chief's Enforcer"
+        },
+        {
+          "item": 9478,
+          "name": "Ripsaw"
+        },
+        {
+          "item": 9479,
+          "name": "Embrace of the Lycan"
+        },
+        {
+          "item": 11086,
+          "name": "Jang'thraze the Protector"
+        },
+        {
+          "item": 254100,
+          "name": "Pattern: Fiery Gloves"
+        },
+        {
+          "item": 254096,
+          "name": "Pattern: Gilded Gloves"
+        },
+        {
+          "item": 254102,
+          "name": "Pattern: Black Gloves"
+        },
+        {
+          "item": 251407,
+          "name": "Plans: Justicar's Gloves"
+        },
+        {
+          "item": 254098,
+          "name": "Pattern: Frothing Gloves"
+        },
+        {
+          "item": 252871,
+          "name": "Pattern: Mender's Leather Gauntlets"
+        },
+        {
+          "item": 252867,
+          "name": "Pattern: Prowler's Leather Gauntlets"
+        },
+        {
+          "item": 254106,
+          "name": "Pattern: Radiant Gloves"
+        },
+        {
+          "item": 251404,
+          "name": "Plans: Sentinel's Gloves"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        }
+      ]
+    },
+    {
+      "id": -10082,
+      "name": "Zerillis",
+      "displayID": 9293,
+      "npc": 10082,
+      "level": 45,
+      "loot": [
+        {
+          "item": 12470,
+          "name": "Sandstalker Ankleguards"
+        },
+        {
+          "item": 274658,
+          "name": "Dune Hacker"
+        },
+        {
+          "item": 251400,
+          "name": "Plans: Warder's Boots"
+        }
+      ]
+    },
+    {
+      "id": -10081,
+      "name": "Dustwraith",
+      "displayID": 9292,
+      "npc": 10081,
+      "level": 45,
+      "loot": [
+        {
+          "item": 12471,
+          "name": "Desertwalker Cane"
+        },
+        {
+          "item": 12469,
+          "name": "Mutilator"
+        },
+        {
+          "item": 251399,
+          "name": "Plans: Sentinel's Boots"
+        }
+      ]
+    },
+    {
+      "id": -7604,
+      "name": "Sergeant Bly",
+      "displayID": 6433,
+      "npc": 7604,
+      "level": 45,
+      "loot": [
+        {
+          "item": 274646,
+          "name": "Arch of the Covenant"
+        },
+        {
+          "item": 274647,
+          "name": "Farraki Kris"
+        },
+        {
+          "item": 274648,
+          "name": "The Desert Rose"
+        },
+        {
+          "item": 252896,
+          "name": "Pattern: Stalker's Mail Boots"
+        },
+        {
+          "item": 8548,
+          "name": "Divino-matic Rod"
+        },
+        {
+          "item": 251399,
+          "name": "Plans: Sentinel's Boots"
+        },
+        {
+          "item": 251400,
+          "name": "Plans: Warder's Boots"
+        },
+        {
+          "item": 251402,
+          "name": "Plans: Justicar's Boots"
+        }
+      ]
+    },
+    {
+      "id": -10080,
+      "name": "Sandarr Dunereaver",
+      "npc": 10080,
+      "level": 45,
+      "rare": true,
+      "loot": [
+        {
+          "item": 274660,
+          "name": "Sandarr's Shoulders"
+        },
+        {
+          "item": 274659,
+          "name": "Bloodsand Belt"
+        }
+      ]
+    },
+    {
+      "id": -7797,
+      "name": "Ruuzlu",
+      "npc": 7797,
+      "level": 46,
+      "loot": [
+        {
+          "item": 274654,
+          "name": "Sandfury Guillotine"
+        },
+        {
+          "item": 274655,
+          "name": "Peacekeeper Wand"
+        },
+        {
+          "item": 252919,
+          "name": "Pattern: Skycaller's Mail Gauntlets"
+        },
+        {
+          "item": 254100,
+          "name": "Pattern: Fiery Gloves"
+        },
+        {
+          "item": 252869,
+          "name": "Pattern: Warden's Leather Gauntlets"
+        },
+        {
+          "item": 254102,
+          "name": "Pattern: Black Gloves"
+        },
+        {
+          "item": 254096,
+          "name": "Pattern: Gilded Gloves"
+        },
+        {
+          "item": 252870,
+          "name": "Pattern: Skycaller's Leather Gauntlets"
+        },
+        {
+          "item": 252918,
+          "name": "Pattern: Stalker's Mail Gauntlets"
+        },
+        {
+          "item": 251407,
+          "name": "Plans: Justicar's Gloves"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        },
+        {
+          "item": 9511,
+          "name": "Bloodletter Scalpel"
+        }
+      ]
+    }
+  ],
+  "trash": [],
+  "quests": [2770, 2846, 2768, 2865, 3042, 3527, 2991, 2936, 96770, 96775, 82084]
+}

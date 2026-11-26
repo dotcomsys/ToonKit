@@ -1,0 +1,199 @@
+{
+  "map": 2999,
+  "name": "Ruins of Lordaeron",
+  "minLevel": 15,
+  "maxLevel": 22,
+  "requiredLevel": 10,
+  "zone": 1420,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\Camelot160\\Main\\LoadScreen_Camelot_RuinsofLordaeron",
+  "backgroundCoords": [0, 1, 0.154, 0.846],
+  "entrance": [1420, 62, 69],
+  "encounters": [
+    {
+      "id": 3353,
+      "name": "Witherfang",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\witherfang.blp",
+      "displayID": 144189,
+      "npc": 250483,
+      "level": 17,
+      "loot": [
+        {
+          "item": 271201,
+          "name": "Atrophic Girdle"
+        },
+        {
+          "item": 271202,
+          "name": "Witherbite Bracers"
+        },
+        {
+          "item": 271203,
+          "name": "Segmented Spider Leg"
+        }
+      ]
+    },
+    {
+      "id": 3357,
+      "name": "The Abandoned",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\the_abandoned.blp",
+      "displayID": 138667,
+      "npc": 250631,
+      "level": 18,
+      "loot": [
+        {
+          "item": 271207,
+          "name": "Rotmender's Leggings"
+        },
+        {
+          "item": 271208,
+          "name": "Grip of Fear"
+        },
+        {
+          "item": 271216,
+          "name": "Scepter of the Abandoned"
+        }
+      ]
+    },
+    {
+      "id": 3355,
+      "name": "The Baron",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\the_butcher.blp",
+      "displayID": 144188,
+      "npc": 250660,
+      "level": 17,
+      "loot": [
+        {
+          "item": 271204,
+          "name": "Meathook Slicer"
+        },
+        {
+          "item": 271205,
+          "name": "Abomination Bones"
+        },
+        {
+          "item": 271206,
+          "name": "Leftover Abomination Skin"
+        },
+        {
+          "item": 280438,
+          "name": "Abominable Head"
+        }
+      ]
+    },
+    {
+      "id": 3354,
+      "name": "Rath'mael",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\rathmael.blp",
+      "displayID": 144175,
+      "npc": 250657,
+      "level": 20,
+      "loot": [
+        {
+          "item": 271213,
+          "name": "Mirror of Rath'mael"
+        },
+        {
+          "item": 271214,
+          "name": "Rotmender's Treads"
+        },
+        {
+          "item": 271215,
+          "name": "Coldspire Staff"
+        },
+        {
+          "item": 273085,
+          "name": "Blueprint: Fermenter"
+        }
+      ]
+    },
+    {
+      "id": 3408,
+      "name": "Lordaeron Captain",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\lordaeron_captain.blp",
+      "displayID": 139050,
+      "npc": 255699,
+      "level": 19,
+      "rare": true,
+      "loot": [
+        {
+          "item": 6641,
+          "name": "Haunting Blade"
+        },
+        {
+          "item": 6642,
+          "name": "Phantom Armor"
+        }
+      ]
+    },
+    {
+      "id": 3411,
+      "name": "Viktor the Vile",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\viktor_the_vile.blp",
+      "displayID": 139455,
+      "npc": 256035,
+      "level": 19,
+      "loot": [
+        {
+          "item": 271211,
+          "name": "Vilewalkers"
+        },
+        {
+          "item": 271212,
+          "name": "Bloodied Chestwraps"
+        },
+        {
+          "item": 271218,
+          "name": "Vileblood Scimitar"
+        }
+      ]
+    },
+    {
+      "id": 3412,
+      "name": "Bjork",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\bjork.blp",
+      "displayID": 144170,
+      "npc": 256097,
+      "level": 19,
+      "loot": [
+        {
+          "item": 271209,
+          "name": "Bonerust Leggings"
+        },
+        {
+          "item": 271210,
+          "name": "Tuskwrap Belt"
+        },
+        {
+          "item": 271217,
+          "name": "Corpse Chopper"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 268535,
+      "name": "Bloodied Insignia"
+    },
+    {
+      "item": 286981,
+      "name": "Death Bindings"
+    },
+    {
+      "item": 286977,
+      "name": "Sword of the Fallen"
+    },
+    {
+      "item": 286978,
+      "name": "Rotmender's Garb"
+    },
+    {
+      "item": 286979,
+      "name": "Rotmender's Gloves"
+    },
+    {
+      "item": 286980,
+      "name": "Rotmender's Sash"
+    }
+  ],
+  "quests": [92422, 92415, 92421, 95250, 95195, 95216, 97288, 92401, 95189, 95204]
+}

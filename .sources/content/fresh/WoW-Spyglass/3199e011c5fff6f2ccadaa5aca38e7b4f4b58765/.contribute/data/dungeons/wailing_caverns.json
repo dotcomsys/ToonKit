@@ -1,0 +1,294 @@
+{
+  "map": 43,
+  "name": "Wailing Caverns",
+  "minLevel": 15,
+  "maxLevel": 24,
+  "requiredLevel": 10,
+  "zone": 1413,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenWailingCaverns",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1413, 46, 36],
+  "encounters": [
+    {
+      "id": 585,
+      "name": "Lady Anacondra",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lady Anacondra",
+      "displayID": 4313,
+      "npc": 3671,
+      "level": 20,
+      "loot": [
+        {
+          "item": 5404,
+          "name": "Serpent's Shoulders"
+        },
+        {
+          "item": 273088,
+          "name": "Snake Eye Kaleidoscope"
+        },
+        {
+          "item": 10412,
+          "name": "Belt of the Fang"
+        },
+        {
+          "item": 6446,
+          "name": "Snakeskin Bag"
+        },
+        {
+          "item": 9739,
+          "name": "Gem of Anacondra"
+        },
+        {
+          "item": 273098,
+          "name": "Blueprint: Field Guide"
+        }
+      ]
+    },
+    {
+      "id": 586,
+      "name": "Lord Cobrahn",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Cobrahn",
+      "displayID": 4213,
+      "npc": 3669,
+      "level": 20,
+      "loot": [
+        {
+          "item": 6460,
+          "name": "Cobrahn's Grasp"
+        },
+        {
+          "item": 6465,
+          "name": "Robe of the Moccasin"
+        },
+        {
+          "item": 10410,
+          "name": "Leggings of the Fang"
+        },
+        {
+          "item": 9738,
+          "name": "Gem of Cobrahn"
+        },
+        {
+          "item": 252782,
+          "name": "Pattern: Wisdom's Leather Gloves"
+        }
+      ]
+    },
+    {
+      "id": 587,
+      "name": "Kresh",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Kresh",
+      "displayID": 5126,
+      "npc": 3653,
+      "level": 20,
+      "loot": [
+        {
+          "item": 13245,
+          "name": "Kresh's Back"
+        },
+        {
+          "item": 273084,
+          "name": "Cloak of Hermitic Bliss"
+        },
+        {
+          "item": 6447,
+          "name": "Worn Turtle Shell Shield"
+        }
+      ]
+    },
+    {
+      "id": 588,
+      "name": "Lord Pythas",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Pythas",
+      "displayID": 4214,
+      "npc": 3670,
+      "level": 21,
+      "loot": [
+        {
+          "item": 6472,
+          "name": "Stinging Viper"
+        },
+        {
+          "item": 6473,
+          "name": "Armor of the Fang"
+        },
+        {
+          "item": 273089,
+          "name": "Slither Cord"
+        },
+        {
+          "item": 9740,
+          "name": "Gem of Pythas"
+        },
+        {
+          "item": 253938,
+          "name": "Pattern: Filigreed Pristine Leggings"
+        },
+        {
+          "item": 253940,
+          "name": "Pattern: Filigreed Silky Leggings"
+        },
+        {
+          "item": 253946,
+          "name": "Pattern: Filigreed Pearly Leggings"
+        }
+      ]
+    },
+    {
+      "id": 589,
+      "name": "Skum",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Skum",
+      "displayID": 4203,
+      "npc": 3674,
+      "level": 21,
+      "loot": [
+        {
+          "item": 6449,
+          "name": "Glowing Lizardscale Cloak"
+        },
+        {
+          "item": 273137,
+          "name": "Skum's Bucket"
+        },
+        {
+          "item": 6448,
+          "name": "Tail Spike"
+        },
+        {
+          "item": 253944,
+          "name": "Pattern: Filigreed Shadow Leggings"
+        }
+      ]
+    },
+    {
+      "id": 590,
+      "name": "Lord Serpentis",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Serpentis",
+      "displayID": 4215,
+      "npc": 3673,
+      "level": 21,
+      "loot": [
+        {
+          "item": 6469,
+          "name": "Venomstrike"
+        },
+        {
+          "item": 5970,
+          "name": "Serpent Gloves"
+        },
+        {
+          "item": 6459,
+          "name": "Savage Trodders"
+        },
+        {
+          "item": 10411,
+          "name": "Footpads of the Fang"
+        },
+        {
+          "item": 9741,
+          "name": "Gem of Serpentis"
+        },
+        {
+          "item": 273087,
+          "name": "Blueprint: Journeyman Campfire"
+        },
+        {
+          "item": 253942,
+          "name": "Pattern: Filigreed Flame Leggings"
+        }
+      ]
+    },
+    {
+      "id": 591,
+      "name": "Verdan the Everliving",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Verdan the Everliving",
+      "displayID": 4256,
+      "npc": 5775,
+      "level": 21,
+      "loot": [
+        {
+          "item": 6630,
+          "name": "Seedcloud Buckler"
+        },
+        {
+          "item": 6631,
+          "name": "Living Root"
+        },
+        {
+          "item": 6629,
+          "name": "Sporid Cape"
+        },
+        {
+          "item": 253948,
+          "name": "Pattern: Filigreed Shining Leggings"
+        }
+      ]
+    },
+    {
+      "id": 592,
+      "name": "Mutanus the Devourer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Mutanus the Devourer",
+      "displayID": 4088,
+      "npc": 3654,
+      "level": 22,
+      "loot": [
+        {
+          "item": 6461,
+          "name": "Slime-encrusted Pads"
+        },
+        {
+          "item": 6463,
+          "name": "Deep Fathom Ring"
+        },
+        {
+          "item": 6627,
+          "name": "Mutant Scale Breastplate"
+        },
+        {
+          "item": 10441,
+          "name": "Glowing Shard"
+        },
+        {
+          "item": 252798,
+          "name": "Pattern: Brawler's Leather Hood"
+        }
+      ]
+    },
+    {
+      "id": -5912,
+      "name": "Deviate Faerie Dragon",
+      "displayID": 1267,
+      "npc": 5912,
+      "level": 20,
+      "rare": true,
+      "loot": [
+        {
+          "item": 5243,
+          "name": "Firebelcher"
+        },
+        {
+          "item": 6632,
+          "name": "Feyscale Cloak"
+        },
+        {
+          "item": 252781,
+          "name": "Pattern: Stormrider's Leather Gloves"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 10413,
+      "name": "Gloves of the Fang"
+    },
+    {
+      "item": 5243,
+      "name": "Firebelcher"
+    },
+    {
+      "item": 6632,
+      "name": "Feyscale Cloak"
+    }
+  ],
+  "quests": [914, 1486, 962, 1487, 1491, 959, 6981]
+}

@@ -1,0 +1,63 @@
+{
+  "map": 209,
+  "name": "Zul'Farrak",
+  "minLevel": 44,
+  "maxLevel": 54,
+  "requiredLevel": 35,
+  "zone": 1446,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenZulFarrak",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1446, 39, 20],
+  "encounters": [
+    {
+      "id": 593,
+      "name": "Hydromancer Velratha",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Hydromancer Velratha",
+      "loot": []
+    },
+    {
+      "id": 594,
+      "name": "Gahz'rilla",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Gahzrilla",
+      "loot": []
+    },
+    {
+      "id": 595,
+      "name": "Antu'sul",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Antusul",
+      "loot": []
+    },
+    {
+      "id": 596,
+      "name": "Theka the Martyr",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Theka the Martyr",
+      "loot": []
+    },
+    {
+      "id": 597,
+      "name": "Witch Doctor Zum'rah",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Witch Doctor Zumrah",
+      "loot": []
+    },
+    {
+      "id": 598,
+      "name": "Nekrum Gutchewer",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Nekrum Gutchewer",
+      "loot": []
+    },
+    {
+      "id": 599,
+      "name": "Shadowpriest Sezz'ziz",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Shadowpriest Sezzizz",
+      "loot": []
+    },
+    {
+      "id": 600,
+      "name": "Chief Ukorz Sandscalp",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Chief Ukorz Sandscalp",
+      "loot": []
+    }
+  ],
+  "trash": [],
+  "quests": []
+}

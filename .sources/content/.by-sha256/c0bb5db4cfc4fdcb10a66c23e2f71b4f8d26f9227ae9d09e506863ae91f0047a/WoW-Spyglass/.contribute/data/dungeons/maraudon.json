@@ -1,0 +1,384 @@
+{
+  "map": 349,
+  "name": "Maraudon",
+  "minLevel": 46,
+  "maxLevel": 55,
+  "requiredLevel": 30,
+  "zone": 1443,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenMaraudon",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1443, 29, 63],
+  "encounters": [
+    {
+      "id": 422,
+      "name": "Noxxion",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Noxxion",
+      "npc": 13282,
+      "level": 48,
+      "loot": [
+        {
+          "item": 17744,
+          "name": "Heart of Noxxion"
+        },
+        {
+          "item": 17746,
+          "name": "Noxxion's Shackles"
+        },
+        {
+          "item": 17745,
+          "name": "Noxious Shooter"
+        },
+        {
+          "item": 254100,
+          "name": "Pattern: Fiery Gloves"
+        },
+        {
+          "item": 254096,
+          "name": "Pattern: Gilded Gloves"
+        },
+        {
+          "item": 252918,
+          "name": "Pattern: Stalker's Mail Gauntlets"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 423,
+      "name": "Razorlash",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Razorlash",
+      "npc": 12258,
+      "level": 48,
+      "loot": [
+        {
+          "item": 17748,
+          "name": "Vinerot Sandals"
+        },
+        {
+          "item": 17749,
+          "name": "Phytoskin Spaulders"
+        },
+        {
+          "item": 17750,
+          "name": "Chloromesh Girdle"
+        },
+        {
+          "item": 17751,
+          "name": "Brusslehide Leggings"
+        },
+        {
+          "item": 252869,
+          "name": "Pattern: Warden's Leather Gauntlets"
+        },
+        {
+          "item": 254100,
+          "name": "Pattern: Fiery Gloves"
+        },
+        {
+          "item": 254096,
+          "name": "Pattern: Gilded Gloves"
+        },
+        {
+          "item": 252871,
+          "name": "Pattern: Mender's Leather Gauntlets"
+        },
+        {
+          "item": 251407,
+          "name": "Plans: Justicar's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 427,
+      "name": "Tinkerer Gizlock",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Tinkerer Gizlock",
+      "npc": 13601,
+      "level": 50,
+      "loot": [
+        {
+          "item": 17717,
+          "name": "Megashot Rifle"
+        },
+        {
+          "item": 17718,
+          "name": "Gizlock's Hypertech Buckler"
+        },
+        {
+          "item": 17719,
+          "name": "Inventor's Focal Sword"
+        },
+        {
+          "item": 254098,
+          "name": "Pattern: Frothing Gloves"
+        },
+        {
+          "item": 252867,
+          "name": "Pattern: Prowler's Leather Gauntlets"
+        },
+        {
+          "item": 254106,
+          "name": "Pattern: Radiant Gloves"
+        },
+        {
+          "item": 252920,
+          "name": "Pattern: Skirmisher's Mail Gauntlets"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 251404,
+          "name": "Plans: Sentinel's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 424,
+      "name": "Lord Vyletongue",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Vyletongue",
+      "npc": 12236,
+      "level": 47,
+      "loot": [
+        {
+          "item": 17752,
+          "name": "Satyr's Lash"
+        },
+        {
+          "item": 17754,
+          "name": "Infernal Trickster Leggings"
+        },
+        {
+          "item": 17755,
+          "name": "Satyrmane Sash"
+        },
+        {
+          "item": 275864,
+          "name": "Putridus Wall"
+        }
+      ]
+    },
+    {
+      "id": 425,
+      "name": "Celebras the Cursed",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Celebras the Cursed",
+      "npc": 12225,
+      "level": 49,
+      "loot": [
+        {
+          "item": 17738,
+          "name": "Claw of Celebras"
+        },
+        {
+          "item": 17739,
+          "name": "Grovekeeper's Drape"
+        },
+        {
+          "item": 17740,
+          "name": "Soothsayer's Headdress"
+        },
+        {
+          "item": 251405,
+          "name": "Plans: Warder's Gloves"
+        },
+        {
+          "item": 254098,
+          "name": "Pattern: Frothing Gloves"
+        },
+        {
+          "item": 252920,
+          "name": "Pattern: Skirmisher's Mail Gauntlets"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        }
+      ]
+    },
+    {
+      "id": 426,
+      "name": "Landslide",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Landslide",
+      "npc": 12203,
+      "level": 50,
+      "loot": [
+        {
+          "item": 17943,
+          "name": "Fist of Stone"
+        },
+        {
+          "item": 17736,
+          "name": "Rockgrip Gauntlets"
+        },
+        {
+          "item": 17737,
+          "name": "Cloud Stone"
+        },
+        {
+          "item": 17734,
+          "name": "Helm of the Mountain"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 252918,
+          "name": "Pattern: Stalker's Mail Gauntlets"
+        },
+        {
+          "item": 254098,
+          "name": "Pattern: Frothing Gloves"
+        },
+        {
+          "item": 252867,
+          "name": "Pattern: Prowler's Leather Gauntlets"
+        },
+        {
+          "item": 254106,
+          "name": "Pattern: Radiant Gloves"
+        },
+        {
+          "item": 252920,
+          "name": "Pattern: Skirmisher's Mail Gauntlets"
+        },
+        {
+          "item": 252919,
+          "name": "Pattern: Skycaller's Mail Gauntlets"
+        },
+        {
+          "item": 251404,
+          "name": "Plans: Sentinel's Gloves"
+        }
+      ]
+    },
+    {
+      "id": 428,
+      "name": "Rotgrip",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Rotgrip",
+      "npc": 13596,
+      "level": 50,
+      "loot": [
+        {
+          "item": 17732,
+          "name": "Rotgrip Mantle"
+        },
+        {
+          "item": 17728,
+          "name": "Albino Crocscale Boots"
+        },
+        {
+          "item": 17730,
+          "name": "Gatorbite Axe"
+        },
+        {
+          "item": 252918,
+          "name": "Pattern: Stalker's Mail Gauntlets"
+        },
+        {
+          "item": 254102,
+          "name": "Pattern: Black Gloves"
+        },
+        {
+          "item": 254100,
+          "name": "Pattern: Fiery Gloves"
+        },
+        {
+          "item": 252919,
+          "name": "Pattern: Skycaller's Mail Gauntlets"
+        }
+      ]
+    },
+    {
+      "id": 429,
+      "name": "Princess Theradras",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Princess Theradras",
+      "npc": 12201,
+      "level": 51,
+      "loot": [
+        {
+          "item": 17713,
+          "name": "Blackstone Ring"
+        },
+        {
+          "item": 17714,
+          "name": "Bracers of the Stone Princess"
+        },
+        {
+          "item": 17707,
+          "name": "Gemshard Heart"
+        },
+        {
+          "item": 17715,
+          "name": "Eye of Theradras"
+        },
+        {
+          "item": 17766,
+          "name": "Princess Theradras' Scepter"
+        },
+        {
+          "item": 17710,
+          "name": "Charstone Dirk"
+        },
+        {
+          "item": 17711,
+          "name": "Elemental Rockridge Leggings"
+        },
+        {
+          "item": 17780,
+          "name": "Blade of Eternal Darkness"
+        },
+        {
+          "item": 254100,
+          "name": "Pattern: Fiery Gloves"
+        },
+        {
+          "item": 252868,
+          "name": "Pattern: Skulker's Leather Gauntlets"
+        },
+        {
+          "item": 252869,
+          "name": "Pattern: Warden's Leather Gauntlets"
+        },
+        {
+          "item": 251407,
+          "name": "Plans: Justicar's Gloves"
+        },
+        {
+          "item": 251403,
+          "name": "Plans: Officer's Gloves"
+        }
+      ]
+    },
+    {
+      "id": -12237,
+      "name": "Meshlok the Harvester",
+      "displayID": 9014,
+      "npc": 12237,
+      "level": 48,
+      "loot": [
+        {
+          "item": 17767,
+          "name": "Bloomsprout Headpiece"
+        },
+        {
+          "item": 17741,
+          "name": "Nature's Embrace"
+        },
+        {
+          "item": 17742,
+          "name": "Fungus Shroud Armor"
+        },
+        {
+          "item": 251407,
+          "name": "Plans: Justicar's Gloves"
+        }
+      ]
+    }
+  ],
+  "trash": [],
+  "quests": [7067, 7068, 7070, 7029, 7041, 7028, 7044, 7046, 7064, 7065, 7066, 93404, 96776]
+}

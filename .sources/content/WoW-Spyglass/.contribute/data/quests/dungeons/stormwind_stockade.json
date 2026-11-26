@@ -1,0 +1,199 @@
+{
+  "quests": [
+    {
+      "id": 386,
+      "name": "What Comes Around...",
+      "side": "Alliance",
+      "requiredLevel": 22,
+      "xp": 2000,
+      "objective": "Kill Targorr the Dread in The Stockade and bring his head to Guard Berton.",
+      "start": {
+        "npc": "Guard Berton",
+        "location": [1433, 21.2, 46.6],
+        "description": "Guard Berton, Lakeshire, Redridge Mountains"
+      },
+      "turnIn": {
+        "npc": "Guard Berton",
+        "location": [1433, 21.2, 46.6],
+        "description": "Guard Berton, Lakeshire, Redridge Mountains"
+      },
+      "items": [
+        {
+          "item": 3400,
+          "name": "Lucine Longsword"
+        },
+        {
+          "item": 1317,
+          "name": "Hardened Root Staff"
+        },
+        {
+          "item": 270027,
+          "name": "Ursine Hammer"
+        }
+      ]
+    },
+    {
+      "id": 377,
+      "name": "Crime and Punishment",
+      "side": "Alliance",
+      "requiredLevel": 22,
+      "xp": 2100,
+      "objective": "Kill Dextren Ward in The Stockade and bring his hand to Councilman Millstipe.",
+      "start": {
+        "npc": "Councilman Millstipe",
+        "location": [1431, 72, 47.8],
+        "description": "Councilman Millstipe, Darkshire, Duskwood"
+      },
+      "turnIn": {
+        "npc": "Councilman Millstipe",
+        "location": [1431, 72, 47.8],
+        "description": "Councilman Millstipe, Darkshire, Duskwood"
+      },
+      "items": [
+        {
+          "item": 2033,
+          "name": "Ambassador's Boots"
+        },
+        {
+          "item": 2906,
+          "name": "Darkshire Mail Leggings"
+        },
+        {
+          "item": 270029,
+          "name": "Town Clerk's Mittens"
+        }
+      ]
+    },
+    {
+      "id": 387,
+      "name": "Quell the Uprising",
+      "side": "Alliance",
+      "requiredLevel": 22,
+      "xp": 2650,
+      "objective": "Kill 10 Defias Prisoners, 8 Defias Convicts, and 8 Defias Insurgents inside The Stockade.",
+      "start": {
+        "npc": "Warden Thelwater",
+        "location": [1453, 51.8, 69.3],
+        "description": "Warden Thelwater, outside The Stockade, Stormwind"
+      },
+      "turnIn": {
+        "npc": "Warden Thelwater",
+        "location": [1453, 51.8, 69.3],
+        "description": "Warden Thelwater, outside The Stockade, Stormwind"
+      },
+      "items": []
+    },
+    {
+      "id": 388,
+      "name": "The Color of Blood",
+      "side": "Alliance",
+      "requiredLevel": 22,
+      "xp": 2650,
+      "objective": "Collect 10 Red Wool Bandanas from Defias prisoners in The Stockade.",
+      "start": {
+        "npc": "Nikova Raskol",
+        "location": [1453, 76.4, 63.7],
+        "description": "Nikova Raskol, Old Town, Stormwind"
+      },
+      "turnIn": {
+        "npc": "Nikova Raskol",
+        "location": [1453, 74.4, 60],
+        "description": "Nikova Raskol, Old Town, Stormwind"
+      },
+      "items": []
+    },
+    {
+      "id": 391,
+      "name": "The Stockade Riots",
+      "side": "Alliance",
+      "requiredLevel": 16,
+      "xp": 2350,
+      "objective": "Kill Bazil Thredd in The Stockade and bring his head back to Warden Thelwater.",
+      "description": "Part of the chain that begins with The Unsent Letter from Edwin VanCleef in The Deadmines.",
+      "requires": [389],
+      "start": {
+        "npc": "Warden Thelwater",
+        "location": [1453, 51.8, 69.3],
+        "description": "Warden Thelwater, outside The Stockade, Stormwind"
+      },
+      "turnIn": {
+        "npc": "Warden Thelwater",
+        "location": [1453, 51.8, 69.3],
+        "description": "Warden Thelwater, outside The Stockade, Stormwind"
+      },
+      "items": []
+    },
+    {
+      "id": 378,
+      "name": "The Fury Runs Deep",
+      "side": "Alliance",
+      "requiredLevel": 25,
+      "xp": 5750,
+      "objective": "Kill Kam Deepfury in The Stockade and bring his head to Motley Garmason.",
+      "description": "Requires The Dark Iron War before this quest becomes available.",
+      "requires": [303],
+      "start": {
+        "npc": "Motley Garmason",
+        "location": [1437, 49.6, 18.2],
+        "description": "Dun Modr, Wetlands."
+      },
+      "turnIn": {
+        "npc": "Motley Garmason",
+        "location": [1437, 49.6, 18.2],
+        "description": "Dun Modr, Wetlands."
+      },
+      "items": [
+        {
+          "item": 3562,
+          "name": "Belt of Vindication"
+        },
+        {
+          "item": 1264,
+          "name": "Headbasher"
+        },
+        {
+          "item": 270036,
+          "name": "Magistrate's Pantaloons"
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "name": "The Dark Iron War",
+      "requiredLevel": 25,
+      "xp": 2450,
+      "objective": "Kill 10 Dark Iron Dwarves, 5 Dark Iron Tunnelers, 5 Dark Iron Saboteurs and 5 Dark Iron Demolitionists at Dun Modr.",
+      "description": "Complete The Dark Iron War to unlock The Fury Runs Deep.",
+      "start": {
+        "npc": "Motley Garmason",
+        "location": [1437, 49.6, 18.2],
+        "description": "Dun Modr, Wetlands."
+      },
+      "turnIn": {
+        "npc": "Motley Garmason",
+        "location": [1437, 49.6, 18.2],
+        "description": "Dun Modr, Wetlands."
+      },
+      "items": []
+    },
+    {
+      "id": 389,
+      "name": "Bazil Thredd",
+      "requiredLevel": 16,
+      "xp": 440,
+      "objective": "Speak with Warden Thelwater outside The Stockade.",
+      "description": "Second required step leading to The Stockade Riots.",
+      "requires": [373],
+      "start": {
+        "npc": "Baros Alexston",
+        "location": [1453, 57.7, 47.9],
+        "description": "City Hall, Cathedral Square, Stormwind."
+      },
+      "turnIn": {
+        "npc": "Warden Thelwater",
+        "description": "Outside The Stockade, Stormwind."
+      },
+      "items": []
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "map": 33,
+  "name": "Shadowfang Keep",
+  "minLevel": 20,
+  "maxLevel": 30,
+  "requiredLevel": 11,
+  "zone": 1421,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LOADSCREENSHADOWFANGKEEP",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1421, 45, 68],
+  "encounters": [
+    {
+      "id": 2748,
+      "name": "Rethilgore",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\rethilgore.blp",
+      "displayID": 524,
+      "npc": 3914,
+      "level": 20,
+      "loot": [
+        {
+          "item": 5254,
+          "name": "Rugged Spaulders"
+        },
+        {
+          "item": 273456,
+          "name": "Cell Keeper's Claws"
+        },
+        {
+          "item": 273457,
+          "name": "Sorcerer Collar"
+        }
+      ]
+    },
+    {
+      "id": 2749,
+      "name": "Razorclaw the Butcher",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\rethilgore.blp",
+      "displayID": 524,
+      "npc": 3886,
+      "level": 22,
+      "loot": [
+        {
+          "item": 1292,
+          "name": "Butcher's Cleaver"
+        },
+        {
+          "item": 6226,
+          "name": "Bloody Apron"
+        },
+        {
+          "item": 6633,
+          "name": "Butcher's Slicer"
+        },
+        {
+          "item": 273096,
+          "name": "Blueprint: Tanning Rack"
+        },
+        {
+          "item": 253938,
+          "name": "Pattern: Filigreed Pristine Leggings"
+        },
+        {
+          "item": 253942,
+          "name": "Pattern: Filigreed Flame Leggings"
+        },
+        {
+          "item": 253944,
+          "name": "Pattern: Filigreed Shadow Leggings"
+        }
+      ]
+    },
+    {
+      "id": -3864,
+      "name": "Fel Steed",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\fel_steed.blp",
+      "displayID": 1951,
+      "npc": 3864,
+      "level": 19,
+      "loot": [
+        {
+          "item": 932,
+          "name": "Fel Steed Saddlebags"
+        },
+        {
+          "item": 6341,
+          "name": "Eerie Stable Lantern"
+        },
+        {
+          "item": 251341,
+          "name": "Plans: Guard's Chain Shirt"
+        },
+        {
+          "item": 251362,
+          "name": "Plans: Protector's Gloves"
+        },
+        {
+          "item": 251363,
+          "name": "Plans: Acolyte's Gloves"
+        },
+        {
+          "item": 251364,
+          "name": "Plans: Crusader's Gloves"
+        },
+        {
+          "item": 252781,
+          "name": "Pattern: Stormrider's Leather Gloves"
+        },
+        {
+          "item": 252782,
+          "name": "Pattern: Wisdom's Leather Gloves"
+        },
+        {
+          "item": 253902,
+          "name": "Pattern: Filigreed Pristine Gown"
+        },
+        {
+          "item": 253904,
+          "name": "Pattern: Filigreed Silky Gown"
+        },
+        {
+          "item": 253906,
+          "name": "Pattern: Filigreed Flame Gown"
+        },
+        {
+          "item": 253908,
+          "name": "Pattern: Filigreed Shadow Gown"
+        },
+        {
+          "item": 253910,
+          "name": "Pattern: Filigreed Pearly Gown"
+        },
+        {
+          "item": 253912,
+          "name": "Pattern: Filigreed Shining Gown"
+        },
+        {
+          "item": 251381,
+          "name": "Plans: Guard's Silvered Chain Helm"
+        },
+        {
+          "item": 251382,
+          "name": "Plans: Protector's Silvered Chain Helm"
+        },
+        {
+          "item": 252799,
+          "name": "Pattern: Trapper's Leather Hood"
+        },
+        {
+          "item": 252801,
+          "name": "Pattern: Totemic Leather Hood"
+        },
+        {
+          "item": 252803,
+          "name": "Pattern: Wisdom's Leather Hood"
+        },
+        {
+          "item": 253940,
+          "name": "Pattern: Filigreed Silky Leggings"
+        },
+        {
+          "item": 253946,
+          "name": "Pattern: Filigreed Pearly Leggings"
+        },
+        {
+          "item": 253948,
+          "name": "Pattern: Filigreed Shining Leggings"
+        }
+      ]
+    },
+    {
+      "id": 2750,
+      "name": "Baron Silverlaine",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Baron Silverlaine",
+      "displayID": 3222,
+      "npc": 3887,
+      "level": 24,
+      "loot": [
+        {
+          "item": 6321,
+          "name": "Silverlaine's Family Seal"
+        },
+        {
+          "item": 6323,
+          "name": "Baron's Scepter"
+        },
+        {
+          "item": 273637,
+          "name": "Blade of Silverlaine"
+        }
+      ]
+    },
+    {
+      "id": 2751,
+      "name": "Commander Springvale",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Commander Springvale",
+      "displayID": 3223,
+      "npc": 4278,
+      "level": 24,
+      "loot": [
+        {
+          "item": 3191,
+          "name": "Arced War Axe"
+        },
+        {
+          "item": 6320,
+          "name": "Commander's Crest"
+        },
+        {
+          "item": 273643,
+          "name": "Worgenbane Talisman"
+        },
+        {
+          "item": 273105,
+          "name": "Blueprint: Toxin Study"
+        },
+        {
+          "item": 6341,
+          "name": "Eerie Stable Lantern"
+        }
+      ]
+    },
+    {
+      "id": 2752,
+      "name": "Odo the Blindwatcher",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\odo_the_blindwatcher.blp",
+      "displayID": 522,
+      "npc": 4279,
+      "level": 24,
+      "loot": [
+        {
+          "item": 6318,
+          "name": "Odo's Ley Staff"
+        },
+        {
+          "item": 6319,
+          "name": "Girdle of the Blindwatcher"
+        },
+        {
+          "item": 273645,
+          "name": "Blindwatcher's Sight"
+        }
+      ]
+    },
+    {
+      "id": -3872,
+      "name": "Deathsworn Captain",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\deathsworn_captain.blp",
+      "displayID": 3224,
+      "npc": 3872,
+      "level": 25,
+      "rare": true,
+      "loot": [
+        {
+          "item": 6641,
+          "name": "Haunting Blade"
+        },
+        {
+          "item": 6642,
+          "name": "Phantom Armor"
+        }
+      ]
+    },
+    {
+      "id": 2753,
+      "name": "Fenrus the Devourer",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\fenrus_the_devourer.blp",
+      "displayID": 2352,
+      "npc": 4274,
+      "level": 25,
+      "loot": [
+        {
+          "item": 3230,
+          "name": "Black Wolf Bracers"
+        },
+        {
+          "item": 6340,
+          "name": "Fenrus' Hide"
+        },
+        {
+          "item": 273646,
+          "name": "Half-Eaten Boots"
+        },
+        {
+          "item": 251380,
+          "name": "Plans: Veteran's Silvered Chain Helm"
+        }
+      ]
+    },
+    {
+      "id": -4627,
+      "name": "Arugal's Voidwalker",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\arugals_voidwalker.blp",
+      "displayID": 1131,
+      "npc": 4627,
+      "level": 24,
+      "loot": [
+        {
+          "item": 5943,
+          "name": "Rift Bracers"
+        }
+      ]
+    },
+    {
+      "id": 2754,
+      "name": "Wolf Master Nandos",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\wolf_master_nandos.blp",
+      "displayID": 11179,
+      "npc": 3927,
+      "level": 25,
+      "loot": [
+        {
+          "item": 3748,
+          "name": "Feline Mantle"
+        },
+        {
+          "item": 6314,
+          "name": "Wolfmaster Cape"
+        },
+        {
+          "item": 1318,
+          "name": "Night Reaver"
+        },
+        {
+          "item": 2292,
+          "name": "Necrology Robes"
+        },
+        {
+          "item": 273647,
+          "name": "Worgpelt Leggings"
+        }
+      ]
+    },
+    {
+      "id": 2755,
+      "name": "Archmage Arugal",
+      "portrait": "Interface\\AddOns\\Spyglass\\assets\\bosses\\archmage_arugal.blp",
+      "displayID": 2353,
+      "npc": 4275,
+      "level": 26,
+      "loot": [
+        {
+          "item": 6220,
+          "name": "Meteor Shard"
+        },
+        {
+          "item": 6324,
+          "name": "Robes of Arugal"
+        },
+        {
+          "item": 6392,
+          "name": "Belt of Arugal"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 1489,
+      "name": "Gloomshroud Armor"
+    },
+    {
+      "item": 2205,
+      "name": "Duskbringer"
+    },
+    {
+      "item": 2292,
+      "name": "Necrology Robes"
+    },
+    {
+      "item": 5943,
+      "name": "Rift Bracers"
+    },
+    {
+      "item": 1482,
+      "name": "Shadowfang"
+    },
+    {
+      "item": 1935,
+      "name": "Assassin's Blade"
+    },
+    {
+      "item": 1318,
+      "name": "Night Reaver"
+    },
+    {
+      "item": 2807,
+      "name": "Guillotine Axe"
+    },
+    {
+      "item": 1484,
+      "name": "Witching Stave"
+    },
+    {
+      "item": 1974,
+      "name": "Mindthrust Bracers"
+    },
+    {
+      "item": 1483,
+      "name": "Face Smasher"
+    },
+    {
+      "item": 3194,
+      "name": "Black Malice"
+    },
+    {
+      "item": 6341,
+      "name": "Eerie Stable Lantern"
+    },
+    {
+      "item": 932,
+      "name": "Fel Steed Saddlebags"
+    }
+  ],
+  "quests": [1098, 1014, 1013, 1740, 1806, 95140, 78307]
+}

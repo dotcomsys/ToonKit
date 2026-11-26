@@ -1,0 +1,22 @@
+{
+  "map": 189,
+  "id": 18903,
+  "name": "Scarlet Monastery: Armory",
+  "displayName": "SM: Armory",
+  "minLevel": 36,
+  "maxLevel": 44,
+  "requiredLevel": 20,
+  "zone": 1420,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenScarletMonastery2",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1420, 83, 34],
+  "encounters": [
+    {
+      "id": 448,
+      "name": "Herod",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Herod",
+      "loot": []
+    }
+  ],
+  "trash": []
+}

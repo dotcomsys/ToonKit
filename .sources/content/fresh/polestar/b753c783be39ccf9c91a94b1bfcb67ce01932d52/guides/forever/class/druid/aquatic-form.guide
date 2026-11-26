@@ -1,0 +1,174 @@
+guide forever/class/druid/aquatic-form
+title Aquatic Form
+category Class
+folder Druid
+keywords Aquatic Form, A Lesson to Learn, Trial of the Lake, Trial of the Sea Lion, Pendant of the Sea Lion, Strange Lockbox, Shrine of Remulos, Idol of Shifting Tides, Moonglade, class quest
+reward spell 1066 "Aquatic Form"
+reward item 263411
+reward item 16608
+why Your water travel form: swim fast and breathe underwater, with a belt and an idol besides.
+class Druid
+levels 16-22
+zone Moonglade
+
+# Aquatic Form: in Forever Aquatic Form (5061 Night Elf, 31 Tauren) rewards
+# the form itself and the Idol of Shifting Tides besides the Aquarius Belt
+# (Forever's druid class quest list: "Rewards: adds Aquatic Form, Idol of
+# Shifting Tides").
+# Chain: A Lesson to Learn (26 / 27, your trainer) -> Trial of the Lake (29 /
+# 28: a Shrine Bauble from Lake Elune'ara used at the Shrine of Remulos) ->
+# Trial of the Sea Lion (272 / 30: the two half pendants from Strange
+# Lockboxes, joined near the shrine) -> Aquatic Form back at your trainer.
+# Night Elves find the halves in Darkshore and Westfall, Tauren in the Barrens
+# and Silverpine Forest.
+# The leveling guides carry the chain inline (Night Elves in
+# alliance/03-darkshore, 03-darkshore-return, 04-redridge-mountains and
+# 06-wetlands; Tauren in horde/02-the-barrens, 05-stonetalon-mountains and
+# 06-hillsbrad-foothills): this guide is for druids off our route. The
+# Strange Lockboxes give their half pendants only while Trial of the Sea Lion
+# is in the log (#1386; players' recordings: every lockbox loot came with
+# it), so the lockbox steps here come after its accept.
+# Skyborne: Forever's quest data opens the Alliance chain (26, 29, 272,
+# 5061) to Alliance Skyborne druids (corrections.json, checked 2026-10-16),
+# and the server race mask in the KB (EG) the Horde chain (27, 28, 30, 31) to
+# Horde Skyborne (forever-db/corrections/quests.json, this branch): the
+# steps take each side's Skyborne with its Night Elves or Tauren.
+# Timers and places from Forever's quest notes: Trial of the Lake 30 minutes,
+# the Shrine Bauble 5 minutes, six Bauble Containers (3 min respawn); each
+# Strange Lockbox one spawn, 50 s respawn; the Darkshore box behind tall
+# rocks west of the Cliffspring River mouth (threshers), the Westfall box by
+# a bubbling fissure west of a sunken anchor (sharks; deep water past the
+# wreck brings fatigue), the Sludge Fen box in front of a wooden wall in the
+# pond (approach from the west), the Silverpine box very deep beside an air
+# fissure. Moonglade's two flight masters give the clues (optional).
+# Sources: quests.json, objects.json and items.json (Questie 12.1.0,
+# Forever); the lockbox tips are the ones the leveling guides above use.
+# A player's teleport during Trial of the Lake reset it (#1327): the trial's
+# tip says no teleport or Hearthstone until Tajarri has it, and the arrow plans
+# none while a quest timer runs (Nav/Travel.lua).
+
+# ---------------------------------------------------------------- Night Elves and Alliance Skyborne
+# Mathrengyl stands upstairs in the druids' building and the walking maps have no way up inside it:
+# without a waypoint the arrow led onto a ledge outside his floor, behind the wall (#1338). Each step
+# to him comes after a goto at the building's door on its south side, 35.8,11.6, where players'
+# recordings walk in; from there the arrow points straight at him.
+
+# Keep the entrance for upstairs Mathrengyl until this quest visit is done.
+step Cenarion Enclave
+  only NightElf,Skyborne,Alliance
+  when !onquest 26
+  when !turnedin 26
+  zone Darnassus
+  tip Mathrengyl Bearwalker stands upstairs in the druids' building of the Cenarion Enclave. Skyborne: cast Teleport: Moonglade and take Silva Fil'naveth's flight from the middle of Nighthaven (she flies druids to Rut'theran Village, no flight path needed), then the portal up.
+  level 16
+  goto 35.8,11.6 "Cenarion Enclave"
+
+step A Lesson to Learn
+  only NightElf,Skyborne,Alliance
+  zone Darnassus
+  tip Mathrengyl Bearwalker stands upstairs in the druids' building of the Cenarion Enclave. Skyborne: cast Teleport: Moonglade and take Silva Fil'naveth's flight from the middle of Nighthaven (she flies druids to Rut'theran Village, no flight path needed), then the portal up.
+  level 16
+  accept 26                             -- Mathrengyl Bearwalker
+
+step Trial of the Lake
+  only NightElf,Skyborne,Alliance
+  zone Moonglade
+  tip Cast Teleport: Moonglade to get here: Dendrite Starblaze stands upstairs in the building beside where you land. Trial of the Lake runs on a 30-minute timer: once you accept it, no teleport or Hearthstone until Tajarri has it. Six Bauble Containers (vases) lie in narrow hollows deep on the floor of Lake Elune'ara below Nighthaven, often near the bubbling fissures (the Bubbly Fissure in the middle of the lake refills your breath); each comes back three minutes after it is opened, and other druids take them too. Check the Shrine Bauble is in your bags before you surface: it fades five minutes after you loot it. Swim it straight to the Shrine of Remulos on the north-west shore, use it inside the shrine grounds and speak to Tajarri by the tree.
+  turnin 26                             -- Dendrite Starblaze
+  accept 29
+  collect 15877 x1                      -- Shrine Bauble, from a Bauble Container in the lake
+  use 15877 @36.0,41.4                  -- At the Shrine of Remulos
+  complete 29 @36.0,41.4
+  turnin 29                             -- Tajarri
+  accept 272
+
+step Half Pendant of Aquatic Agility
+  only NightElf,Skyborne,Alliance
+  zone Darkshore
+  tip Fly from Nighthaven to Auberdine. The Strange Lockbox lies far out on the sea floor off the north coast, between tall rocks west of where the Cliffspring River reaches the sea: it cannot be seen from the east side of the rocks. Watch your breath and the Darkshore Threshers; fight above water.
+  fly "Auberdine"
+  collect 15883 x1                      -- Half Pendant of Aquatic Agility, from the Strange Lockbox
+
+step Half Pendant of Aquatic Endurance
+  only NightElf,Skyborne,Alliance
+  zone Westfall
+  tip Take the boat from Auberdine to Stormwind and fly to Sentinel Hill. Head west to the coast: the Strange Lockbox lies far out on the sea floor beside a bubbling fissure (air), west of a sunken anchor. Sharks roam here; do not swim on past the wreck beyond it, the deep water brings fatigue.
+  fly "Sentinel Hill"
+  collect 15882 x1                      -- Half Pendant of Aquatic Endurance, from the Strange Lockbox
+
+step Pendant of the Sea Lion
+  only NightElf,Skyborne,Alliance
+  zone Moonglade
+  tip Cast Teleport: Moonglade. With both halves in your bags, stand by the Shrine of Remulos on the north-west shore and use the Half Pendant of Aquatic Agility to join them, then cast Teleport: Moonglade again (it works inside Moonglade) to land by Dendrite Starblaze. He stands upstairs in his building: go up inside, the arrow cannot tell the floors apart. Afterwards Silva Fil'naveth, in the middle of Nighthaven, flies druids straight to Rut'theran Village.
+  collect 15885 quest 272.1             -- Pendant of the Sea Lion: join the halves at the shrine
+  turnin 272                            -- Dendrite Starblaze
+  accept 5061
+  fly "Rut'theran Village"
+
+step Cenarion Enclave
+  only NightElf,Skyborne,Alliance
+  when !turnedin 5061
+  zone Darnassus
+  tip Take the portal up to Mathrengyl in the Cenarion Enclave. Aquatic Form: swim fast and breathe underwater.
+  goto 35.8,11.6 "Cenarion Enclave"
+
+step Aquatic Form
+  only NightElf,Skyborne,Alliance
+  zone Darnassus
+  tip Take the portal up to Mathrengyl in the Cenarion Enclave. Aquatic Form: swim fast and breathe underwater.
+  turnin 5061 reward 16608 263411       -- Mathrengyl Bearwalker: Aquatic Form
+
+# ---------------------------------------------------------------- Tauren and Horde Skyborne
+
+step A Lesson to Learn
+  only Tauren,Skyborne,Horde
+  zone Thunder Bluff
+  tip Turak Runetotem stands in the druids' hut on Elder Rise.
+  level 16
+  accept 27                             -- Turak Runetotem
+
+step Trial of the Lake
+  only Tauren,Skyborne,Horde
+  zone Moonglade
+  tip Cast Teleport: Moonglade to get here: Dendrite Starblaze stands upstairs in the building beside where you land. Trial of the Lake runs on a 30-minute timer: once you accept it, no teleport or Hearthstone until Tajarri has it. Six Bauble Containers (vases) lie in narrow hollows deep on the floor of Lake Elune'ara below Nighthaven, often near the bubbling fissures (the Bubbly Fissure in the middle of the lake refills your breath); each comes back three minutes after it is opened, and other druids take them too. Check the Shrine Bauble is in your bags before you surface: it fades five minutes after you loot it. Swim it straight to the Shrine of Remulos on the north-west shore, use it inside the shrine grounds and speak to Tajarri by the tree.
+  turnin 27                             -- Dendrite Starblaze
+  accept 28
+  collect 15877 x1                      -- Shrine Bauble, from a Bauble Container in the lake
+  use 15877 @36.0,41.4                  -- At the Shrine of Remulos
+  complete 28 @36.0,41.4
+  turnin 28                             -- Tajarri
+  accept 30
+
+step Half Pendant of Aquatic Agility
+  only Tauren,Skyborne,Horde
+  zone The Barrens
+  tip Take Bunthen Plainswind's flight to Thunder Bluff and fly on to Orgrimmar. The Strange Lockbox lies underwater in the Sludge Fen pond, a short walk out of Orgrimmar's west gate, in front of a wooden wall. The Venture Co. there are quick to join a fight: come in from the west to avoid most of them.
+  fly "Thunder Bluff"
+  fly "Orgrimmar"
+  collect 15883 x1                      -- Half Pendant of Aquatic Agility, from the Strange Lockbox
+
+step Zeppelin to Undercity
+  only Tauren,Skyborne,Horde
+  zone Durotar
+  tip Back through Orgrimmar to the zeppelin towers outside its main gate: the zeppelin to the Undercity lands in Tirisfal Glades, and Silverpine Forest is south of the Undercity.
+  goto 50.8,13.5 "Zeppelin to Undercity"
+
+step Half Pendant of Aquatic Endurance
+  only Tauren,Skyborne,Horde
+  zone Silverpine Forest
+  tip The Strange Lockbox lies at the bottom of very deep water off the coast north-west of the Sepulcher, beside an air fissure where you can breathe: watch your breath on the way down. Then Teleport: Moonglade takes you straight back.
+  collect 15882 x1                      -- Half Pendant of Aquatic Endurance, from the Strange Lockbox
+
+step Pendant of the Sea Lion
+  only Tauren,Skyborne,Horde
+  zone Moonglade
+  tip Cast Teleport: Moonglade. With both halves in your bags, stand by the Shrine of Remulos on the north-west shore and use the Half Pendant of Aquatic Agility to join them, then cast Teleport: Moonglade again (it works inside Moonglade) to land by Dendrite Starblaze. He stands upstairs in his building: go up inside, the arrow cannot tell the floors apart. Bunthen Plainswind flies druids to Thunder Bluff.
+  collect 15885 quest 30.1              -- Pendant of the Sea Lion: join the halves at the shrine
+  turnin 30                             -- Dendrite Starblaze
+  accept 31
+  fly "Thunder Bluff"
+
+step Aquatic Form
+  only Tauren,Skyborne,Horde
+  zone Thunder Bluff
+  turnin 31 reward 16608 263411         -- Turak Runetotem: Aquatic Form

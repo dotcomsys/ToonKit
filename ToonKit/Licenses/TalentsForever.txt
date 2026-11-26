@@ -1,0 +1,7 @@
+Talent data: Talents Forever / Chris Baldwin
+https://talentsforever.com/about
+https://talentsforever.com/data.json
+Export: 2026-10-16
+License: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Changes: normalized to Lua, omitted Classic comparisons and non-talent data.
+Game names, text, and icons belong to Blizzard Entertainment and are excluded from this license.

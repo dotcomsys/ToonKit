@@ -1,0 +1,509 @@
+{
+  "npcs": {
+    "Captain Truman": {
+      "description": "Just inside Ruins of Lordaeron."
+    },
+    "Deathguard Kristof": {
+      "location": [1420, 65.2, 60.2],
+      "description": "Brill."
+    },
+    "Morbin Lightbane": {
+      "location": [1458, 57.9, 89.5],
+      "description": "Undercity."
+    },
+    "Tabitha Heartweaver": {
+      "location": [1421, 44.5, 43],
+      "description": "The Sepulcher, Silverpine Forest."
+    },
+    "Theodore Griffs": {
+      "location": [1458, 46.5, 71.6],
+      "description": "Undercity."
+    },
+    "Oran Snakewrithe": {
+      "location": [1458, 73.6, 32.6],
+      "description": "Undercity."
+    },
+    "Master Apothecary Faranell": {
+      "location": [1458, 48.6, 69.6],
+      "description": "Undercity."
+    },
+    "Unfinished Abomination": {
+      "location": [1458, 46, 62.2],
+      "description": "Undercity."
+    }
+  },
+  "quests": [
+    {
+      "id": 92422,
+      "name": "The Wrath of Rath'mael",
+      "side": "Horde",
+      "requiredLevel": 15,
+      "xp": 0,
+      "objective": "Kill Rath'mael in Ruins of Lordaeron.",
+      "requires": [99156],
+      "start": {
+        "npc": "Deathguard Kristof",
+        "location": [1420, 65.2, 60.2],
+        "description": "Deathguard Kristof, Brill, Tirisfal Glades"
+      },
+      "turnIn": {
+        "npc": "Deathguard Kristof",
+        "description": "Deathguard Kristof, Brill"
+      },
+      "items": [
+        {
+          "item": 251533,
+          "name": "Forsaken Greataxe"
+        },
+        {
+          "item": 251534,
+          "name": "Gnarled Necromancer's Staff"
+        }
+      ]
+    },
+    {
+      "id": 92415,
+      "name": "Remember That I Love You",
+      "side": "Alliance",
+      "requiredLevel": 15,
+      "xp": 2600,
+      "objective": "Bring the Blood-Stained Letter to Orphan Matron Nightingale.",
+      "description": "Found in the graveyard inside Ruins of Lordaeron",
+      "start": {
+        "item": 251522,
+        "description": "Item start: Blood-Stained Letter, graveyard inside Ruins of Lordaeron"
+      },
+      "turnIn": {
+        "npc": "Orphan Matron Nightingale",
+        "description": "Stormwind City."
+      },
+      "items": [
+        {
+          "item": 279870,
+          "name": "Tarnished Locket"
+        }
+      ]
+    },
+    {
+      "id": 92421,
+      "name": "Light's Justice",
+      "side": "Horde",
+      "requiredLevel": 15,
+      "xp": 2200,
+      "objective": "Collect 25 Intact Limbs within Ruins of Lordaeron.",
+      "start": {
+        "npc": "Morbin Lightbane",
+        "location": [1458, 57.9, 89.5],
+        "description": "Morbin Lightbane, Undercity"
+      },
+      "turnIn": {
+        "npc": "Morbin Lightbane",
+        "description": "Morbin Lightbane, Undercity"
+      },
+      "items": [
+        {
+          "item": 279874,
+          "name": "The Stitcher"
+        },
+        {
+          "item": 279875,
+          "name": "Spare Part Bindings"
+        }
+      ]
+    },
+    {
+      "id": 95250,
+      "name": "Abominable Creatures",
+      "side": "Alliance",
+      "requiredLevel": 16,
+      "xp": 1650,
+      "objective": "Collect the Head of the Baron in Ruins of Lordaeron.",
+      "start": {
+        "npc": "Captain Truman",
+        "description": "Just inside Ruins of Lordaeron (left of the entrance)."
+      },
+      "turnIn": {
+        "npc": "Captain Truman",
+        "description": "Captain Truman, just inside Ruins of Lordaeron"
+      },
+      "items": [
+        {
+          "item": 279864,
+          "name": "Monstrous Cleaver"
+        },
+        {
+          "item": 279865,
+          "name": "Grave Shroud"
+        },
+        {
+          "item": 279867,
+          "name": "Slain Baron's Signet"
+        }
+      ]
+    },
+    {
+      "id": 95195,
+      "name": "Bloodied Insignia",
+      "side": "Alliance",
+      "requiredLevel": 16,
+      "xp": 2600,
+      "objective": "Collect 10 Bloodied Insignias.",
+      "description": "Dropped by: undead enemies inside Ruins of Lordaeron",
+      "start": {
+        "item": 268535,
+        "description": "Item start: Bloodied Insignia, inside Ruins of Lordaeron"
+      },
+      "turnIn": {
+        "npc": "General Marcus Jonathan",
+        "description": "Stormwind City."
+      },
+      "items": [
+        {
+          "item": 279868,
+          "name": "Duty Bound Leggings"
+        },
+        {
+          "item": 279869,
+          "name": "Remembrance Armor"
+        }
+      ]
+    },
+    {
+      "id": 95216,
+      "name": "The New Plague",
+      "side": "Horde",
+      "requiredLevel": 16,
+      "xp": 2600,
+      "objective": "Collect the Highly Toxic Strain from Witherfang.",
+      "requires": [451],
+      "start": {
+        "npc": "Theodore Griffs",
+        "location": [1458, 46.5, 71.6],
+        "description": "Theodore Griffs, Undercity"
+      },
+      "turnIn": {
+        "npc": "Theodore Griffs",
+        "description": "Theodore Griffs, Undercity"
+      },
+      "items": [
+        {
+          "item": 279876,
+          "name": "Plaguefang"
+        },
+        {
+          "item": 279877,
+          "name": "Blight Gloves"
+        }
+      ]
+    },
+    {
+      "id": 97288,
+      "name": "Unending Torment",
+      "side": "Horde",
+      "requiredLevel": 15,
+      "xp": 1650,
+      "objective": "Deliver the Abominable Head to the Undercity.",
+      "description": "Dropped by: The Baron",
+      "followUps": [97289, 97290, 97291, 97292],
+      "start": {
+        "item": 280438,
+        "description": "Item start: Abominable Head, inside Ruins of Lordaeron"
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "description": "Undercity."
+      },
+      "items": [
+        {
+          "item": 279864,
+          "name": "Monstrous Cleaver"
+        },
+        {
+          "item": 279865,
+          "name": "Grave Shroud"
+        },
+        {
+          "item": 279867,
+          "name": "Slain Baron's Signet"
+        }
+      ]
+    },
+    {
+      "id": 97289,
+      "name": "Unending Torment",
+      "side": "Horde",
+      "requiredLevel": 16,
+      "xp": 1650,
+      "objective": "Bring the Head of the Baron to the body of Othmar in the Undercity.",
+      "start": {
+        "npc": "Master Apothecary Faranell",
+        "description": "Undercity."
+      },
+      "turnIn": {
+        "npc": "Unfinished Abomination",
+        "description": "Undercity."
+      },
+      "items": []
+    },
+    {
+      "id": 97290,
+      "name": "Unending Torment",
+      "side": "Horde",
+      "requiredLevel": 16,
+      "xp": 1650,
+      "objective": "Report your findings to Master Apothecary Faranell in Undercity.",
+      "start": {
+        "npc": "Unfinished Abomination",
+        "description": "Undercity."
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "description": "Undercity."
+      },
+      "items": [
+        {
+          "item": 279867,
+          "name": "Slain Baron's Signet"
+        },
+        {
+          "item": 279865,
+          "name": "Grave Shroud"
+        },
+        {
+          "item": 279864,
+          "name": "Monstrous Cleaver"
+        }
+      ]
+    },
+    {
+      "id": 97291,
+      "name": "Unending Torment",
+      "side": "Horde",
+      "requiredLevel": 16,
+      "xp": 1650,
+      "objective": "Collect a Toxic Skullcap from Tawny Grisette in the Trade Quarter, Blisterweed near the Herbalism Trainer, and Essence of Agony from the poison vendor in the Rogues' Quarter for Master Apothecary Faranell in Undercity.",
+      "start": {
+        "npc": "Master Apothecary Faranell",
+        "description": "Undercity."
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "description": "Undercity."
+      },
+      "items": []
+    },
+    {
+      "id": 97292,
+      "name": "Unending Torment",
+      "side": "Horde",
+      "requiredLevel": 16,
+      "xp": 1650,
+      "objective": "Inject the Hissing Serum into the system above Othmar's body for Master Apothecary Faranell.",
+      "start": {
+        "npc": "Master Apothecary Faranell",
+        "description": "Undercity."
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "description": "Undercity."
+      },
+      "items": []
+    },
+    {
+      "id": 92401,
+      "name": "A Frightened Request",
+      "side": "Horde",
+      "requiredLevel": 15,
+      "xp": 2200,
+      "objective": "Investigate the disappearance of Edward Heartweaver in Ruins of Lordaeron.",
+      "start": {
+        "npc": "Tabitha Heartweaver",
+        "location": [1421, 44.5, 43],
+        "description": "Tabitha Heartweaver, Silverpine Forest / The Sepulcher"
+      },
+      "turnIn": {
+        "npc": "Tabitha Heartweaver",
+        "description": "Tabitha Heartweaver, The Sepulcher, Silverpine Forest"
+      },
+      "items": [
+        {
+          "item": 251485,
+          "name": "Edward's Knife"
+        },
+        {
+          "item": 251486,
+          "name": "Tabitha's Cuffs"
+        }
+      ]
+    },
+    {
+      "id": 95189,
+      "name": "Crest of Lordaeron",
+      "side": "Alliance",
+      "requiredLevel": 16,
+      "xp": 2600,
+      "objective": "Return the Crest of Lordaeron to Stormwind.",
+      "description": "Community reports indicate the Crest can spawn at one of several locations inside the dungeon. Reported spots include upper floors of towers, side/crypt rooms near The Baron, and the area around Bjork.",
+      "start": {
+        "item": 268579,
+        "description": "Item start: Crest of Lordaeron, inside Ruins of Lordaeron"
+      },
+      "turnIn": {
+        "npc": "Lady Dena Kennedy",
+        "description": "Stormwind City."
+      },
+      "items": [
+        {
+          "item": 280567,
+          "name": "Small Sack of Gems"
+        }
+      ]
+    },
+    {
+      "id": 95204,
+      "name": "Crest of Lordaeron",
+      "side": "Horde",
+      "requiredLevel": 16,
+      "xp": 2600,
+      "objective": "Bring the Crest of Lordaeron to the Undercity.",
+      "description": "Community reports indicate the Crest can spawn at one of several locations inside the dungeon. Reported spots include upper floors of towers, side/crypt rooms near The Baron, and the area around Bjork.",
+      "start": {
+        "item": 268579,
+        "description": "Item start: Crest of Lordaeron, inside Ruins of Lordaeron"
+      },
+      "turnIn": {
+        "npc": "Oran Snakewrithe",
+        "description": "Undercity."
+      },
+      "items": [
+        {
+          "item": 280567,
+          "name": "Small Sack of Gems"
+        }
+      ]
+    },
+    {
+      "id": 356,
+      "name": "Rear Guard Patrol",
+      "requiredLevel": 6,
+      "xp": 650,
+      "objective": "Kill 8 Bleeding Horrors and 8 Wandering Spirits, then report back to Linnea at her camp.",
+      "description": "Both are at the Balnir Farmstead, east of Linnea's camp.",
+      "start": {
+        "npc": "Deathguard Linnea",
+        "location": [1420, 65.5, 60.3],
+        "description": "camp south-east of Brill, Tirisfal Glades"
+      },
+      "turnIn": {
+        "npc": "Deathguard Linnea",
+        "location": [1420, 65.5, 60.3],
+        "description": "camp south-east of Brill, Tirisfal Glades"
+      },
+      "items": []
+    },
+    {
+      "id": 447,
+      "name": "A Recipe For Death",
+      "requiredLevel": 9,
+      "xp": 900,
+      "objective": "Collect 6 Grizzled Bear Hearts and 6 samples of Skittering Blood and deliver them to Master Apothecary Faranell in the Undercity.",
+      "start": {
+        "npc": "Apothecary Renferrel",
+        "location": [1421, 42.8, 40.9],
+        "description": "The Sepulcher, Silverpine Forest"
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "location": [1458, 48.8, 69.3],
+        "description": "Undercity"
+      },
+      "items": [
+        {
+          "item": 3448,
+          "name": "Senggin Root"
+        }
+      ]
+    },
+    {
+      "id": 450,
+      "name": "A Recipe For Death",
+      "requiredLevel": 9,
+      "xp": 1350,
+      "objective": "Retrieve Apothecary Berard's journal from Pyrewood Village and take it to Apothecary Renferrel at the Sepulcher.",
+      "description": "Group quest: the inn is in Pyrewood Village, among hostile villagers.",
+      "requires": [447],
+      "start": {
+        "npc": "Master Apothecary Faranell",
+        "location": [1458, 48.8, 69.3],
+        "description": "Undercity"
+      },
+      "turnIn": {
+        "npc": "Apothecary Renferrel",
+        "location": [1421, 42.8, 40.9],
+        "description": "The Sepulcher, Silverpine Forest"
+      },
+      "items": []
+    },
+    {
+      "id": 451,
+      "name": "A Recipe For Death",
+      "requiredLevel": 9,
+      "xp": 2050,
+      "objective": "Bring 6 samples of Lake Creeper Moss, 6 samples of Lake Skulker Moss and a Hardened Tumor to Master Apothecary Faranell in the Undercity.",
+      "requires": [450],
+      "start": {
+        "npc": "Apothecary Renferrel",
+        "location": [1421, 42.8, 40.9],
+        "description": "The Sepulcher, Silverpine Forest"
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "location": [1458, 48.8, 69.3],
+        "description": "Undercity"
+      },
+      "items": [
+        {
+          "item": 3451,
+          "name": "Nightglow Concoction"
+        },
+        {
+          "item": 3582,
+          "name": "Acidproof Cloak"
+        }
+      ]
+    },
+    {
+      "id": 99156,
+      "name": "Rear Guard Patrol",
+      "requiredLevel": 6,
+      "xp": 900,
+      "objective": "Kill Riptear in north-east Tirisfal Glades and bring Riptear's Heart to Deathguard Linnea.",
+      "description": "Group quest: Riptear is a level 13 elite.",
+      "requires": [356],
+      "start": {
+        "npc": "Deathguard Linnea",
+        "location": [1420, 65.5, 60.3],
+        "description": "camp south-east of Brill, Tirisfal Glades"
+      },
+      "turnIn": {
+        "npc": "Deathguard Linnea",
+        "location": [1420, 65.5, 60.3],
+        "description": "camp south-east of Brill, Tirisfal Glades"
+      },
+      "items": [
+        {
+          "item": 286742,
+          "name": "Riptear's Cleaver"
+        },
+        {
+          "item": 286743,
+          "name": "Riptear's Spare Arm"
+        },
+        {
+          "item": 286744,
+          "name": "Thrice-Stitched Flesh"
+        }
+      ]
+    }
+  ]
+}

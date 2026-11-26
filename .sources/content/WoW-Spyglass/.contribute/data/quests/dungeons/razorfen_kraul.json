@@ -1,0 +1,659 @@
+{
+  "quests": [
+    {
+      "id": 1144,
+      "name": "Willix the Importer",
+      "side": "Both",
+      "requiredLevel": 23,
+      "xp": 3050,
+      "objective": "Escort Willix the Importer out of Razorfen Kraul.",
+      "start": {
+        "npc": "Willix the Importer",
+        "description": "Willix the Importer, inside Razorfen Kraul"
+      },
+      "turnIn": {
+        "npc": "Willix the Importer",
+        "description": "Willix the Importer, inside Razorfen Kraul"
+      },
+      "items": [
+        {
+          "item": 6748,
+          "name": "Monkey Ring"
+        },
+        {
+          "item": 6750,
+          "name": "Snake Hoop"
+        },
+        {
+          "item": 6749,
+          "name": "Tiger Band"
+        },
+        {
+          "item": 274078,
+          "name": "Boar Signet"
+        }
+      ]
+    },
+    {
+      "id": 1221,
+      "name": "Blueleaf Tubers",
+      "side": "Both",
+      "requiredLevel": 20,
+      "xp": 5000,
+      "objective": "Use the Crate with Holes to summon a Snufflenose Gopher and the Command Stick to make it find 6 Blueleaf Tubers. Bring them, the Command Stick and the Crate back to Mebok Mizzyrix.",
+      "start": {
+        "npc": "Mebok Mizzyrix",
+        "location": [1413, 62.4, 37.6],
+        "description": "Mebok Mizzyrix, Ratchet, The Barrens"
+      },
+      "turnIn": {
+        "npc": "Mebok Mizzyrix",
+        "location": [1413, 62, 37],
+        "description": "Mebok Mizzyrix, Ratchet, The Barrens"
+      },
+      "items": [
+        {
+          "item": 6755,
+          "name": "A Small Container of Gems"
+        }
+      ]
+    },
+    {
+      "id": 1142,
+      "name": "Mortality Wanes",
+      "side": "Alliance",
+      "requiredLevel": 25,
+      "xp": 3050,
+      "objective": "Find Treshala's Pendant and return it to Treshala Fallowbrook in Darnassus.",
+      "start": {
+        "npc": "Heralath Fallowbrook",
+        "description": "Inside Razorfen Kraul."
+      },
+      "turnIn": {
+        "npc": "Treshala Fallowbrook",
+        "description": "Darnassus."
+      },
+      "items": [
+        {
+          "item": 6751,
+          "name": "Mourning Shawl"
+        },
+        {
+          "item": 6752,
+          "name": "Lancer Boots"
+        },
+        {
+          "item": 270047,
+          "name": "Sentinel's Boots"
+        }
+      ]
+    },
+    {
+      "id": 1101,
+      "name": "The Crone of the Kraul",
+      "side": "Alliance",
+      "requiredLevel": 29,
+      "xp": 3350,
+      "objective": "Bring Razorflank's Medallion to Falfindel Waywarder in Thalanaar.",
+      "requires": [1100],
+      "start": {
+        "npc": "Falfindel Waywarder",
+        "location": [1444, 89.6, 46.6],
+        "description": "Thalanaar, Feralas."
+      },
+      "turnIn": {
+        "npc": "Falfindel Waywarder",
+        "location": [1444, 89, 46],
+        "description": "Thalanaar, Feralas."
+      },
+      "items": [
+        {
+          "item": 4197,
+          "name": "Berylline Pads"
+        },
+        {
+          "item": 6742,
+          "name": "Stonefist Girdle"
+        },
+        {
+          "item": 6725,
+          "name": "Marbled Buckler"
+        },
+        {
+          "item": 274084,
+          "name": "Quilboar Blaster"
+        }
+      ]
+    },
+    {
+      "id": 1100,
+      "name": "Lonebrow's Journal",
+      "requiredLevel": 23,
+      "objective": "Read Henrig Lonebrow's Journal and take it to Falfindel Waywarder in Thalanaar.",
+      "start": {
+        "location": [1441, 30.7, 24.4],
+        "description": "Henrig Lonebrow's Journal beside his corpse at the bottom of the Great Lift."
+      },
+      "turnIn": {
+        "npc": "Falfindel Waywarder",
+        "description": "Thalanaar, Feralas."
+      },
+      "items": []
+    },
+    {
+      "id": 1102,
+      "name": "A Vengeful Fate",
+      "side": "Horde",
+      "requiredLevel": 29,
+      "xp": 4050,
+      "objective": "Bring Razorflank's Heart to Auld Stonespire in Thunder Bluff.",
+      "start": {
+        "npc": "Auld Stonespire",
+        "location": [1456, 36, 59],
+        "description": "Thunder Bluff."
+      },
+      "turnIn": {
+        "npc": "Auld Stonespire",
+        "location": [1456, 36, 59],
+        "description": "Thunder Bluff."
+      },
+      "items": [
+        {
+          "item": 4197,
+          "name": "Berylline Pads"
+        },
+        {
+          "item": 6742,
+          "name": "Stonefist Girdle"
+        },
+        {
+          "item": 6725,
+          "name": "Marbled Buckler"
+        },
+        {
+          "item": 274084,
+          "name": "Quilboar Blaster"
+        }
+      ]
+    },
+    {
+      "id": 6521,
+      "name": "An Unholy Alliance",
+      "side": "Horde",
+      "requiredLevel": 28,
+      "xp": 7350,
+      "objective": "Bring Ambassador Malcin's Head to Varimathras in the Undercity.",
+      "description": "This quest is completed in the area OUTSIDE Razorfen Downs.\n\nThis quest is done OUTSIDE Razorfen Downs, do it before entering the dungeon.",
+      "requires": [6522],
+      "start": {
+        "npc": "Varimathras",
+        "location": [1458, 56.2, 92.6],
+        "description": "Royal Quarter, Undercity."
+      },
+      "turnIn": {
+        "npc": "Varimathras",
+        "location": [1458, 56.2, 92.6],
+        "description": "Royal Quarter, Undercity."
+      },
+      "items": [
+        {
+          "item": 17039,
+          "name": "Skullbreaker"
+        },
+        {
+          "item": 17042,
+          "name": "Nail Spitter"
+        },
+        {
+          "item": 17043,
+          "name": "Zealot's Robe"
+        },
+        {
+          "item": 270054,
+          "name": "Cultist's Chestguard"
+        }
+      ]
+    },
+    {
+      "id": 6522,
+      "name": "An Unholy Alliance",
+      "side": "Horde",
+      "requiredLevel": 28,
+      "xp": 5900,
+      "objective": "Take the Small Scroll to Varimathras in the Undercity.",
+      "followUps": [6521],
+      "start": {
+        "item": 17008,
+        "description": "Drops from Charlga Razorflank in Razorfen Kraul."
+      },
+      "turnIn": {
+        "npc": "Varimathras",
+        "location": [1458, 56.2, 92.6],
+        "description": "Royal Quarter, Undercity"
+      },
+      "items": []
+    },
+    {
+      "id": 1109,
+      "name": "Going, Going, Guano!",
+      "side": "Horde",
+      "requiredLevel": 30,
+      "xp": 3300,
+      "objective": "Bring 1 pile of Kraul Guano from the Kraul bats to Master Apothecary Faranell.",
+      "description": "Required before Hearts of Zeal.",
+      "start": {
+        "npc": "Master Apothecary Faranell",
+        "location": [1458, 48, 69],
+        "description": "Apothecarium, Undercity."
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "location": [1458, 48, 69],
+        "description": "Apothecarium, Undercity."
+      },
+      "items": []
+    },
+    {
+      "id": 96016,
+      "name": "The Tempest's Weapons",
+      "side": "Alliance",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "xp": 3900,
+      "objective": "Deliver the Eye of the Tempest to Bath'rah the Windwatcher in Alterac Mountains.",
+      "description": "Shaman class quest from level 30, unlocked by Call of Air (the Air Totem quest). In this dungeon: Elemental Aid. Kill Charlga Razorflank and loot the Tattered Note; every Shaman on the quest gets one. After that: 20 Twisted Totems from four zones and the elite Heed My Call ritual in Thousand Needles.\nThis is a chain quest with a step in Razorfen Kraul",
+      "requires": [96135],
+      "start": {
+        "npc": "Veyric Thunderhame",
+        "location": [1417, 59.6, 27.6],
+        "description": "Arathi Highlands"
+      },
+      "turnIn": {
+        "npc": "Bath'rah the Windwatcher",
+        "description": "Alterac Mountains (80.4, 66.8)"
+      },
+      "items": [
+        {
+          "item": 280604,
+          "name": "Rage of the Storm"
+        },
+        {
+          "item": 280607,
+          "name": "Lightning's Grasp"
+        },
+        {
+          "item": 280605,
+          "name": "Tidebringer's Claw"
+        },
+        {
+          "item": 280696,
+          "name": "Elementalist's Guard"
+        }
+      ]
+    },
+    {
+      "id": 96264,
+      "name": "Elemental Aid",
+      "side": "Alliance",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "xp": 6950,
+      "objective": "Defeat Charlga Razorflank in Razorfen Kraul and collect information on the quilboar's plans.",
+      "description": "The Razorfen Kraul step. Call of Air (from Eldrun Stormbreaker in Ironforge) sends you to Veyric. Alliance Shamans can share this quest.",
+      "followUps": [79358, 96135, 96016],
+      "start": {
+        "npc": "Veyric Thunderhame",
+        "location": [1417, 59.6, 27.6],
+        "description": "Arathi Highlands"
+      },
+      "turnIn": {
+        "npc": "Veyric Thunderhame",
+        "location": [1417, 59.6, 27.6],
+        "description": "Arathi Highlands (59.6, 27.6)"
+      },
+      "items": []
+    },
+    {
+      "id": 79358,
+      "name": "Storm, Earth, and Fire",
+      "side": "Alliance",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "objective": "Collect 5 Twisted Fire Totems, 5 Twisted Earth Totems, 5 Twisted Air Totems and 5 Twisted Water Totems for Veyric Thunderhame in Arathi Highlands.",
+      "description": "Twisted Totems only drop while this quest is in your log. Water: Mirefin murlocs, northeast coast of Dustwallow Marsh. Air: Maraudine centaurs, Desolace. Earth: Lost Ones, Swamp of Sorrows. Fire: Dustbelcher ogres and Stonevault troggs, Badlands.",
+      "requires": [96264],
+      "start": {
+        "npc": "Veyric Thunderhame",
+        "location": [1417, 59.6, 27.6],
+        "description": "Arathi Highlands"
+      },
+      "turnIn": {
+        "npc": "Veyric Thunderhame",
+        "location": [1417, 59.6, 27.6],
+        "description": "Arathi Highlands (59.6, 27.6)"
+      },
+      "items": []
+    },
+    {
+      "id": 96135,
+      "name": "Heed My Call",
+      "side": "Alliance",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "xp": 3150,
+      "objective": "Use the Twisted Totems to put an end to the quilboar ritual.",
+      "description": "Elite, level 40: bring a group. At the steam pools in Thousand Needles, stand on the rune circle and use the Corrupted Totems. Waves of elementals come, then an elite quilboar and the Ravaging Tempest, which drops the Eye of the Tempest for every Shaman on the quest.",
+      "requires": [79358],
+      "followUps": [96016],
+      "start": {
+        "npc": "Veyric Thunderhame",
+        "location": [1417, 59.6, 27.6],
+        "description": "Arathi Highlands"
+      },
+      "turnIn": {
+        "npc": "Veyric Thunderhame",
+        "location": [1417, 59.6, 27.6],
+        "description": "Arathi Highlands (59.6, 27.6)"
+      },
+      "items": []
+    },
+    {
+      "id": 79442,
+      "name": "The Tempest's Weapons",
+      "side": "Horde",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "objective": "Deliver the Eye of the Tempest to Bath'rah the Windwatcher in Alterac Mountains.",
+      "description": "Shaman class quest from level 30, unlocked by Call of Air (the Air Totem quest). In this dungeon: Elemental Aid. Kill Charlga Razorflank and loot the Tattered Note; every Shaman on the quest gets one. After that: 20 Twisted Totems from four zones and the elite Heed My Call ritual in Thousand Needles. Horde quest givers after the dungeon aren't confirmed yet (Prate Cloudseer or Rau Cliffrunner): follow your quest log.\nThis is a chain quest with a step in Razorfen Kraul",
+      "requires": [79366],
+      "start": {
+        "npc": "Prate Cloudseer",
+        "location": [1441, 53, 42],
+        "description": "Thousand Needles (follow your quest log)"
+      },
+      "turnIn": {
+        "npc": "Bath'rah the Windwatcher",
+        "description": "Alterac Mountains (80.4, 66.8)"
+      },
+      "items": [
+        {
+          "item": 280604,
+          "name": "Rage of the Storm"
+        },
+        {
+          "item": 280607,
+          "name": "Lightning's Grasp"
+        },
+        {
+          "item": 280605,
+          "name": "Tidebringer's Claw"
+        }
+      ]
+    },
+    {
+      "id": 79360,
+      "name": "Elemental Aid",
+      "side": "Horde",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "objective": "Defeat Charlga Razorflank in Razorfen Kraul and collect information on the quilboar's plans.",
+      "description": "The Razorfen Kraul step. After Call of Air, Prate Cloudseer sends you to Rau Cliffrunner. It can't be shared on the Horde side.",
+      "followUps": [79364, 79361, 79366, 79442],
+      "start": {
+        "npc": "Rau Cliffrunner",
+        "location": [1441, 46, 51.6],
+        "description": "Freewind Post, Thousand Needles"
+      },
+      "turnIn": {
+        "npc": "Rau Cliffrunner",
+        "location": [1441, 46, 51.6],
+        "description": "Freewind Post, Thousand Needles (46.0, 51.6)"
+      },
+      "items": []
+    },
+    {
+      "id": 79364,
+      "name": "Eyes on the Sky",
+      "side": "Horde",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "objective": "Speak with Prate Cloudseer in Thousand Needles.",
+      "requires": [79360],
+      "start": {
+        "npc": "Rau Cliffrunner",
+        "location": [1441, 46, 51.6],
+        "description": "Freewind Post, Thousand Needles"
+      },
+      "turnIn": {
+        "npc": "Prate Cloudseer",
+        "location": [1441, 53, 42],
+        "description": "The Weathered Nook, Thousand Needles"
+      },
+      "items": []
+    },
+    {
+      "id": 79361,
+      "name": "Storm, Earth, and Fire",
+      "side": "Horde",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "objective": "Collect 5 Twisted Fire Totems, 5 Twisted Earth Totems, 5 Twisted Air Totems and 5 Twisted Water Totems and turn them in to Prate Cloudseer in Thousand Needles.",
+      "description": "Twisted Totems only drop while this quest is in your log. Water: Mirefin murlocs, northeast coast of Dustwallow Marsh. Air: Maraudine centaurs, Desolace. Earth: Lost Ones, Swamp of Sorrows. Fire: Dustbelcher ogres and Stonevault troggs, Badlands.",
+      "requires": [79364],
+      "start": {
+        "npc": "Prate Cloudseer",
+        "location": [1441, 53, 42],
+        "description": "The Weathered Nook, Thousand Needles"
+      },
+      "turnIn": {
+        "npc": "Prate Cloudseer",
+        "location": [1441, 53, 42],
+        "description": "The Weathered Nook, Thousand Needles (53, 42)"
+      },
+      "items": []
+    },
+    {
+      "id": 79366,
+      "name": "Heed My Call",
+      "side": "Horde",
+      "class": "Shaman",
+      "requiredLevel": 30,
+      "objective": "Use the Twisted Totems to put an end to the quilboar ritual.",
+      "description": "Elite, level 40: bring a group. At the steam pools in Thousand Needles, stand on the rune circle and use the Corrupted Totems. Waves of elementals come, then an elite quilboar and the Ravaging Tempest, which drops the Eye of the Tempest for every Shaman on the quest. Horde: givers not confirmed yet, follow your quest log.",
+      "requires": [79361],
+      "followUps": [79442],
+      "start": {
+        "npc": "Prate Cloudseer",
+        "location": [1441, 53, 42],
+        "description": "The Weathered Nook, Thousand Needles"
+      },
+      "turnIn": {
+        "npc": "Prate Cloudseer",
+        "location": [1441, 53, 42],
+        "description": "The Weathered Nook, Thousand Needles (53, 42)"
+      },
+      "items": []
+    },
+    {
+      "id": 1782,
+      "name": "Furen's Armor",
+      "side": "Alliance",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "xp": 3400,
+      "objective": "Wait for Furen Longbeard to finish your armor.",
+      "description": "This is a chain quest with a step in Razorfen Kraul",
+      "requires": [1701],
+      "start": {
+        "npc": "Furen Longbeard",
+        "location": [1453, 64.6, 37.2],
+        "description": "Furen Longbeard, Dwarven District, Stormwind (64.6, 37.2)"
+      },
+      "turnIn": {
+        "npc": "Furen Longbeard",
+        "location": [1453, 58, 16.8],
+        "description": "Furen Longbeard, Dwarven District, Stormwind (64.6, 37.2)"
+      },
+      "items": [
+        {
+          "item": 6972,
+          "name": "Fire Hardened Hauberk"
+        }
+      ]
+    },
+    {
+      "id": 1699,
+      "name": "The Rethban Gauntlet",
+      "side": "Alliance",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "objective": "Enter the Rethban Caverns, reach the first fork and return to Yorus Barleybrew in time. You must not die and release your spirit.",
+      "description": "Your warrior trainer (Wu Shen in Stormwind, or the trainers in Ironforge and Darnassus) sends you to Yorus Barleybrew in Lakeshire first. The run is timed.",
+      "start": {
+        "npc": "Yorus Barleybrew",
+        "location": [1433, 21.5, 44.7],
+        "description": "Lakeshire, Redridge Mountains"
+      },
+      "turnIn": {
+        "npc": "Yorus Barleybrew",
+        "location": [1433, 21.5, 44.7],
+        "description": "Lakeshire, Redridge Mountains"
+      },
+      "items": []
+    },
+    {
+      "id": 1702,
+      "name": "The Shieldsmith",
+      "side": "Alliance",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "objective": "Bring the Cask of Scalder to Furen Longbeard.",
+      "description": "Furen rewards you with a shield, Furen's Favor.",
+      "requires": [1699],
+      "start": {
+        "npc": "Yorus Barleybrew",
+        "location": [1433, 21.5, 44.7],
+        "description": "Lakeshire, Redridge Mountains"
+      },
+      "turnIn": {
+        "npc": "Furen Longbeard",
+        "location": [1453, 64.6, 37.2],
+        "description": "Furen Longbeard, Dwarven District, Stormwind (64.6, 37.2)"
+      },
+      "items": []
+    },
+    {
+      "id": 1701,
+      "name": "Fire Hardened Mail",
+      "side": "Alliance",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "xp": 2300,
+      "objective": "Gather the materials Furen Longbeard requires, and bring them to him in Stormwind.",
+      "description": "The Razorfen Kraul step.",
+      "requires": [1702],
+      "followUps": [1782],
+      "start": {
+        "npc": "Furen Longbeard",
+        "location": [1453, 64.6, 37.2],
+        "description": "Furen Longbeard, Dwarven District, Stormwind (64.6, 37.2)"
+      },
+      "turnIn": {
+        "npc": "Furen Longbeard",
+        "location": [1453, 58, 16.8],
+        "description": "Furen Longbeard, Dwarven District, Stormwind (64.6, 37.2)"
+      },
+      "items": []
+    },
+    {
+      "id": 1848,
+      "name": "Brutal Hauberk",
+      "side": "Horde",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "xp": 3050,
+      "objective": "Wait for Thun'grim Firegaze to finish your armor.",
+      "description": "This is a chain quest with a step in Razorfen Kraul",
+      "requires": [1838],
+      "start": {
+        "npc": "Thun'grim Firegaze",
+        "location": [1413, 57, 30],
+        "description": "hills east of the Crossroads, The Barrens"
+      },
+      "turnIn": {
+        "npc": "Thun'grim Firegaze",
+        "location": [1413, 57, 30],
+        "description": "hills east of the Crossroads, The Barrens (57, 30)"
+      },
+      "items": [
+        {
+          "item": 7133,
+          "name": "Brutal Hauberk"
+        }
+      ]
+    },
+    {
+      "id": 1824,
+      "name": "Trial at the Field of Giants",
+      "side": "Horde",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "objective": "Deliver 5 Twitching Antennae to Ruga Ragetotem at Camp Taurajo.",
+      "description": "Your warrior trainer (Sorek in Orgrimmar) sends you to Ruga first. Timed: 30 minutes. The antennae come from the silithids at the Field of Giants, south of Camp Taurajo.",
+      "start": {
+        "npc": "Ruga Ragetotem",
+        "location": [1413, 45, 59],
+        "description": "Camp Taurajo, The Barrens"
+      },
+      "turnIn": {
+        "npc": "Ruga Ragetotem",
+        "location": [1413, 45, 59],
+        "description": "Camp Taurajo, The Barrens"
+      },
+      "items": []
+    },
+    {
+      "id": 1825,
+      "name": "Speak with Thun'grim",
+      "side": "Horde",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "objective": "Speak with Thun'grim Firegaze in the Barrens.",
+      "requires": [1824],
+      "start": {
+        "npc": "Ruga Ragetotem",
+        "location": [1413, 45, 59],
+        "description": "Camp Taurajo, The Barrens"
+      },
+      "turnIn": {
+        "npc": "Thun'grim Firegaze",
+        "location": [1413, 57, 30],
+        "description": "hills east of the Crossroads, The Barrens"
+      },
+      "items": []
+    },
+    {
+      "id": 1838,
+      "name": "Brutal Armor",
+      "side": "Horde",
+      "class": "Warrior",
+      "requiredLevel": 20,
+      "xp": 3650,
+      "objective": "Bring Thun'grim Firegaze 15 Smoky Iron Ingots, 10 Powdered Azurite, 10 Iron Bars and a Vial of Phlogiston.",
+      "description": "The Razorfen Kraul step.",
+      "requires": [1825],
+      "followUps": [1848],
+      "start": {
+        "npc": "Thun'grim Firegaze",
+        "location": [1413, 57, 30],
+        "description": "hills east of the Crossroads, The Barrens"
+      },
+      "turnIn": {
+        "npc": "Thun'grim Firegaze",
+        "location": [1413, 57, 30],
+        "description": "hills east of the Crossroads, The Barrens (57, 30)"
+      },
+      "items": []
+    }
+  ]
+}

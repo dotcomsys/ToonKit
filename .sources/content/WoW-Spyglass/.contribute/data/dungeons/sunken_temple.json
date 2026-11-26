@@ -1,0 +1,59 @@
+{
+  "map": 109,
+  "name": "Sunken Temple",
+  "minLevel": 50,
+  "maxLevel": 60,
+  "requiredLevel": 35,
+  "zone": 1435,
+  "background": "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenSunkenTemple",
+  "backgroundCoords": [0, 1, 0.305, 0.695],
+  "entrance": [1435, 70, 54],
+  "encounters": [
+    {
+      "id": 3582,
+      "name": "Atal'alarion",
+      "loot": []
+    },
+    {
+      "id": 3583,
+      "name": "Avatar of Hakkar",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Avatar of Hakkar",
+      "loot": []
+    },
+    {
+      "id": 3584,
+      "name": "Shade of Eranikus",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Shade of Eranikus",
+      "loot": []
+    },
+    {
+      "id": 3585,
+      "name": "Hazzas",
+      "loot": []
+    },
+    {
+      "id": 3586,
+      "name": "Morphaz",
+      "loot": []
+    },
+    {
+      "id": 3587,
+      "name": "Weaver",
+      "loot": []
+    },
+    {
+      "id": 3588,
+      "name": "Dreamscythe",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Dreamscythe",
+      "loot": []
+    },
+    {
+      "id": 3589,
+      "name": "Jammal'an the Prophet",
+      "portrait": "Interface\\EncounterJournal\\UI-EJ-BOSS-Jammalan the Prophet",
+      "loot": []
+    }
+  ],
+  "trash": [],
+  "quests": []
+}

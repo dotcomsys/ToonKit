@@ -1,0 +1,171 @@
+{
+  "map": 2994,
+  "name": "Alcaz Prison",
+  "minLevel": 48,
+  "maxLevel": 53,
+  "zone": 1445,
+  "icon": "Interface\\Icons\\INV_Misc_Key_14",
+  "background": 7963734,
+  "backgroundCoords": [0, 1, 0.154, 0.846],
+  "entrance": [1445, 75.3, 14.1],
+  "encounters": [
+    {
+      "id": 3403,
+      "name": "Overseer Wrex",
+      "displayID": 7914,
+      "npc": 255391,
+      "level": 50,
+      "loot": [
+        {
+          "item": 276734,
+          "name": "Wrex's Pinky Ring"
+        },
+        {
+          "item": 276733,
+          "name": "Grips of Control"
+        },
+        {
+          "item": 276732,
+          "name": "Alcaz Willcrusher"
+        }
+      ]
+    },
+    {
+      "id": 3409,
+      "name": "Blazeroar",
+      "displayID": 6374,
+      "npc": 255702,
+      "level": 53,
+      "loot": [
+        {
+          "item": 276744,
+          "name": "Zarla's Snack Pouch"
+        },
+        {
+          "item": 276745,
+          "name": "Beastbond Robe"
+        },
+        {
+          "item": 276746,
+          "name": "Defias Enforcer's Legguards"
+        },
+        {
+          "item": 276890,
+          "name": "Zarla's Journal"
+        }
+      ]
+    },
+    {
+      "id": 3410,
+      "name": "Tidemistress Ca'zass",
+      "displayID": 4973,
+      "npc": 255997,
+      "level": 50,
+      "quests": [96332, 96381],
+      "loot": [
+        {
+          "item": 276736,
+          "name": "Seascale Bracers"
+        },
+        {
+          "item": 276735,
+          "name": "Tidesong Wand"
+        },
+        {
+          "item": 276737,
+          "name": "Cloak of the Tidemistress"
+        },
+        {
+          "item": 273883,
+          "name": "Ca'zass's Head"
+        }
+      ]
+    },
+    {
+      "id": 3415,
+      "name": "The Questioner",
+      "displayID": 140092,
+      "npc": 256236,
+      "level": 51,
+      "quests": [96335],
+      "loot": [
+        {
+          "item": 276742,
+          "name": "Girdle of Extracted Answers"
+        },
+        {
+          "item": 276743,
+          "name": "Fingerbreaker Stamp"
+        },
+        {
+          "item": 276741,
+          "name": "Defias Enforcer's Shoulderpads"
+        },
+        {
+          "item": 274029,
+          "name": "Ornate Shackle Key"
+        }
+      ]
+    },
+    {
+      "id": 3418,
+      "name": "Katerina the Cleaner",
+      "displayID": 2317,
+      "npc": 257016,
+      "level": 52,
+      "loot": [
+        {
+          "item": 276739,
+          "name": "Cutthroat Chestguard"
+        },
+        {
+          "item": 276738,
+          "name": "Katerina's Shanker"
+        },
+        {
+          "item": 276740,
+          "name": "Sentimental Locket"
+        }
+      ]
+    }
+  ],
+  "trash": [
+    {
+      "item": 287021,
+      "name": "Defias Enforcer's Prowlers"
+    },
+    {
+      "item": 287019,
+      "name": "Defias Enforcer's Mask"
+    },
+    {
+      "item": 287018,
+      "name": "Compound Gloves"
+    },
+    {
+      "item": 287020,
+      "name": "Defias Enforcer's Chest"
+    },
+    {
+      "item": 287017,
+      "name": "Chaplain's Mitre"
+    },
+    {
+      "item": 287022,
+      "name": "Spaulders of Containment"
+    },
+    {
+      "item": 287023,
+      "name": "Iron-Wrought Cuffs"
+    },
+    {
+      "item": 287024,
+      "name": "Mark of Captivity"
+    },
+    {
+      "item": 287025,
+      "name": "Enchantresses' Spire"
+    }
+  ],
+  "quests": [96772, 95483, 96334, 96332, 95263, 96381, 96337]
+}
