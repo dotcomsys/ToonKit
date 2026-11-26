@@ -14,4 +14,4 @@ ToonKit is an add-on for WoW Forever only. The installable code and its notices 
 2. Under **Actions → Publish to CurseForge → Run workflow**, keep the branch set to `main`. Enter the numeric run ID from the successful build’s URL and select the CurseForge release type.
 3. Check the publishing run’s summary for the two CurseForge file IDs. The workflow verifies both archives, selects WoW Forever 1.60.1, and attaches the source ZIP to the installable ZIP.
 
-Pushes build packages. Publishing starts only when you run the publish workflow. You can also download the artifact to upload both files manually. If the installable upload succeeds and the attachment fails, use the parent file ID in the log to check or attach the matching source in CurseForge.
+Pushes build packages. Publishing starts only when you run the publish workflow. You can also download the artifact to upload both files manually. If the installable upload succeeds and the attachment fails, check the parent file’s attachments. If the source is missing, run the workflow again with the same build run ID and fill in `existing_parent_file_id` with that parent file ID. This uploads only the source ZIP.

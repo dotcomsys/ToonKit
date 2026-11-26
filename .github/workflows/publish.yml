@@ -13,6 +13,10 @@ on:
         default: alpha
         type: choice
         options: [alpha, beta, release]
+      existing_parent_file_id:
+        description: Existing CurseForge file ID for a source-only retry
+        required: false
+        type: string
 
 permissions:
   actions: read
@@ -64,4 +68,8 @@ jobs:
           RELEASE_TYPE: ${{ inputs.release_type }}
           CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
           CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
-        run: ./tools/Publish-CurseForge.ps1 -PackageDirectory release -Version $env:BUILD_VERSION -ReleaseType $env:RELEASE_TYPE
+          EXISTING_PARENT_FILE_ID: ${{ inputs.existing_parent_file_id }}
+        run: |
+          $retry = @{}
+          if ($env:EXISTING_PARENT_FILE_ID) { $retry.ParentFileID = $env:EXISTING_PARENT_FILE_ID }
+          ./tools/Publish-CurseForge.ps1 -PackageDirectory release -Version $env:BUILD_VERSION -ReleaseType $env:RELEASE_TYPE @retry

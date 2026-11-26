@@ -2,6 +2,7 @@ param(
     [Parameter(Mandatory)][string]$PackageDirectory,
     [Parameter(Mandatory)][ValidatePattern('^[0-9A-Za-z.-]+$')][string]$Version,
     [ValidateSet('alpha','beta','release')][string]$ReleaseType = 'alpha',
+    [ValidatePattern('^[1-9][0-9]*$')][string]$ParentFileID,
     [switch]$VerifyOnly
 )
 $ErrorActionPreference = 'Stop'
@@ -46,21 +47,33 @@ if ($forever.Count -ne 1 -or $forever[0].id -notmatch '^[1-9][0-9]*$') {
 }
 
 function Send-Archive($file, $metadata) {
-    $response = Invoke-RestMethod -Uri "$api/projects/$project/upload-file" -Headers $headers -Method Post -TimeoutSec 180 -Form @{
+    $response = Invoke-WebRequest -Uri "$api/projects/$project/upload-file" -Headers $headers -Method Post -TimeoutSec 180 -SkipHttpErrorCheck -Form @{
         metadata = ConvertTo-Json -InputObject $metadata -Compress
         file = $file
     }
-    if ($response.id -notmatch '^[1-9][0-9]*$') { throw "CurseForge returned no file ID for $($file.Name)." }
-    return $response.id
+    if ($response.StatusCode -ge 300) {
+        $detail = (($response.Content -replace '\s+', ' ').Trim() -replace [regex]::Escape($env:CURSEFORGE_API_TOKEN), '[redacted]')
+        if ($detail.Length -gt 600) { $detail = $detail.Substring(0, 600) }
+        throw "CurseForge rejected $($file.Name) (HTTP $($response.StatusCode)). $detail"
+    }
+    $result = $response.Content | ConvertFrom-Json
+    if ($result.id -notmatch '^[1-9][0-9]*$') { throw "CurseForge returned no file ID for $($file.Name)." }
+    return $result.id
 }
 
-$parent = Send-Archive $files[0] @{
-    displayName = "ToonKit $Version"
-    releaseType = $ReleaseType
-    gameVersions = @([int]$forever[0].id)
-    changelog = "ToonKit $Version for WoW Forever. The matching source is attached as an additional file."
+$parent = $ParentFileID
+if ($parent) {
+    Write-Host "Source-only retry for existing CurseForge file $parent."
+} else {
+    $parent = Send-Archive $files[0] @{
+        displayName = "ToonKit $Version"
+        releaseType = $ReleaseType
+        gameVersions = @([int]$forever[0].id)
+        changelog = "ToonKit $Version for WoW Forever."
+    }
+    Write-Host "CurseForge accepted the installable ZIP as file $parent."
 }
-Write-Host "CurseForge accepted the installable ZIP as file $parent."
+"CurseForge installable file ID: $parent" >> $env:GITHUB_STEP_SUMMARY
 try {
     $source = Send-Archive $files[1] @{
         displayName = "ToonKit $Version Source"
@@ -69,6 +82,8 @@ try {
         changelog = "Corresponding source for ToonKit $Version."
     }
 } catch {
-    throw "The installable ZIP was accepted as CurseForge file $parent. Check that file’s attachments before retrying. If the source is missing, attach $($files[1].Name) from the selected build manually. $($_.Exception.Message)"
+    "Source upload failed. Check the attachments on file $parent before running a source-only retry." >> $env:GITHUB_STEP_SUMMARY
+    throw
 }
-"Submitted ToonKit $Version to CurseForge as file $parent with matching source file $source." >> $env:GITHUB_STEP_SUMMARY
+Write-Host "CurseForge accepted source file $source under parent $parent."
+"Matching source file ID: $source" >> $env:GITHUB_STEP_SUMMARY
