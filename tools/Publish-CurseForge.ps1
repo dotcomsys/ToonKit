@@ -61,29 +61,68 @@ function Send-Archive($file, $metadata) {
     return $result.id
 }
 
+function Publish-Source($file) {
+    if ($env:BUILD_SHA -notmatch '^[0-9a-f]{40}$') { throw 'Missing verified build commit.' }
+    $github = "$env:GITHUB_API_URL/repos/$env:GITHUB_REPOSITORY"
+    $githubHeaders = @{ Authorization = "Bearer $env:GH_TOKEN"; Accept = 'application/vnd.github+json' }
+    $tag = "v$Version"
+    $lookup = Invoke-WebRequest -Uri "$github/releases/tags/$tag" -Headers $githubHeaders -SkipHttpErrorCheck
+    if ($lookup.StatusCode -eq 404) {
+        $metadata = @{
+            tag_name = $tag
+            target_commitish = $env:BUILD_SHA
+            name = "ToonKit $Version source"
+            body = "Corresponding source for ToonKit $Version for WoW Forever."
+            prerelease = $Version -match '-(alpha|beta)'
+            make_latest = 'false'
+        } | ConvertTo-Json -Compress
+        $release = Invoke-RestMethod -Uri "$github/releases" -Headers $githubHeaders -ContentType 'application/json' -Method Post -Body $metadata
+    } elseif ($lookup.StatusCode -eq 200) {
+        $release = $lookup.Content | ConvertFrom-Json
+    } else {
+        throw "Could not look up the GitHub source release (HTTP $($lookup.StatusCode))."
+    }
+    $commit = Invoke-RestMethod -Uri "$github/commits/$tag" -Headers $githubHeaders
+    if ($commit.sha -ne $env:BUILD_SHA) { throw "GitHub tag $tag points at a different build." }
+    $asset = $release.assets | Where-Object name -CEQ $file.Name | Select-Object -First 1
+    if (-not $asset) {
+        $upload = ($release.upload_url -replace '\{.*$', '') + '?name=' + [uri]::EscapeDataString($file.Name)
+        $asset = Invoke-RestMethod -Uri $upload -Headers $githubHeaders -ContentType 'application/zip' -Method Post -InFile $file.FullName -TimeoutSec 180
+    }
+    $digest = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash
+    if ($asset.state -ne 'uploaded' -or $asset.digest -ne "sha256:$digest" -or -not $asset.browser_download_url) {
+        throw 'The GitHub source release asset did not match the verified source ZIP.'
+    }
+    Write-Host "Verified public source asset $($asset.id)."
+    return $asset.browser_download_url
+}
+
+$sourceUrl = Publish-Source $files[1]
+$changelog = @"
+ToonKit $Version for WoW Forever.
+
+[Download the matching source ZIP]($sourceUrl)
+"@
+"Matching source ZIP: $sourceUrl" >> $env:GITHUB_STEP_SUMMARY
 $parent = $ParentFileID
 if ($parent) {
-    Write-Host "Source-only retry for existing CurseForge file $parent."
+    $result = Invoke-RestMethod -Uri "$api/projects/$project/update-file" -Headers $headers -Method Post -TimeoutSec 60 -Form @{
+        metadata = @{
+            fileID = [int]$parent
+            changelogType = 'markdown'
+            changelog = $changelog
+        } | ConvertTo-Json -Compress
+    }
+    if ($result.id -ne $parent) { throw 'CurseForge did not confirm the changelog update.' }
+    Write-Host "CurseForge linked the verified source ZIP in the changelog for existing file $parent."
 } else {
     $parent = Send-Archive $files[0] @{
         displayName = "ToonKit $Version"
         releaseType = $ReleaseType
         gameVersions = @([int]$forever[0].id)
-        changelog = "ToonKit $Version for WoW Forever."
+        changelogType = 'markdown'
+        changelog = $changelog
     }
     Write-Host "CurseForge accepted the installable ZIP as file $parent."
 }
 "CurseForge installable file ID: $parent" >> $env:GITHUB_STEP_SUMMARY
-try {
-    $source = Send-Archive $files[1] @{
-        displayName = "ToonKit $Version Source"
-        releaseType = $ReleaseType
-        parentFileID = [int]$parent
-        changelog = "Corresponding source for ToonKit $Version."
-    }
-} catch {
-    "Source upload failed. Check the attachments on file $parent before running a source-only retry." >> $env:GITHUB_STEP_SUMMARY
-    throw
-}
-Write-Host "CurseForge accepted source file $source under parent $parent."
-"Matching source file ID: $source" >> $env:GITHUB_STEP_SUMMARY
