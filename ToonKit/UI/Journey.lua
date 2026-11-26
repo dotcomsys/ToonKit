@@ -695,7 +695,7 @@ local function layoutGuide()
     local fullNote=view.paused and view.hint or view.blocked and view.hint or view.travel and view.travelInstructions or view.actionNote
 
     local showDirections=ns.db.settings.guideNotes~=false or view.blocked or view.route.live
-    local note=not view.paused and view.approachCaption or (showDirections and fullNote) or ""
+    local note=not view.paused and (view.travelStop or view.approachCaption) or (showDirections and fullNote) or ""
     local notesEnabled=showDirections or view.approachCaption or view.contact
 
     -- Full directions remain available in the hover and journal.

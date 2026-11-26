@@ -5,8 +5,7 @@ local P={};ns.DungeonJourney=P
 local targets={["hall-of-thanes"]=15,["the-deadmines"]=20,["shadowfang-keep"]=23,["blackfathom-deeps"]=25}
 local function meta(id) return (ns.Data.questSupport or {}).meta and ns.Data.questSupport.meta[id] end
 local function identity(id)
-    local m=meta(id);if not m then return true end
-    return ns.Rules.MaskAllows(m.classes,ns.State.classID) and ns.Rules.QuestRaceAllowed(m.races)
+    return ns.Rules.QuestCharacterAllows(id)
 end
 local function locate(goal)
     if goal.map then return end
@@ -83,7 +82,9 @@ end
 function P.IncludeDungeon(source)
     ns.char.dungeonJourney=ns.char.dungeonJourney or {asked=true}
     local plan=ns.char.dungeonJourney;plan.quests=plan.quests or {}
-    for _,q in ipairs(source) do if ns.Rules.Available(q,false) then plan.quests[source.slug..":"..q.id]=true end end
+    for _,q in ipairs(source) do
+        if identity(q.id) and ns.Rules.Available(q,false) then plan.quests[source.slug..":"..q.id]=true end
+    end
     ns.Emit("STATE_CHANGED")
 end
 local routes=J.Routes

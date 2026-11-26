@@ -167,13 +167,13 @@ function G.Candidates()
         if ns.Rules.Available({min=d.min,classic=d.classic},false) then
             for _,q in ipairs(d) do
                 local copy=ns.Copy(q)
-                if ns.Rules.Available(copy,false) and not ns.API.QuestDone(q.id) then
+                if ns.Journal.QuestAccess(copy) and not ns.API.QuestDone(q.id) then
                     for _,reward in ipairs(q.rewards or {}) do
-                        add(reward.id,d.name..": "..q.title,live[q.id],q.id,d.slug)
+                        add(reward.id,d.name..": "..q.title,live[q.id],q.id,d.slug,nil,copy)
                     end
                     for _,reward in ipairs(q.choice or {}) do
                         -- Quest acceptance proves the quest exists here, not eligibility for every choice.
-                        add(reward.id,d.name..": "..q.title,live[q.id],q.id,d.slug)
+                        add(reward.id,d.name..": "..q.title,live[q.id],q.id,d.slug,nil,copy)
                     end
                 end
             end
@@ -185,10 +185,9 @@ function G.Candidates()
         end
     end end end
     local support=ns.Data.questSupport or {quests={},meta={}}
-    local function maskAllows(mask,id) return not mask or mask==0 or type(id)=="number" and math.floor(mask/2^(id-1))%2==1 end
     for quest,rewards in pairs(support.quests) do
         local meta=support.meta[quest]
-        if meta and (meta.min or 1)<=ns.Rules.Cap() and maskAllows(meta.classes,ns.State.classID) and ns.Rules.QuestRaceAllowed(meta.races)
+        if meta and (meta.min or 1)<=ns.Rules.Cap() and ns.Rules.QuestCharacterAllows(quest)
             and not ns.API.QuestDone(quest) then
             for _,id in ipairs(rewards.rewards or {}) do
                 add(id,"Quest reward: "..(meta.name or "Quest #"..quest),live[quest]==true,quest,nil,nil,{required=meta.min,sourceKnown=true,sourceKind="quest",provenance="EverythingQuests Forever MIT quest rewards"})

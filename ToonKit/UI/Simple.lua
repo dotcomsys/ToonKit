@@ -103,6 +103,7 @@ function M.Journey()
         local point=view.pickup or view.point
         local mapInfo=point and point.map and ns.API.Call("C_Map","GetMapInfo",point.map)
         local destination=type(mapInfo)=="table" and ns.Safe(mapInfo.name)
+        if view.travelStop then M.Line(view.travelStop,"GameFontNormal") end
         if view.approachCaption then M.Line(view.approachCaption,"GameFontHighlightSmall")
         elseif type(destination)=="string" and destination~="" then M.Line(destination,"GameFontHighlightSmall") end
         if view.pickup then M.Line("First: "..J.GoalText(view.pickup),"GameFontNormal")
@@ -148,6 +149,12 @@ function M.Journey()
         if view.stopPreview and #view.stopPreview>0 then
             M.Line("At this stop","GameFontNormal")
             for _,text in ipairs(view.stopPreview) do M.Line(text,"GameFontHighlightSmall") end
+        end
+        local action=view.pickup or view.goal
+        local destination=not view.paused and action and ns.Navigation.FinalLocation(action)
+        if destination and view.approach and not view.blocked then
+            local label=action.t=="accept" and "Show quest pickup" or action.t=="turnin" and "Show quest turn-in" or "Show final destination"
+            M.Action(label,function() ns.Navigation.ShowDestination(destination) end,200)
         end
         if view.tripChecklist then M.Line(view.tripChecklist,"GameFontHighlightSmall") end
         if view.route.live then

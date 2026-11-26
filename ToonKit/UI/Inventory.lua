@@ -759,8 +759,8 @@ local function paintGearBadges(queue)
             local button,item=row.button,row.item
             if button.item==item and button:IsShown() then
                 local advice=ns.ItemComparison.Cached(item.id,item.link)
-                if advice and (advice.kind=="upgrade" or advice.sellCandidate) then
-                    ns.ItemComparison.Badge(button.tkAdvice,advice.kind=="upgrade" and "upgrade" or "vendor")
+                if advice and advice.kind=="upgrade" then
+                    ns.ItemComparison.Badge(button.tkAdvice,"upgrade")
                 end
             end
             if started and debugprofilestop()-started>=1 then break end
@@ -1057,6 +1057,14 @@ function B.Create()
 
     B.tools=U.IconButton(B.frame,"Interface\\Buttons\\UI-OptionsButton","Inventory options",function(self)
         ns.QuestWorkspace.Menu(self,{
+            {"Item size: "..ns.db.settings.bagIconSize.." px",function()
+                local sizes={}
+                for _,size in ipairs({32,40,48,56}) do
+                    local pixels=size
+                    sizes[#sizes+1]={pixels.." px",function() ns.Preferences.Set("bagIconSize",pixels) end}
+                end
+                ns.QuestWorkspace.Menu(B.tools,sizes)
+            end},
             {"Display sort",function() B.SortMenu(B.tools) end},
             {"Filter categories",function() B.CategoryMenu(B.tools) end},
             {"Assign categories",function() if not B.offlineKey then B.assignMode=not B.assignMode;B.inlineAssignment=nil;B.Render() end end},

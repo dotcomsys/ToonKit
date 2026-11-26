@@ -46,13 +46,13 @@ end
 function I.StatusText(advice,upgrade)
     if not advice then return end
     if upgrade then return advice.specName and "Upgrade for "..advice.specName or "Upgrade" end
-    if advice.kind=="noUpgrade" then return "Keep equipped" end
-    if advice.kind=="unusable" then return "Cannot equip" end
+    if advice.kind=="noUpgrade" then return advice.text or "Keep equipped for current build" end
+    if advice.kind=="unusable" then return advice.text or "Cannot equip now" end
     if advice.kind=="pending" then return "Comparison pending" end
-    if advice.tradeoff then return "Trade-off for "..advice.specName end
+    if advice.tradeoff then return "Trade-off for "..advice.specName.." · review before replacing" end
     if advice.effectsUnresolved and advice.statDelta then
         if advice.statDelta>0 then return "Better stats · compare effects" end
-        if advice.statDelta<0 then return "Keep equipped for stats · compare effects" end
+        if advice.statDelta<0 then return "Effects unresolved · review before replacing or selling" end
         return "Even stats · compare effects"
     end
     return advice.text or "Comparison unavailable"

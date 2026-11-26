@@ -11,7 +11,7 @@ local function prerequisites(q)
     return meta and meta.preAll or {},meta and meta.pre or {},meta and meta.parent
 end
 local function questBadges(q)
-    local faction,classes=D.QuestRestrictions(q)
+    local faction,classes,meta=D.QuestRestrictions(q)
     local icons,names={},{}
     if faction then
         names[#names+1]=faction=="alliance" and "Alliance" or "Horde"
@@ -32,6 +32,16 @@ local function questBadges(q)
         elseif coords then
             icons[#icons+1]={texture="Interface\\Glues\\CharacterCreate\\UI-CharacterCreate-Classes",coords=coords}
         else icons[#icons+1]={texture="Interface\\Icons\\ClassIcon_"..class} end
+    end
+    local races=meta and meta.races
+    if type(races)=="number" and races>0 and not ns.Rules.QuestFaction(races) then
+        for id=1,32 do
+            if ns.Rules.MaskAllows(races,id) then
+                local info=ns.API.Call("C_CreatureInfo","GetRaceInfo",id)
+                local name=type(info)=="table" and ns.Safe(info.raceName)
+                if type(name)=="string" then names[#names+1]=name end
+            end
+        end
     end
     return icons,table.concat(names," · ")
 end
@@ -128,7 +138,7 @@ function V.MapPages(d)
                     if not seen[key] then
                         seen[key]=true
                         pages[#pages+1]={id=key,name=label,tiles=tiles,floor=floor,
-                            minimap=minimap~=nil,nativeFloor=not minimap and uiMapID or nil}
+                            minimap=minimap~=nil,nativeFloor=uiMapID}
                     end
                 elseif uiMapID and ns.API.Call("C_Map","GetMapInfo",uiMapID) then add(uiMapID) end
             end
@@ -166,14 +176,25 @@ local function clientTiles(parent,tiles,width,height)
     return panel
 end
 local function bossMapPins(d,page)
-    local available={}
-    local native=page.nativeFloor or (not page.tiles and page.id)
-    for _,pin in ipairs(native and D.NativeMapEncounters(native) or {}) do available[pin.name]=pin end
-    local rows={}
+    local function key(name) return name:lower():gsub("[^%w]","") end
+    local floor=page.floor or page.id
+    local bosses,rows,seen={},{},{}
     for index,boss in ipairs(d.encounters or {}) do
-        local pin=available[boss.name]
-        if pin then rows[#rows+1]={index=index,name=boss.name,x=pin.x,y=pin.y} end
+        bosses[key(boss.name)]=index
     end
+    local function add(pins,source,keepUnmatched)
+        for _,pin in ipairs(pins or {}) do
+            local name=key(pin.name)
+            if not seen[name] and (bosses[name] or keepUnmatched) then
+                seen[name]=true
+                rows[#rows+1]={index=bosses[name],name=pin.name,x=pin.x,y=pin.y,source=source}
+            end
+        end
+    end
+    -- Client minimap mosaics use the pinned floor's coordinate space.
+    local native=page.nativeFloor or (not page.tiles and page.id)
+    if native and not page.minimap then add(D.NativeMapEncounters(native),"Native encounter location") end
+    add((ns.Data.dungeonBossPins or {})[floor],"Source-listed Forever boss location",true)
     return rows
 end
 local function mapView(d,top,height)
@@ -223,9 +244,9 @@ local function mapView(d,top,height)
         if area then
             for _,boss in ipairs(bossMapPins(d,selected)) do
                 local pin=U.IconButton(art,"Interface\\TargetingFrame\\UI-TargetingFrame-Skull",boss.name,function()
-                    V.boss=boss.index;V.item=nil;V.tab="loot";M.Render()
+                    if boss.index then V.boss=boss.index;V.item=nil;V.tab="loot";M.Render() end
                 end,26)
-                U.Tooltip(pin,boss.name,{"Native encounter location","Click to see loot."})
+                U.Tooltip(pin,boss.name,boss.index and {boss.source,"Click to see loot."} or {boss.source})
                 pin:SetPoint("CENTER",art,"TOPLEFT",area.x+boss.x*area.width,-area.y-boss.y*area.height)
             end
         end
@@ -346,7 +367,11 @@ local function questView(d,left,right)
         if q.note and q.note~=q.goal then M.Line(q.note,"GameFontHighlightSmall") end
         if state~=1 then questLocation("Turn-in",q.turnIn,q.turnInAt,"Show turn-in") end
         local rewards={}
-        for _,r in ipairs(q.choice or {}) do rewards[#rewards+1]={id=r.id,name=r.name,quest=q.id,dungeon=d.slug,source=d.name..": "..q.title,sourceKnown=true,foreverLive=true} end
+        for _,r in ipairs(q.choice or {}) do
+            rewards[#rewards+1]={id=r.id,name=r.name,quest=q.id,dungeon=d.slug,source=d.name..": "..q.title,
+                class=q.class,classes=q.classes,races=q.races,faction=q.faction or q.side,required=q.req,
+                sourceKnown=true,foreverLive=q.foreverLive==true,referenceOnly=q.rewardLayoutUnknown==true or state>=4}
+        end
         local listedFallback=#rewards==0
         local support=listedFallback and ns.Data.questSupport and ns.Data.questSupport.quests[q.id]
         local seen={}
@@ -359,7 +384,7 @@ local function questView(d,left,right)
         if #rewards>0 then
             section((listedFallback or q.rewardLayoutUnknown) and "Listed rewards" or "Choose one reward")
             local inspectSource
-            if not listedFallback and state~=6 and state~=5 then
+            if not listedFallback and not q.rewardLayoutUnknown and state<4 then
                 inspectSource=function(item) M.OpenGearCandidate(nil,item.id,item) end
             end
             C.ItemTiles(rewards,function(item) ns.ItemCompare.Show(item) end,inspectSource,states[q.id]~=6)

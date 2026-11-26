@@ -4,7 +4,14 @@ local W={ mapNames={}, pins={}, notices={} }; ns.World=W
 
 function W.MapForZone(zone)
 
+    if type(zone)~="string" or zone=="" then return end
     if W.mapNames[zone] then return W.mapNames[zone] end
+    local function insensitive()
+        local wanted=zone:lower()
+        for name,id in pairs(W.mapNames) do if name:lower()==wanted then return id end end
+    end
+    local cached=insensitive()
+    if cached then return cached end
 
     if not C_Map or not C_Map.GetMapChildrenInfo then return end
 
@@ -40,7 +47,7 @@ function W.MapForZone(zone)
 
     end
 
-    return W.mapNames[zone]
+    return W.mapNames[zone] or insensitive()
 
 end
 
@@ -275,6 +282,14 @@ function W.DrawPins()
 
     end
 
+    for _,waypoint in ipairs(ns.char.manualWaypoints or {}) do
+        local point=stitched and waypoint or project(waypoint,map)
+        if point then
+            pin(waypoint.label or "Saved waypoint","Click to follow this waypoint.",point,
+                "Interface\\Icons\\INV_Misc_Map_01",function() ns.Navigation.SelectWaypoint(waypoint) end)
+        end
+    end
+
     if ns.db.settings.modules.world and ns.db.settings.mapBookPins~=false then
 
         for _,r in ipairs(W.Records()) do if not W.Status(r) then
@@ -345,13 +360,33 @@ function W.DrawPins()
             local existing=goal.t=="turnin" and native[goal.quest]
             return existing and markers.NearContact(existing,point)
         end
-        local goal=ns.Journey.Action()
+        local goal,step=ns.Journey.Action()
         local point=goal and (goal.t=="accept" and markers.PickupEligible(goal) or goal.t~="accept" and not ns.Journey.Blocked(goal)) and ns.Navigation.Location(goal)
         local guidePoint=point and (stitched and point or project(point,map))
         local guideShown
         if guidePoint and ns.db.settings.mapGuidePins~=false and not covered(goal,guidePoint) then
-            guideShown=pin(ns.Journey.GoalText(goal),"Next route action",guidePoint,markers.Icon(goal),
+            local title=point.connection and "Travel via "..(point.label or ns.Journey.GoalText(goal)) or ns.Journey.GoalText(goal)
+            guideShown=pin(title,"Next route action",guidePoint,markers.Icon(goal),
                 function() ns.Journey.GoalWaypoint(goal) end,markers.Contact(goal) and goal.t)
+        end
+        if goal and not ns.char.journeyPaused and ns.db.settings.mapGuidePins~=false then
+            local count=0
+            for _,action in ipairs(step and step.goals or {}) do
+                if action.t=="accept" or action.t=="turnin" then
+                    local eligible=action.t=="accept" and markers.PickupEligible(action)
+                        or action.t=="turnin" and ns.Journey.ReadyToTurnIn(action.quest) and not ns.Journey.Blocked(action)
+                    local location=eligible and ns.Journey.Applies(action.only) and ns.Navigation.FinalLocation(action)
+                    local p=location and (stitched and location or project(location,map))
+                    if p and not covered(action,p) and not (action==goal and guideShown and markers.NearContact(guidePoint,p)) then
+                        local text=action.npcName and "Speak with "..action.npcName or "Quest contact in the current route group"
+                        pin(ns.Journey.GoalText(action),text,p,markers.Icon(action),function()
+                            ns.Navigation.ShowDestination(location)
+                        end,action.t)
+                        count=count+1
+                        if count>=8 then break end
+                    end
+                end
+            end
         end
         for _,marker in ipairs(markers.Markers(map,stitched)) do
             local action=marker.goal

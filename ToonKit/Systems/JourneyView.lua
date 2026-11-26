@@ -281,6 +281,11 @@ function J.View()
         end
         if not view.blocked then
             view.point,view.connectionHint=ns.Navigation.Location(goal)
+            local destination=view.point and ns.Navigation.FinalLocation(goal)
+            if destination and view.point.map~=destination.map and view.point.map==ns.API.Position() then
+                local name=view.point.label or view.point.npcName or view.point.name
+                view.travelStop=name and ("First: "..name) or "First: follow the travel waypoint"
+            end
         end
         if goal.t=="vendor" and not view.contact and view.point and view.point.npcName then view.contact="Speak with "..view.point.npcName end
         if view.blocked then view.status="Needs attention";view.hint=view.blocked

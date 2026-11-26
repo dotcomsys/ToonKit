@@ -30,16 +30,8 @@ function D.QuestRestrictions(quest)
     return faction,classes,meta
 end
 function D.QuestAccess(quest)
-    local faction,classes,meta=D.QuestRestrictions(quest)
-    if faction and faction~=(ns.State.faction or ""):lower() then return false,"Other faction" end
-    if #classes>0 then
-        local match=false
-        for _,class in ipairs(classes) do if class==ns.State.class then match=true;break end end
-        if not match then return false,"Other class" end
-    end
-    if meta and not ns.Rules.QuestRaceAllowed(meta.races) then
-        return false,"Other race"
-    end
+    local allowed,reason=ns.Rules.QuestCharacterAllows(quest.id)
+    if not allowed then return false,reason end
     return ns.Rules.Available(quest,false)
 end
 function D.Entries()
@@ -91,6 +83,7 @@ function D.SourceAllowed(d,item)
     if d.required>ns.Rules.Cap() then return false,"Above active content cap" end
     if d.required>ns.State.level then return false,"Requires level "..d.required end
     if item and item.referenceOnly then return false,"Reference source only" end
+    if item then return ns.Rules.CharacterAllows(item) end
     return true
 end
 function D.Drops(d,query,encounter)
@@ -102,17 +95,14 @@ function D.Drops(d,query,encounter)
             if query=="" or (name.." "..e.name.." "..item.id):lower():find(query,1,true) then
                 local allowed,reason=D.SourceAllowed(d,item)
                 if not info then allowed=false; reason="Item data not yet available" end
-                if item.classes and #item.classes>0 and ns.State.classID then
-                    local matches=false; for _,id in ipairs(item.classes) do if id==ns.State.classID then matches=true; break end end
-                    if not matches then allowed=false; reason="Other class" end
-                end
                 if info and info.required>math.min(ns.State.level,ns.Rules.Cap()) then allowed=false; reason="Requires level "..info.required end
                 if info and ns.Data.equipSlots[info.equip] then
                     local usable,eligibility=ns.API.ItemEligibility(item.id,info)
                     if usable~=true then allowed=false; reason=eligibility end
                 end
                 drops[#drops+1]={id=item.id,info=info,name=name,link=info and info.link,source=d.name..": "..e.name,
-                    dungeon=d.slug,boss=e.name,encounter=e,classes=item.classes,actionable=allowed,reason=reason,corroborated=item.corroborated,
+                    dungeon=d.slug,boss=e.name,encounter=e,classes=item.classes,class=item.class,
+                    faction=item.faction or item.side,races=item.races,actionable=allowed,reason=reason,corroborated=item.corroborated,
                     required=info and info.required or d.required,catalog=true,live=(ns.State.owned[item.id] or 0)>0,
                     foreverLive=d.foreverLive==true,sourceKnown=d.foreverLive==true and not item.referenceOnly,
                     referenceOnly=item.referenceOnly or d.foreverLive~=true}

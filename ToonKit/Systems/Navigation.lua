@@ -77,7 +77,12 @@ function N.Location(goal)
     if not ns.Travel or not current or current==destination.map or kind=="fly" or kind=="boat"
         or kind=="zeppelin" or kind=="portal" then return destination end
     local directions=ns.Travel.Directions(destination,current)
-    return destination,directions and (directions.text.."\nThe arrow targets the destination shown above.")
+    if directions then
+        local departure=directions.kind~="hearth" and validPoint(directions.point) and directions.point.map==current
+        if departure then return directions.point,directions.text end
+        return destination,directions.text
+    end
+    return ns.Travel.Connection(destination,goal)
 end
 local function activePoint()
     if ns.char and validPoint(ns.char.customWaypoint) then return ns.char.customWaypoint end
@@ -123,7 +128,7 @@ function N.Pulse()
         N.displayMapWidth,N.displayMapHeight=ns.Safe(N.displayMapWidth),ns.Safe(N.displayMapHeight)
     end
     local info=N.displayMapInfo
-    local text=(p==ns.char.customWaypoint and "Waypoint: " or p.handoff and "Travel handoff: " or p.native and "Quest area: " or "")..(info and ns.Safe(info.name) or "Map #"..p.map)..string.format("  %.1f, %.1f",p.x*100,p.y*100)
+    local text=(p==ns.char.customWaypoint and ((p.label or "Waypoint")..": ") or p.connection and "Via: " or p.handoff and "Travel handoff: " or p.native and "Quest area: " or "")..(info and ns.Safe(info.name) or "Map #"..p.map)..string.format("  %.1f, %.1f",p.x*100,p.y*100)
     local pos=ns.Safe(ns.API.Call("C_Map","GetPlayerMapPosition",p.map,"player"))
     local x,y
     if pos then x,y=pos:GetXY();x,y=ns.Safe(x),ns.Safe(y) end
@@ -173,13 +178,17 @@ end
 function N.Refresh()
     if not ns.char then return end
     local goal=ns.Journey.Action();N.goal=goal
+    if N.manualPin and N.manualPin~=ns.char.customWaypoint then
+        if matchesWaypoint(ns.Safe(ns.API.Call("C_Map","GetUserWaypoint")),N.manualPin) and C_Map.ClearUserWaypoint then C_Map.ClearUserWaypoint() end
+        N.manualPin=nil
+    end
     if N.guidePin and N.guidePin.goal~=(goal and goal.id) then
         if matchesWaypoint(ns.Safe(ns.API.Call("C_Map","GetUserWaypoint")),N.guidePin) and C_Map.ClearUserWaypoint then C_Map.ClearUserWaypoint() end
         N.guidePin=nil
     end
     -- A taxi arrival point is useful on the map, but it is not a walking target.
     N.point=not ns.char.journeyPaused and goal and goal.t~="fly"
-        and not ns.Journey.Blocked(goal) and N.Destination(goal) or nil
+        and not ns.Journey.Blocked(goal) and N.Location(goal) or nil
     N.Pulse();N.UpdateTicker()
 end
 ns.On("PLAYER_STARTED_MOVING",function() N.moving=true; N.Refresh() end)
@@ -190,42 +199,91 @@ end)
 ns.Listen("SETTINGS_CHANGED",function() ns.After("navigationRefresh",N.Refresh) end)
 ns.On("PLAYER_ENTERING_WORLD",function() N.displayMap=nil;N.displayMapInfo=nil end)
 
+local function selectWaypoint(point)
+    ns.char.customWaypoint=point;ns.char.questFocus=nil
+    if point and C_Map and type(C_Map.GetUserWaypoint)=="function" then
+        local pin=ns.Safe(ns.API.Call("C_Map","GetUserWaypoint"))
+        if not pin or matchesWaypoint(pin,N.manualPin) or matchesWaypoint(pin,N.guidePin) then
+            if ns.API.MapPoint(point.map,point.x,point.y,false) then N.manualPin=point end
+        end
+    end
+    N.Refresh()
+    ns.Emit("STATE_CHANGED","journey")
+end
+function N.SelectWaypoint(point)
+    if validPoint(point) then selectWaypoint(point) end
+end
+local function selected(point)
+    local current=ns.char.customWaypoint
+    return current==point or current and point.waypointID and current.waypointID==point.waypointID
+end
 local function waypointCommand(message)
     if not ns.char then return end
     message=message:match("^%s*(.-)%s*$")
-    if message:lower()=="clear" or message:lower()=="reset" then
-        ns.char.customWaypoint=nil;ns.char.questFocus=nil
-        if not ns.db.settings.guideArrow then ns.SetSetting("guideArrow",true) end
-        if not ns.db.settings.guide then ns.SetSetting("guide",true) end
-        N.Refresh()
-        ns.Emit("STATE_CHANGED","journey")
-        local view=ns.Journey.View()
-        local point=view.point
-        if view.paused then
-            ns.Message("Journey is paused. Resume Journey to follow "..view.title..".")
-        elseif point then
-            local info=ns.API.Call("C_Map","GetMapInfo",point.map)
-            local zone=info and ns.Safe(info.name) or "Map #"..point.map
-            ns.Message(string.format("%s. Go to %s (%.1f, %.1f).",view.title,zone,point.x*100,point.y*100))
-        elseif view.goal then
-            ns.Message(view.title..". "..(view.blocked or view.travelInstructions or view.note
-                or (view.goal.quest and "Use Map in Journey to see the Blizzard quest area." or view.hint)))
+    local command=message:lower()
+    local points=ns.char.manualWaypoints or {}
+    ns.char.manualWaypoints=points
+    if command=="closest" then
+        local map,x,y=ns.API.Position()
+        local closest,distance
+        if type(x)=="number" and type(y)=="number" then
+            for _,point in ipairs(points) do
+                if validPoint(point) and point.map==map then
+                    local delta=(point.x-x)^2+(point.y-y)^2
+                    if not distance or delta<distance then closest,distance=point,delta end
+                end
+            end
+        end
+        if closest then selectWaypoint(closest) else ns.Message("No saved waypoint in your current zone.") end
+        return
+    end
+    if command=="clear" or command=="reset" or command=="reset all" then
+        for index=#points,1,-1 do
+            if command=="reset all" or selected(points[index]) then table.remove(points,index) end
+        end
+        selectWaypoint(nil)
+        ns.Message(command=="reset all" and "Cleared all saved waypoints." or "Cleared the active waypoint.")
+        return
+    end
+    if command=="next" or command=="list" then
+        if #points==0 then ns.Message("No saved waypoints.");return end
+        if command=="next" then
+            local index=0
+            for i,point in ipairs(points) do
+                if selected(point) then index=i;break end
+            end
+            selectWaypoint(points[index%#points+1])
         else
-            ns.Message(view.title..".")
+            for i,point in ipairs(points) do
+                local info=ns.API.Call("C_Map","GetMapInfo",point.map)
+                ns.Message(string.format("%d. %s %.1f %.1f %s%s",i,info and ns.Safe(info.name) or "Map #"..point.map,
+                    point.x*100,point.y*100,point.label or "",selected(point) and " (active)" or ""))
+            end
         end
         return
     end
-    local coords="(%d+%.?%d*)%s*[, ]%s*(%d+%.?%d*)$"
-    local x,y=message:match("^"..coords)
+    local coords="(%d+%.?%d*)%s*[, ]%s*(%d+%.?%d*)"
+    local function coordinates(input)
+        local x,y,label=input:match("^"..coords.."%s+(.+)$")
+        if not x then x,y=input:match("^"..coords.."$") end
+        return x,y,label
+    end
+    local first,remainder=message:match("^(%d+)%s+(.+)$")
+    local numericMap=first and tonumber(first)>100 and tonumber(first) or nil
+    local x,y,label=coordinates(numericMap and remainder or message)
     local zone,map
     if x then
-        map=ns.Safe(ns.API.Call("C_Map","GetBestMapForUnit","player"))
+        map=numericMap or ns.Safe(ns.API.Call("C_Map","GetBestMapForUnit","player"))
     else
-        zone,x,y=message:match("^(.-)%s+"..coords)
-        if zone then map=tonumber(zone) or ns.World.MapForZone(zone) end
+        local remaining
+        zone,remaining=message:match("^(.-)%s+(%d.*)$")
+        if zone then
+            x,y,label=coordinates(remaining)
+            map=tonumber(zone:match("^#(%d+)$")) or ns.World.MapForZone(zone)
+        end
     end
     if not x then
-        ns.Message("Use /tkway 45.2 61.8, /tkway Zone Name 45.2 61.8, or /tkway reset.")
+        ns.Message("Use /tkway 45.2 61.8 Label, /tkway Zone Name 45.2 61.8 Label, or /tkway #1446 45.2 61.8 Label. Commands: list, next, closest, reset, reset all.")
         return
     end
     local point={map=map,x=tonumber(x)/100,y=tonumber(y)/100}
@@ -238,22 +296,16 @@ local function waypointCommand(message)
         ns.Message("No map found for that waypoint.")
         return
     end
-    ns.char.questFocus=nil;ns.char.customWaypoint=point
-    N.Refresh()
-    ns.Emit("STATE_CHANGED","journey")
+    point.label=label and label:gsub("|",""):sub(1,80)
+    ns.char.manualWaypointSerial=(ns.char.manualWaypointSerial or 0)+1
+    point.waypointID=ns.char.manualWaypointSerial
+    if #points>=50 then table.remove(points,1) end
+    points[#points+1]=point
+    selectWaypoint(point)
     ns.Message(string.format("Waypoint set in %s at %.1f, %.1f.",ns.Safe(info.name,"Map #"..map),point.x*100,point.y*100))
 end
 local function registerWaypointCommand()
-    local available=true
-    for command in pairs(SlashCmdList) do
-        local i=1
-        while _G["SLASH_"..command..i] do
-            if _G["SLASH_"..command..i]:lower()=="/way" then available=false end
-            i=i+1
-        end
-    end
     SLASH_TOONKITWAY1="/tkway"
-    if available then SLASH_TOONKITWAY2="/way" end
     SlashCmdList.TOONKITWAY=waypointCommand
 end
 ns.On("PLAYER_LOGIN",registerWaypointCommand)

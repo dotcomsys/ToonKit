@@ -2,7 +2,7 @@
 ## Title: ToonKit
 ## Notes: An all-in-one character and adventure companion for WoW Forever.
 ## Author: ToonKit contributors
-## Version: 0.10-alpha
+## Version: 0.11-alpha
 ## OptionalDeps: OpenMap
 ## IconTexture: Interface\AddOns\ToonKit\Media\ToonKit
 ## SavedVariables: AdventureCompanionDB, ToonKitDB

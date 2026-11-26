@@ -1173,7 +1173,7 @@ function J.NextRoute()
 end
 function J.GoalWaypoint(g)
     if not J.Applies(g.only) or J.Blocked(g) then return false end
-    local point=ns.Navigation.Destination(g)
+    local point=ns.Navigation.Location(g)
     if point and ns.Navigation.ShowDestination(point) then return true end
     if g.quest and g.t~="accept" and J.OnQuest(g.quest) and type(QuestMapFrame_OpenToQuestDetails)=="function" then
         QuestMapFrame_OpenToQuestDetails(g.quest)

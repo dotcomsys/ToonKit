@@ -3,7 +3,8 @@ ns.Rules = {}
 function ns.Rules.Cap() return 60 end
 function ns.Rules.CampaignCap() return 60 end
 function ns.Rules.MaskAllows(mask,id)
-    return not mask or mask==0 or type(id)=="number" and id>0 and math.floor(mask/2^(id-1))%2==1
+    return mask==nil or mask==0 or mask==-1
+        or type(mask)=="number" and type(id)=="number" and id>0 and math.floor(mask/2^(id-1))%2==1
 end
 function ns.Rules.QuestFaction(mask)
     return mask==77 and "alliance" or mask==178 and "horde" or nil
@@ -16,9 +17,9 @@ function ns.Rules.QuestRaceAllowed(mask)
     if faction and (state.raceToken or ""):lower()=="skyborne" then return (state.faction or ""):lower()==faction end
     return ns.Rules.MaskAllows(mask,state.raceID)
 end
-function ns.Rules.Available(record, actionable, contentCap)
+function ns.Rules.CharacterAllows(record)
     if not record then return false,"Missing data" end
-    if record.class and ns.State and record.class~=ns.State.class then return false,"Other class" end
+    if record.class and record.class~=ns.State.classID and tostring(record.class):upper()~=ns.State.class then return false,"Other class" end
     if record.only and ns.State and record.only:upper()~=ns.State.class then return false,"Other class" end
     if type(record.classes)=="table" and #record.classes>0 then
         local allowed=false
@@ -26,7 +27,32 @@ function ns.Rules.Available(record, actionable, contentCap)
         if not allowed then return false,"Other class" end
     end
     local side=record.faction or record.side
-    if side and side~="both" and ns.State and string.lower(ns.State.faction or "")~=string.lower(side) then return false,"Other faction" end
+    if type(side)=="string" then side=side:lower() end
+    if side and side~="both" and side~="neutral" and side~=(ns.State.faction or ""):lower() then return false,"Other faction" end
+    local races=record.races
+    if type(races)=="table" and #races>0 then
+        local token=(ns.State.raceToken or ""):lower():gsub("[^%w]","")
+        local allowed=false
+        for _,race in ipairs(races) do
+            if race==ns.State.raceID or tostring(race):lower():gsub("[^%w]","")==token then allowed=true;break end
+        end
+        if not allowed then return false,"Other race" end
+    end
+    return true
+end
+function ns.Rules.QuestCharacterAllows(questID)
+    local support=ns.Data.questSupport
+    local meta=support and support.meta and support.meta[questID]
+    if not meta then return true end
+    if not ns.Rules.MaskAllows(meta.classes,ns.State.classID) then return false,"Other class" end
+    local faction=ns.Rules.QuestFaction(meta.races)
+    if faction and faction~=(ns.State.faction or ""):lower() then return false,"Other faction" end
+    if not ns.Rules.QuestRaceAllowed(meta.races) then return false,"Other race" end
+    return true
+end
+function ns.Rules.Available(record, actionable, contentCap)
+    local allowed,reason=ns.Rules.CharacterAllows(record)
+    if not allowed then return false,reason end
     if record.classic then return false,"Classic fallback, unverified in Forever" end
     if (record.min or record.required or record.req or 1)>(contentCap or ns.Rules.Cap()) then return false,"Above active content cap" end
     if actionable and record.availability~="confirmed" and not record.live then return false,"Availability unverified" end

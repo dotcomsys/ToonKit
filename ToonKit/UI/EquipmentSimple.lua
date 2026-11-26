@@ -27,6 +27,7 @@ local function sources()
     for _,d in ipairs(ns.Data.journals or {}) do
         for _,boss in ipairs(d.encounters or {}) do for _,item in ipairs(boss.loot or {}) do
             coroutine.yield({id=item.id,source=d.name..": "..boss.name,dungeon=d.key,classes=item.classes,
+                class=item.class,faction=item.faction or item.side,races=item.races,required=item.required or d.required or d.min,
                 boss=boss.name,bossKey=boss.id,referenceOnly=item.referenceOnly,
                 foreverLive=d.foreverLive==true,sourceKnown=d.foreverLive==true and not item.referenceOnly})
         end end
@@ -84,7 +85,8 @@ local function score(job,raw)
     local record={}
     for key,value in pairs(raw) do if key~="alternatives" then record[key]=value end end
     record.info=info;record.link=raw.link or info.link
-    record.referenceOnly=raw.referenceOnly or raw.sourceKnown==false or inspection and not G.SourceConditions(raw)
+    record.referenceOnly=raw.referenceOnly or not raw.owned and raw.sourceKnown~=true and raw.foreverLive~=true
+        or inspection and not G.SourceConditions(raw)
         or raw.quest and not raw.owned and ns.API.QuestDone(raw.quest)
     local eligible,reason=G.EquipCheck(record,job.slot)
     local usable=eligible==true
@@ -92,7 +94,7 @@ local function score(job,raw)
     if not usable and not inspection and not raw.owned then return end
     record.priority=sourcePriority(raw)
     record.usable=usable;record.eligibilityReason=reason;record.delta=comparison and comparison.delta;record.weaponDelta=comparison and comparison.weaponDelta
-    record.decision=ns.ItemComparison.StatusText(comparison,comparison and comparison.kind=="upgrade")
+    record.decision=record.referenceOnly and "Source reference" or ns.ItemComparison.StatusText(comparison,comparison and comparison.kind=="upgrade")
     record.upgrade=usable and not record.referenceOnly and comparison and comparison.kind=="upgrade"
     record.owned=(ns.State.owned[raw.id] or 0)>0
     if variant and not better(record,existing) then return end
@@ -198,7 +200,8 @@ local function sourceRecord(selected)
     local item=ns.Copy(E.sourceChoice)
     item.info=ns.API.Item(item.link or item.id,true)
     item.link=item.link or item.info and item.info.link;item.slot=selected.slot;item.owned=selected.owned
-    item.referenceOnly=item.referenceOnly or item.sourceKnown==false or item.quest and not item.owned and ns.API.QuestDone(item.quest)
+    item.referenceOnly=item.referenceOnly or not G.SourceConditions(item)
+        or item.sourceKnown==false or item.quest and not item.owned and ns.API.QuestDone(item.quest)
     return item
 end
 function M.Equipment()

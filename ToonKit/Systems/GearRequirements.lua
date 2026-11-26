@@ -116,6 +116,45 @@ local function recipeName(spell)
     local name=ns.Safe(ns.API.Call("C_Spell","GetSpellName",spell))
     return type(name)=="string" and name~="" and name or "Recipe #"..spell
 end
+local classNames={WARRIOR="Warrior",PALADIN="Paladin",HUNTER="Hunter",ROGUE="Rogue",PRIEST="Priest",SHAMAN="Shaman",MAGE="Mage",WARLOCK="Warlock",DRUID="Druid"}
+local function appendClassUses(tooltip,groups,exact,expanded)
+    local classes={}
+    for class in pairs(groups) do classes[#classes+1]=class end
+    table.sort(classes,function(a,b)
+        if a==ns.State.class then return b~=a end
+        if b==ns.State.class then return false end
+        return a<b
+    end)
+    tooltip:AddLine(exact and "Class spell reagents" or "Class spell reference · Forever build 70959",.62,.86,1,true)
+    local hidden=false
+    for _,class in ipairs(classes) do
+        local spells=groups[class]
+        local names,seen={},{}
+        for _,row in ipairs(spells) do
+            local spell,count=row[1],row[2]
+            local name=ns.Safe(ns.API.Call("C_Spell","GetSpellName",spell))
+            if type(name)~="string" or name=="" then name="Spell #"..spell end
+            local known=class==ns.State.class and isLearned(spell)
+            local label=name..(exact and count>0 and (" ×"..count) or "")
+            if not seen[label] then
+                local entry={label=label,known=known}
+                names[#names+1]=entry;seen[label]=entry
+            elseif known then seen[label].known=true end
+        end
+        table.sort(names,function(a,b) if a.known~=b.known then return a.known end;return a.label<b.label end)
+        local lines={}
+        local limit=math.min(#names,expanded and 14 or 3)
+        hidden=hidden or #names>limit
+        for i=1,limit do
+            local entry=names[i]
+            lines[i]=entry.label..(entry.known and (exact and " (you know)" or " (spell known)") or "")
+        end
+        tooltip:AddLine((LOCALIZED_CLASS_NAMES_MALE and LOCALIZED_CLASS_NAMES_MALE[class] or classNames[class] or class)
+            ..": "..table.concat(lines,", ")..(#names>limit and (" · +"..(#names-limit).." more") or ""),.82,.9,.95,true)
+    end
+    if not groups[ns.State.class] then tooltip:AddLine("No class spell listed for your character.",.72,.77,.83,true) end
+    if hidden and not expanded then tooltip:AddLine("Shift-hover for more spells.",.68,.76,.82,true) end
+end
 local function recipeLine(index,spell,profession,currentRanks)
     local lines={}
     for id in pairs(index.ranks[spell] or {}) do
@@ -152,9 +191,18 @@ function R.AppendReagentUses(tooltip,item)
     if tooltip.tkReagentUses==item.id then return end
     local index=ns.Data.reagentRecipeIndex
     local uses=index and index.items[item.id]
+    local classUses=index and index.classItems and index.classItems[item.id]
+    local build=type(GetBuildInfo)=="function" and ns.Safe(select(2,GetBuildInfo()))
+    local exact=index and tostring(build)==index.build
+    local expanded=type(IsShiftKeyDown)=="function" and IsShiftKeyDown()
     local character=ns.State.name or "the active character"
     local unknown="No learned recipe confirmed for "..character
     if not uses then
+        if classUses then
+            tooltip.tkReagentUses=item.id
+            appendClassUses(tooltip,classUses,exact,expanded)
+            return
+        end
         local info=item.info or ns.API.Item(item.link or item.id)
         if info and (info.reagent or info.classID==7) then
             tooltip.tkReagentUses=item.id
@@ -165,8 +213,7 @@ function R.AppendReagentUses(tooltip,item)
     end
 
     tooltip.tkReagentUses=item.id
-    local build=type(GetBuildInfo)=="function" and ns.Safe(select(2,GetBuildInfo()))
-    local exact=tostring(build)==index.build
+    if classUses then appendClassUses(tooltip,classUses,exact,expanded) end
     local professions={}
     for name in pairs(uses) do professions[#professions+1]=name end
     table.sort(professions)
@@ -182,12 +229,16 @@ function R.AppendReagentUses(tooltip,item)
     end
     if personal then tooltip:AddLine("Known by "..character.." · "..recipeLine(index,personal.spell,personal.profession,currentRanks),.43,1,.55,true)
     else tooltip:AddLine(unknown,.72,.77,.83,true) end
-    local expanded=type(IsShiftKeyDown)=="function" and IsShiftKeyDown()
     local source=exact and "Crafting uses" or ("Forever recipe reference · Build "..index.build)
     if not expanded then
         tooltip:AddLine(source.." · "..table.concat(professions,", "),.62,.86,1,true)
-        local first=professions[1]
-        if first and not personal and uses[first][1] then tooltip:AddLine(recipeLine(index,uses[first][1],first,currentRanks),.82,.9,.95,true) end
+        for i=1,math.min(3,#professions) do
+            local profession=professions[i]
+            local spell=uses[profession][1]
+            if spell and (not personal or personal.spell~=spell) then
+                tooltip:AddLine(profession..": "..recipeName(spell),.82,.9,.95,true)
+            end
+        end
         tooltip:AddLine("Shift-hover for more recipes.",.68,.76,.82,true)
         return
     end

@@ -262,8 +262,14 @@ function C.Item(record)
     record.info=info
     M.Line(info and info.link or record.name or ("Item "..record.id),"GameFontNormal")
     M.Line(record.source or "Current Forever authored source","GameFontHighlightSmall")
-    local advice=ns.ItemComparison.Compare(record.id,record.link or info and info.link)
-    if advice then M.Line(advice.text);if advice.reason then M.Line(advice.reason,"GameFontHighlightSmall") end end
+    if record.referenceOnly or not ns.Gear.SourceConditions(record) then
+        M.Line("Source reference")
+    elseif record.actionable==false then
+        M.Line(record.reason or "Acquisition unavailable")
+    else
+        local advice=ns.ItemComparison.Compare(record.id,record.link or info and info.link)
+        if advice then M.Line(advice.text);if advice.reason then M.Line(advice.reason,"GameFontHighlightSmall") end end
+    end
     M.Action("Compare",function() ns.ItemCompare.Show(record) end,180)
     local target=ns.char.farming[record.id]
     if target then

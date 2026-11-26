@@ -23,6 +23,7 @@ jobs:
           if (@($match).Count -ne 1) { throw 'Expected one version in ToonKit.toc' }
           $version = $match.Matches[0].Groups[1].Value
           & ./tools/Package-Review.ps1 -Version $version -Destination release
+          & ./tools/Publish-CurseForge.ps1 -PackageDirectory release -Version $version -VerifyOnly
           "version=$version" >> $env:GITHUB_OUTPUT
       - uses: actions/upload-artifact@v4
         with:

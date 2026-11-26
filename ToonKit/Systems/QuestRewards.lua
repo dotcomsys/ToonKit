@@ -74,7 +74,7 @@ function R.Analyze(rows,complete,yieldRow)
         if info then
             if type(info.required)=="number" and info.required>(ns.State.level or 0) then
                 entry.advice={kind="manual",text="Requires level "..info.required}
-            elseif row.usable==false then entry.advice={kind="unusable",text="Cannot equip this quest reward"}
+            elseif row.usable==false then entry.advice={kind="unusable",text="Cannot equip now"}
             elseif not ns.ItemComparison then entry.advice={kind="manual",text="Gear comparison unavailable"}
             else
                 local ok,advice=pcall(ns.ItemComparison.Cached,row.id,row.link or info.link)
@@ -85,6 +85,14 @@ function R.Analyze(rows,complete,yieldRow)
             end
         end
         entry.upgrade=entry.advice and entry.advice.kind=="upgrade" and row.usable~=false and info and ns.API.ItemEligibility(row.id,info)==true or false
+        if row.type=="choice" then
+            local equipment=info and (ns.Data.equipSlots[info.equip] or info.classID==2 or info.classID==4)
+            if entry.upgrade then result.upgradeChoices=(result.upgradeChoices or 0)+1 end
+            if not info or equipment and (not entry.advice or entry.advice.kind=="compare"
+                or entry.advice.kind=="manual" or entry.advice.kind=="pending" or entry.advice.kind=="unusable") then
+                result.choiceUnresolved=true
+            end
+        end
         result.rows[#result.rows+1]=entry;result.buttons[row.type][row.index]=entry
         if yieldRow then yieldRow(entry) end
     end
@@ -92,13 +100,19 @@ function R.Analyze(rows,complete,yieldRow)
         result.maximum=maximum;result.ties=0
         local sellOnly=true
         for _,entry in ipairs(result.rows) do
-            if entry.type=="choice" and entry.info and ns.Data.equipSlots[entry.info.equip]
-                and (not entry.advice or entry.advice.kind~="noUpgrade" and entry.advice.kind~="unusable") then sellOnly=false end
+            if entry.type=="choice" and (not entry.info or ns.Data.equipSlots[entry.info.equip]
+                or entry.info.classID==2 or entry.info.classID==4
+                or ns.QuestSupplies and #ns.QuestSupplies.Lines(entry.id)>0) then sellOnly=false end
         end
         for _,entry in ipairs(result.rows) do
             if entry.type=="choice" and entry.vendor==maximum then
                 entry.bestVendor=true;entry.sellChoice=sellOnly;result.ties=result.ties+1
             end
+        end
+    end
+    if complete and not result.choiceUnresolved and result.upgradeChoices==1 then
+        for _,entry in ipairs(result.rows) do
+            entry.takeUpgrade=entry.type=="choice" and entry.upgrade
         end
     end
     return result

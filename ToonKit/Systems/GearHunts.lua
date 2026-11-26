@@ -9,13 +9,9 @@ function G.DataEvidence(item)
     return "Reference | Acquisition unverified"
 end
 function G.SourceConditions(r)
-    if r.faction and r.faction~="both" and r.faction:lower()~=(ns.State.faction or ""):lower() then return false end
-    for _,entry in ipairs({{r.classes,ns.State.classID,ns.State.class},{r.races,ns.State.raceID,ns.State.raceToken}}) do
-        if type(entry[1])=="table" and #entry[1]>0 then
-            local matches=false;for _,value in ipairs(entry[1]) do if value==entry[2] or tostring(value):lower():gsub("[^%w]","")==tostring(entry[3]):lower():gsub("[^%w]","") then matches=true end end
-            if not matches then return false end
-        end
-    end
+    local allowed,reason=ns.Rules.CharacterAllows(r)
+    if not allowed then return false,reason end
+    if r.quest then return ns.Rules.QuestCharacterAllows(r.quest) end
     return true
 end
 function G.HuntProfile(tree,role,level)
@@ -47,24 +43,11 @@ function G.HuntProfile(tree,role,level)
         live=not planName and resolved==ns.Talents.specKey and selected==ns.State.role and ns.Talents.available and ns.Talents.mismatches==0}
 end
 function G.IsCurrentUpgrade(item,slot)
-    local comparison=item and item.capComparison
-    local delta=comparison and ns.Safe(comparison.delta)
-    if item and item.info and item.info.classID==2 and (ns.State.role=="melee" or ns.State.role=="ranged") then
-        local equipped=slot and ns.State.equipment[slot]
-        if equipped and equipped.id then
-            local current=equipped.link and G.Facts(equipped.link)
-            if not current or type(current.dps)~="number" or type(item.capDPS)~="number" or item.capDPS<current.dps then return false end
-            local off=ns.State.equipment[17]
-            if item.info.equip=="INVTYPE_2HWEAPON" and off and off.id then
-                if not off.info or off.info.classID==2 then return false end
-            end
-        end
-    end
-    return item and not item.classic and not item.capEquipped and item.capUsable==true and item.capEquipAllowed==true
-        and item.capSourceKnown==true and not item.capIncomplete and not item.capFuture
-        and math.max(item.required or 1,item.info and item.info.required or 1)<=ns.State.level
-        and type(delta)=="number" and delta==delta and delta<math.huge and delta>0
-        and not (comparison.loadout and comparison.loadout.partial) or false
+    if not item or not item.info or item.classic or item.referenceOnly or item.capEquipped
+        or item.capSourceKnown~=true or item.capFuture or not G.SourceConditions(item)
+        or math.max(item.required or 1,item.info.required or 1)>ns.State.level then return false end
+    local decision=ns.ItemComparison.Cached(item.id,item.link or item.info.link,slot)
+    return decision and decision.kind=="upgrade" or false
 end
 function G.HuntSummary(data,profile)
     local sum,count,recommendations=0,0,{}

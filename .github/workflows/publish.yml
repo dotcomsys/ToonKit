@@ -1,0 +1,67 @@
+name: Publish to CurseForge
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_run_id:
+        description: Run ID of a successful Build ToonKit packages run on main
+        required: true
+        type: string
+      release_type:
+        description: CurseForge release type
+        required: true
+        default: alpha
+        type: choice
+        options: [alpha, beta, release]
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: curseforge-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Identify the verified build artifact
+        id: build
+        shell: pwsh
+        env:
+          BUILD_RUN_ID: ${{ inputs.build_run_id }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ($env:BUILD_RUN_ID -notmatch '^[1-9][0-9]*$') { throw 'Enter the numeric Actions run ID.' }
+          $api = "$env:GITHUB_API_URL/repos/$env:GITHUB_REPOSITORY/actions"
+          $headers = @{ Authorization = "Bearer $env:GH_TOKEN"; Accept = 'application/vnd.github+json' }
+          $run = Invoke-RestMethod -Uri "$api/runs/$env:BUILD_RUN_ID" -Headers $headers
+          if ($run.path -ne '.github/workflows/package.yml' -or $run.head_branch -ne 'main' -or
+              $run.head_repository.full_name -ne $env:GITHUB_REPOSITORY -or $run.conclusion -ne 'success') {
+            throw 'Choose a successful ToonKit package build from the main branch of this repository.'
+          }
+          $result = Invoke-RestMethod -Uri "$api/runs/$env:BUILD_RUN_ID/artifacts" -Headers $headers
+          $artifacts = @($result.artifacts | Where-Object { -not $_.expired -and $_.name -match '^ToonKit-[0-9A-Za-z.-]+$' })
+          if ($artifacts.Count -ne 1) { throw 'Expected one available ToonKit build artifact.' }
+          $name = $artifacts[0].name
+          "name=$name" >> $env:GITHUB_OUTPUT
+          "version=$($name.Substring(8))" >> $env:GITHUB_OUTPUT
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.name }}
+          path: release
+          run-id: ${{ inputs.build_run_id }}
+          github-token: ${{ github.token }}
+      - name: Verify and upload both archives
+        shell: pwsh
+        env:
+          BUILD_VERSION: ${{ steps.build.outputs.version }}
+          RELEASE_TYPE: ${{ inputs.release_type }}
+          CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
+          CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
+        run: ./tools/Publish-CurseForge.ps1 -PackageDirectory release -Version $env:BUILD_VERSION -ReleaseType $env:RELEASE_TYPE

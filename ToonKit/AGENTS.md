@@ -79,4 +79,6 @@ Extensions call `ns.Registry.Add("routes"|"collections"|"gear", record)` after R
 
 Rebranding changes Brand.lua; keep neutral services and SavedVariables stable. Synchronize static TOC metadata with tools/Sync-Brand.ps1. Installation identity migrations also require moving the WoW-named SavedVariables file, as documented in README.
 
+Increment the development version by 0.01 for each update batch (for example, 0.11-alpha to 0.12-alpha) and synchronize the TOC.
+
 The owner currently requests no tests, previews or automated parsing checks. Do not run them unless that instruction changes. Source review does not establish client, taint, combat, bag-interaction or visual behavior. Document data boundaries honestly; do not call this full Baganator or RestedXP parity.

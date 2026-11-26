@@ -1,12 +1,17 @@
-param([string]$Version = '0.10-alpha', [string]$Destination)
+param([string]$Version, [string]$Destination)
 $ErrorActionPreference = 'Stop'
 $reviewRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+$toc = Get-Content -LiteralPath (Join-Path $reviewRoot 'ToonKit/ToonKit.toc')
+if (-not $Version) {
+    $declaredVersion = @($toc | Select-String '^## Version: ([0-9A-Za-z.-]+)$')
+    if ($declaredVersion.Count -ne 1) { throw 'Expected one version in ToonKit.toc' }
+    $Version = $declaredVersion[0].Matches[0].Groups[1].Value
+}
 if ($Version -notmatch '^[0-9A-Za-z.-]+$') { throw 'Invalid review version' }
 $shareRoot = if ($Destination) { [IO.Path]::GetFullPath($Destination) } else { Join-Path $reviewRoot "Share-$Version" }
 $contentRoot = Join-Path $reviewRoot '.sources/content'
 $recoveryRoot = Join-Path $reviewRoot ".sources/recovered-$Version"
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$toc = Get-Content -LiteralPath (Join-Path $reviewRoot 'ToonKit/ToonKit.toc')
 if (-not ($toc -contains "## Version: $Version")) { throw 'Review version does not match TOC' }
 foreach ($line in $toc) {
     if ($line.Trim() -and -not $line.StartsWith('#') -and -not (Test-Path -LiteralPath (Join-Path $reviewRoot "ToonKit/$($line.Trim())") -PathType Leaf)) { throw "Missing load file: $line" }

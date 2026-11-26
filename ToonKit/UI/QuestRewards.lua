@@ -15,7 +15,7 @@ local function appendStatus(button, itemID)
         or ns.Safe(button.questID)~=overlay.quest or itemID and itemID~=entry.id or GameTooltip.tkRewardStatus==entry then return end
     GameTooltip.tkRewardStatus=entry
     if entry.advice then
-        if entry.upgrade and entry.type=="choice" then GameTooltip:AddLine("Take for upgrade",.3,.9,.35,true)
+        if entry.takeUpgrade then GameTooltip:AddLine("Take for upgrade",.3,.9,.35,true)
         else ns.ItemComparison.AppendStatus(GameTooltip,entry.advice,entry.upgrade) end
         if entry.advice.reason and type(IsShiftKeyDown)=="function" and IsShiftKeyDown() then
             GameTooltip:AddLine(entry.advice.reason,.8,.8,.7,true)

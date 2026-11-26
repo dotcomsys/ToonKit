@@ -1,5 +1,6 @@
 local addonName, ns = ...
 local A={};ns.SpecItemAdvice=A
+local decisionRank={upgrade=3,compare=2,noUpgrade=1}
 local schoolBits={2,4,8,16,32,64}
 local schoolSpecs={WARLOCK={Affliction={32},Demonology={4,32},Destruction={4}},PRIEST={Shadow={32},Holy={2},Discipline={2}},DRUID={Balance={8,64}},SHAMAN={Elemental={4,8,16}}}
 local function has(mask,bit) return type(mask)=="number" and math.floor(mask/bit)%2==1 end
@@ -253,7 +254,8 @@ function A.Effects(id,link,profile,slot)
             local covered=type(description)=="string" and represented("Equip: "..description,values)
             if not covered then result.unknown[#result.unknown+1]=why end
         end
-    elseif #other>0 or facts.useSpell then
+    end
+    if #models==0 and #result.unknown==0 and (#other>0 or facts.useSpell) then
         result.unknown[#result.unknown+1]="No complete numeric effect model for this item on your Forever build"
     end
     local hasTemporaryStats,hasScaling=false,false
@@ -463,7 +465,9 @@ function A.Compare(id,link,wantedSlot,profile)
                 local weaponUnknown=false;local weaponDelta=0
                 if info.classID==2 and (profile.role=="melee" or profile.role=="ranged" or profile.role=="tank" or slot==18) then
                     local new=ns.Gear.Facts(link);local old=currentLink and ns.Gear.Facts(currentLink)
-                    if not old then
+                    if removedOffhand and removedOffhand.id and removedOffhand.info.classID==2 then
+                        weaponUnknown=true
+                    elseif not old then
                         if current and current.id then weaponUnknown=true
                         elseif type(new.dps)=="number" then weaponDelta=new.dps else weaponUnknown=true end
                     elseif current.info and info.subID==current.info.subID and type(new.dps)=="number" and type(old.dps)=="number" and new.speed==old.speed and type(new.speed)=="number" then weaponDelta=new.dps-old.dps
@@ -473,10 +477,9 @@ function A.Compare(id,link,wantedSlot,profile)
                 positive=positive and weaponDelta>=0 or low>=0 and dps>=0 and healing>=0 and mana>=0 and weaponDelta>0
                 negative=negative and weaponDelta<=0
                 local kind=unknown>0 and "compare" or positive and "upgrade" or negative and "noUpgrade" or "compare"
-                local keep=ns.Gear.ItemAdvice(id,link)
-                local protected=keep and keep.kind=="keep"
-                local sell=kind=="noUpgrade" and not protected and info.sellPriceKnown and (info.sellPrice or 0)>0
-                local text=kind=="upgrade" and "KEEP: upgrade for "..profile.name or kind=="noUpgrade" and (protected and keep.text or sell and "SELL CANDIDATE: keep your equipped item" or "KEEP EQUIPPED: no spec upgrade") or "KEEP FOR REVIEW: effect / stat tradeoff"
+                local text=kind=="upgrade" and "Upgrade for "..profile.name
+                    or kind=="noUpgrade" and "Keep equipped for "..profile.name
+                    or "Keep for review"
                 local reason=string.format("Auto: %s (%s). %+.1f to %+.1f build-weighted points. %s",profile.name,profile.role,low,high,table.concat(schoolNotes,", "))
                 if weaponDelta~=0 then reason=reason..string.format(" Weapon DPS %+.2f (same skill/speed).",weaponDelta) end
                 if removedOffhand and removedOffhand.id then reason=reason.." Includes off-hand stat, effect and set loss." end
@@ -494,10 +497,10 @@ function A.Compare(id,link,wantedSlot,profile)
                 if kind=="upgrade" and not base.loadout and base.baseline>0 and base.delta>0 then
                     statPercent=100*base.delta/base.baseline
                 end
-                local result={kind=kind,text=text,reason=reason,retry=replacedBuffActive or proposed.pending or prior.pending or proposed.volatile or prior.volatile,delta=low,weaponDelta=weaponDelta,effectDamageDelta=dps,slot=slot,info=info,sellCandidate=sell,
+                local result={kind=kind,text=text,reason=reason,retry=replacedBuffActive or proposed.pending or prior.pending or proposed.volatile or prior.volatile,delta=low,weaponDelta=weaponDelta,effectDamageDelta=dps,slot=slot,info=info,
                     statDelta=base.delta,effectsUnresolved=unknown>0,tradeoff=unknown==0 and kind=="compare",
                     specName=profile.name,statPercent=statPercent}
-                if not best or kind=="upgrade" and best.kind~="upgrade" or kind==best.kind and low>best.delta then best=result end
+                if not best or decisionRank[kind]>decisionRank[best.kind] or kind==best.kind and low>best.delta then best=result end
             end
         end
     end end

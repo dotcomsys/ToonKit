@@ -118,6 +118,13 @@ function M.SettingsContent()
             number("bagHeight","Preferred bag height","180 to 900 pixels. The window grows to fit every slot.")
             check("bagAutoHeight","Fit height to contents","Reduce empty window space while keeping every item at its configured size.")
             number("bagIconSize","Item cell size","28 to 56 pixels; default 32.")
+            control("Bag window scale","Scale the entire bag window, including its text and controls. Limited by available screen space.",function(row)
+                return U.Edit(row,110,tostring(ns.db.settings.windowScales.bags or ns.db.settings.scale),function(value)
+                    local scale=tonumber(value)
+                    if not scale or scale<.65 or scale>1.5 then ns.Message("Use a scale from 0.65 to 1.50.");return end
+                    ns.db.settings.windowScales.bags=scale;ns.Emit("SETTINGS_CHANGED")
+                end)
+            end)
             number("bagColumns","Preferred item columns","Preferred column count when several layouts fit. Inventory chooses the largest readable fit for all items on one canvas.")
             number("bagSpacing","Space between cells","0 to 12 pixels; default 2.")
         elseif page=="Items" then

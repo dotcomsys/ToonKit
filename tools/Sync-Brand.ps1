@@ -9,7 +9,7 @@ foreach ($field in $fieldMap.Keys) {
     if (-not $match.Success) { throw "Brand field not found: $field" }
     $metadata = $fieldMap[$field]
     $value = $match.Groups[1].Value.Replace('\\','\')
-    $tocText = [regex]::Replace($tocText, "(?m)^## ${metadata}:.*$", [System.Text.RegularExpressions.MatchEvaluator]{ param($m) "## ${metadata}: $value" })
+    $tocText = [regex]::Replace($tocText, "(?m)^## ${metadata}:[^\r\n]*", [System.Text.RegularExpressions.MatchEvaluator]{ param($m) "## ${metadata}: $value" })
 }
 [IO.File]::WriteAllText($tocPath, $tocText, [Text.UTF8Encoding]::new($false))
 Write-Output "Synchronized brand metadata: $tocPath"

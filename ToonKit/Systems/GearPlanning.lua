@@ -188,9 +188,11 @@ function G.ItemAdvice(id,link,container)
     if ns.char.farming[id] or (ns.char.itemGroups or {})[id] then return {kind="keep",icon="Interface\\Icons\\INV_Misc_Bag_08",text="Keep: tracked or assigned item"} end
     if container and ns.InventoryRules then
         local sellable,reason=ns.InventoryRules.SellableGear(container)
-        if sellable then return {kind="sell",icon="Interface\\Icons\\INV_Misc_Coin_01",text="Sellable gear: cannot use on this character",reason=reason} end
+        if sellable then return {kind="review",icon="Interface\\Icons\\INV_Misc_Bag_08",text="Review gear: cannot equip now",reason=reason} end
     end
-    if info.quality==0 and info.sellPrice>0 then return {kind="sell",icon="Interface\\Icons\\INV_Misc_Coin_01",text="Poor-quality item: review before selling"} end
+    if not ns.Data.equipSlots[info.equip] and info.classID~=2 and info.classID~=4 and info.quality==0 and info.sellPrice>0 then
+        return {kind="sell",icon="Interface\\Icons\\INV_Misc_Coin_01",text="Poor-quality item: review before selling"}
+    end
 end
 if TooltipDataProcessor and Enum and Enum.TooltipDataType then
     TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item,function(tooltip,data)
